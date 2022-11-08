@@ -1,0 +1,92 @@
+.projects{
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 100px;
+}
+
+.projects_inner{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.prj{
+    width: 100%;
+    display: flex;
+}
+
+.prj_img{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prj_inner{
+    color: #666;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+}
+
+.prj_inner span{
+    color: black;
+}
+
+.header_underline{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project_image{
+    width: 500px;
+}
+
+
+.seeMore{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.seeMoteBTN{
+    background-color: black !important;
+    color: white;
+}
+@media only screen and (max-width:679px){
+    .projects_inner{
+        margin-top: 50px;
+        gap: 100px;
+    }
+    .prj{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        border-bottom: 1px solid rgb(221, 221, 221);
+    }
+    .prj_img{
+        width: 100%;
+    }
+    .prj_inner{
+        padding: 0 3% ;
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .visitBTN{
+        justify-content: center;
+    }
+}
