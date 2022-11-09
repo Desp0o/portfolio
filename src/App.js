@@ -1,15 +1,23 @@
-import {React, useEffect, useState} from 'react';
+import {React} from 'react';
 import './App.css';
-import Navbar from './navbar';
 import Home from './Home';
+import Projs from './redProj'
+
+import {
+  Routes,
+  Route,
+} from "react-router-dom";
 
 function App() {
   return (
     <div>
-      {/* <Navbar /> */}
-      <Home />
+        
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/redProj" element={<Projs />} />
+      </Routes>
       
-    </div>
+      </div>
     
   );
 }

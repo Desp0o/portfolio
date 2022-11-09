@@ -2,6 +2,7 @@ import {React, useEffect, useState} from "react";
 import {useRef} from 'react';
 import {Link} from  "react-router-dom";
 
+
 //CSS
 import './home.css'
 import './navbar.css'
@@ -11,21 +12,21 @@ import './contact.css'
 import './footer.css'
 
 //images
-import despoIMG from './images/despo_img.png'
-import menu     from './images/menu.png'
-import close    from './images/close.png'
-import carco    from './images/carco_prj.png'
-import dlab     from './images/3dlab.png'
-import pixnft   from './images/pixnft.png'
-import indian   from './images/indian.png'
-import linkedin from './images/linkedin.svg'
-import facebook from './images/facebook.svg'
-import github   from './images/github.svg'
-import twitter  from './images/twitter.svg'
-import linkedLi from './images/linkedin-light.png'
-import twitterLi from './images/twitter-light.png'
+import despoIMG   from './images/despo_img.png'
+import menu       from './images/menu.png'
+import close      from './images/close.png'
+import carco      from './images/carco_prj.png'
+import dlab       from './images/3dlab.png'
+import pixnft     from './images/pixnft.png'
+import indian     from './images/indian.png'
+import linkedin   from './images/linkedin.svg'
+import facebook   from './images/facebook.svg'
+import github     from './images/github.svg'
+import twitter    from './images/twitter.svg'
+import linkedLi   from './images/linkedin-light.png'
+import twitterLi  from './images/twitter-light.png'
 import facebookLi from './images/facebook-light.png'
-import githubLi from './images/github-light.png'
+import githubLi   from './images/github-light.png'
 
 const imageStyle = {
     width: '50px',
@@ -33,6 +34,7 @@ const imageStyle = {
 }
 
 function Home() {
+
     const [toggle, setToggle]   = useState(false)
     const [menuIMG, setMenuIMG] = useState(menu)
     const [dashbrd, setDashbrd] = useState('menu_dashboard')
@@ -251,7 +253,7 @@ function Home() {
 
 
             <span className="button_to_cont seeMore">
-               <span className="button_to_cont_inner seeMoteBTN" onClick={()=>redirect('https://desp0o.github.io/IndianMotorcycle/')}>See More</span>
+               <Link to="./redProj"><span className="button_to_cont_inner seeMoteBTN" >See More</span></Link>
             </span>
 
 
