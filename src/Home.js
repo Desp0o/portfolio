@@ -169,8 +169,10 @@ function Home() {
                             <span className="skill">Git</span>
                             <span className="skill">JQuery</span>
                             <span className="skill">Docker</span>
-                            <span className="skill">PhotoShop</span>
+                            <span className="skill">webView App</span> 
                         </div>
+
+                        
                     </div>
                 </div>
         </div>
