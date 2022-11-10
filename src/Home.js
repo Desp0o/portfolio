@@ -109,7 +109,7 @@ function Home() {
             <h1>HEY, I'M TORNIKE DESPOTASHVILI</h1>
 
             <div className="home_p_txt">
-                <p>A Frontend focused Web Developer building the Frontend of Websites and Web Applications <br/> that leads to the success of the overall product</p>
+                <p>Frontend focused Web Developer building the Frontend of Websites and Web Applications <br/> that leads to the success of the overall product</p>
             </div>
 
             <div className="button_to_prj" onClick={()=> handleClick(projectRef)}>
