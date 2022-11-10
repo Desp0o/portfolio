@@ -6,7 +6,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 40px;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .contact_header{
@@ -101,6 +101,6 @@ input:focus{
         width: 80%;
     }
     .contact{
-        height: fit-content;
+        height: unset;
     }
 }

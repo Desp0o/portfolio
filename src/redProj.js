@@ -66,7 +66,7 @@ function PagePrj() {
         <nav>
             <div className="nav_left">
                 <img src={despoIMG} style={imageStyle} />
-                <p>Tornike Despotashvili</p>
+               <Link to="/.Home" style={{textDecoration:'none', color:'unset'}}> <p>Tornike Despotashvili</p></Link>
             </div>
 
             <div className="nav_right">
@@ -203,10 +203,10 @@ function PagePrj() {
                         </div>
                 </div>
 
-                {/* პორტფელი პროექტი */}
+                {/* carco APP პროექტი */}
                 <div className="prj">
                         <div className="prj_img">
-                            <img className="project_image" src={calApp} />
+                            <img className="project_image APP" src={calApp} />
                         </div>
 
 
