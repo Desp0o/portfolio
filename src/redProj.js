@@ -1,4 +1,4 @@
-import {React, useEffect, useState} from "react";
+import {React, useState} from "react";
 import {Link} from  "react-router-dom";
 import './PROJ_mian_screen.css'
 import './project.css'
@@ -65,7 +65,7 @@ function PagePrj() {
         {/* ნავიგაცია /////////////////////////////////////////// */}
         <nav>
             <div className="nav_left">
-                <img src={despoIMG} style={imageStyle} />
+                <img src={despoIMG} style={imageStyle} alt='logo'/>
                <Link to="/.Home" style={{textDecoration:'none', color:'unset'}}> <p>Tornike Despotashvili</p></Link>
             </div>
 
@@ -74,7 +74,7 @@ function PagePrj() {
             </div>
 
             <div className="burger_menu">
-                <img className="menu_bars" src={menuIMG} onClick={()=> toggleMenu()} />
+                <img className="menu_bars" src={menuIMG} onClick={()=> toggleMenu()} alt='menu'/>
             </div>
         </nav>
 
@@ -94,7 +94,7 @@ function PagePrj() {
                 {/* carco პროექტი */}
                 <div className="prj">
                     <div className="prj_img">
-                            <img className="project_image" src={carco} />
+                            <img className="project_image" src={carco} alt='carco'/>
                     </div>
 
 
@@ -110,7 +110,7 @@ function PagePrj() {
                 {/* 3dlab პოექტი */}
                 <div className="prj">
                     <div className="prj_img">
-                        <img className="project_image" src={dlab} />
+                        <img className="project_image" src={dlab} alt='3dlab'/>
                     </div>
 
 
@@ -126,7 +126,7 @@ function PagePrj() {
                 {/* nft პროექტი */}
                 <div className="prj">
                         <div className="prj_img">
-                            <img className="project_image" src={pixnft} />
+                            <img className="project_image" src={pixnft} alt='nft'/>
                         </div>
 
 
@@ -142,7 +142,7 @@ function PagePrj() {
                 {/* ინდიან პროექტი */}
                 <div className="prj">
                         <div className="prj_img">
-                            <img className="project_image" src={indian} />
+                            <img className="project_image" src={indian} alt='indian'/>
                         </div>
 
 
@@ -158,7 +158,7 @@ function PagePrj() {
                 {/* არქიტექტურა პროექტი */}
                 <div className="prj">
                         <div className="prj_img">
-                            <img className="project_image" src={archic} />
+                            <img className="project_image" src={archic} alt='archic'/>
                         </div>
 
 
@@ -174,7 +174,7 @@ function PagePrj() {
                 {/* ჭადრაკი პროექტი */}
                 <div className="prj">
                         <div className="prj_img">
-                            <img className="project_image" src={chess} />
+                            <img className="project_image" src={chess} alt='chess'/>
                         </div>
 
 
@@ -190,7 +190,7 @@ function PagePrj() {
                 {/* პორტფელი პროექტი */}
                 <div className="prj">
                         <div className="prj_img">
-                            <img className="project_image" src={portfolio} />
+                            <img className="project_image" src={portfolio} alt='portfolio'/>
                         </div>
 
 
@@ -206,7 +206,7 @@ function PagePrj() {
                 {/* carco APP პროექტი */}
                 <div className="prj">
                         <div className="prj_img">
-                            <img className="project_image APP" src={calApp} />
+                            <img className="project_image APP" src={calApp} alt='carcoAPP'/>
                         </div>
 
 
@@ -244,10 +244,10 @@ function PagePrj() {
                 <div className="footer_top_right">
                     <p className="footer_hedaer">SOCIAL</p>
                     <span className="footer_social">
-                        <img className="footer_social_img" src={linkedLi} onClick={()=> socialLink("https://www.linkedin.com/in/tornike-despotashvili-250150219/")} />
-                        <img className="footer_social_img" src={twitterLi} onClick={()=> socialLink("https://twitter.com/TDespotashvili")} />
-                        <img className="footer_social_img" src={facebookLi} onClick={()=> socialLink("https://www.facebook.com/tornike.despotashvili/")} />
-                        <img className="footer_social_img" src={githubLi} onClick={()=> socialLink("https://github.com/Desp0o")} />
+                        <img className="footer_social_img" alt='linked' src={linkedLi} onClick={()=> socialLink("https://www.linkedin.com/in/tornike-despotashvili-250150219/")} />
+                        <img className="footer_social_img" alt='twitter' src={twitterLi} onClick={()=> socialLink("https://twitter.com/TDespotashvili")} />
+                        <img className="footer_social_img" alt='facebook' src={facebookLi} onClick={()=> socialLink("https://www.facebook.com/tornike.despotashvili/")} />
+                        <img className="footer_social_img" alt='github' src={githubLi} onClick={()=> socialLink("https://github.com/Desp0o")} />
                     </span>
                 </div>
             </div>

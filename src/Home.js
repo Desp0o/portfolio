@@ -1,4 +1,4 @@
-import {React, useEffect, useState} from "react";
+import {React, useState} from "react";
 import {useRef} from 'react';
 import {Link} from  "react-router-dom";
 
@@ -76,7 +76,7 @@ function Home() {
         {/* ნავიგაცია /////////////////////////////////////////// */}
         <nav>
             <div className="nav_left">
-                <img src={despoIMG} style={imageStyle} />
+                <img src={despoIMG} style={imageStyle} alt='logo'/>
                 <p>Tornike Despotashvili</p>
             </div>
 
@@ -88,7 +88,7 @@ function Home() {
             </div>
 
             <div className="burger_menu">
-                <img className="menu_bars" src={menuIMG} onClick={()=> toggleMenu()} />
+                <img className="menu_bars" src={menuIMG} onClick={()=> toggleMenu()} alt='menu'/>
             </div>
         </nav>
 
@@ -120,10 +120,10 @@ function Home() {
 
             {/* სოციალური ქსელები */}
             <span className="social">
-                <img className="social_img" src={linkedin} onClick={()=> socialLink("https://www.linkedin.com/in/tornike-despotashvili-250150219/")} />
-                <img className="social_img" src={twitter} onClick={()=> socialLink("https://twitter.com/TDespotashvili")} />
-                <img className="social_img" src={facebook} onClick={()=> socialLink("https://www.facebook.com/tornike.despotashvili/")} />
-                <img className="social_img" src={github} onClick={()=> socialLink("https://github.com/Desp0o")} />
+                <img className="social_img" alt='linkedin' src={linkedin} onClick={()=> socialLink("https://www.linkedin.com/in/tornike-despotashvili-250150219/")} />
+                <img className="social_img" alt='twitter' src={twitter} onClick={()=> socialLink("https://twitter.com/TDespotashvili")} />
+                <img className="social_img" alt='facebook' src={facebook} onClick={()=> socialLink("https://www.facebook.com/tornike.despotashvili/")} />
+                <img className="social_img" alt='github' src={github} onClick={()=> socialLink("https://github.com/Desp0o")} />
             </span>
             
         </div>
@@ -191,7 +191,7 @@ function Home() {
 
                 <div className="prj">
                         <div className="prj_img">
-                            <img className="project_image" src={carco} />
+                            <img className="project_image" src={carco} alt='carco'/>
                         </div>
 
 
@@ -206,7 +206,7 @@ function Home() {
 
                 <div className="prj">
                         <div className="prj_img">
-                            <img className="project_image" src={dlab} />
+                            <img className="project_image" src={dlab} alt='3dlab'/>
                         </div>
 
 
@@ -221,7 +221,7 @@ function Home() {
 
                 <div className="prj">
                         <div className="prj_img">
-                            <img className="project_image" src={pixnft} />
+                            <img className="project_image" src={pixnft} alt='nft'/>
                         </div>
 
 
@@ -236,7 +236,7 @@ function Home() {
 
                 <div className="prj">
                         <div className="prj_img">
-                            <img className="project_image" src={indian} />
+                            <img className="project_image" src={indian} alt='indian'/>
                         </div>
 
 
@@ -297,10 +297,10 @@ function Home() {
                 <div className="footer_top_right">
                     <p className="footer_hedaer">SOCIAL</p>
                     <span className="footer_social">
-                        <img className="footer_social_img" src={linkedLi} onClick={()=> socialLink("https://www.linkedin.com/in/tornike-despotashvili-250150219/")} />
-                        <img className="footer_social_img" src={twitterLi} onClick={()=> socialLink("https://twitter.com/TDespotashvili")} />
-                        <img className="footer_social_img" src={facebookLi} onClick={()=> socialLink("https://www.facebook.com/tornike.despotashvili/")} />
-                        <img className="footer_social_img" src={githubLi} onClick={()=> socialLink("https://github.com/Desp0o")} />
+                        <img className="footer_social_img" alt="linkedin" src={linkedLi} onClick={()=> socialLink("https://www.linkedin.com/in/tornike-despotashvili-250150219/")} />
+                        <img className="footer_social_img" alt="twitter" src={twitterLi} onClick={()=> socialLink("https://twitter.com/TDespotashvili")} />
+                        <img className="footer_social_img" alt="facebook" src={facebookLi} onClick={()=> socialLink("https://www.facebook.com/tornike.despotashvili/")} />
+                        <img className="footer_social_img" alt="github" src={githubLi} onClick={()=> socialLink("https://github.com/Desp0o")} />
                     </span>
                 </div>
             </div>
