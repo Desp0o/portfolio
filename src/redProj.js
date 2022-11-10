@@ -106,7 +106,7 @@ function PagePrj() {
                             <h3>Carco.Ge</h3>
                             <p>Auto import Web page, with transportation and Customs Clearnece calculator.</p>
                             <span className="button_to_cont visitBTN">
-                                <span className="button_to_cont_inner" onClick={()=> redirect('https://carco.ge/')}>Visit</span>
+                                <span className="button_to_cont_inner" onClick={()=> redirect('https://carco.ge/')}>ნახვა</span>
                             </span>
                     </div>
                 </div>
@@ -122,7 +122,7 @@ function PagePrj() {
                         <h3>3dlab.Group</h3>
                         <p>3Dlab is Animation studio, famous in social networks, with its funny projects</p>
                         <span className="button_to_cont visitBTN">
-                             <span className="button_to_cont_inner" onClick={()=> redirect('https://3dlab.group/')}>Visit</span>
+                             <span className="button_to_cont_inner" onClick={()=> redirect('https://3dlab.group/')}>ნახვა</span>
                         </span>
                     </div>
                 </div>
@@ -138,7 +138,7 @@ function PagePrj() {
                             <h3>pixNFT.Me</h3>
                             <p>NFT project Landing page, with road map and OpenSea's account link</p>
                             <span className="button_to_cont visitBTN">
-                                <span className="button_to_cont_inner" onClick={()=> redirect('https://pixnft.me/')}>Visit</span>
+                                <span className="button_to_cont_inner" onClick={()=> redirect('https://pixnft.me/')}>ნახვა</span>
                             </span>
                         </div>
                 </div>
@@ -154,7 +154,7 @@ function PagePrj() {
                             <h2>Moto Shop Clone</h2>
                             <p>Moto shop web page clone, with responsive design and links animation</p>
                             <span className="button_to_cont visitBTN">
-                                <span className="button_to_cont_inner" onClick={()=>redirect('https://desp0o.github.io/IndianMotorcycle/')}>Visit</span>
+                                <span className="button_to_cont_inner" onClick={()=>redirect('https://desp0o.github.io/IndianMotorcycle/')}>ნახვა</span>
                             </span>
                         </div>
                 </div>
@@ -170,7 +170,7 @@ function PagePrj() {
                             <h2>Architect  Clone</h2>
                             <p>Architecutre web page clone, with responsive design and animations</p>
                             <span className="button_to_cont visitBTN">
-                                <span className="button_to_cont_inner" onClick={()=>redirect('https://desp0o.github.io/Archic/')}>Visit</span>
+                                <span className="button_to_cont_inner" onClick={()=>redirect('https://desp0o.github.io/Archic/')}>ნახვა</span>
                             </span>
                         </div>
                 </div>
@@ -186,7 +186,7 @@ function PagePrj() {
                             <h2>Chess Championship</h2>
                             <p>Chess registration form built with React JS</p>
                             <span className="button_to_cont visitBTN">
-                                <span className="button_to_cont_inner" onClick={()=>redirect('https://desp0o.github.io/RedBeryy-Chess-Hero/')}>Visit</span>
+                                <span className="button_to_cont_inner" onClick={()=>redirect('https://desp0o.github.io/RedBeryy-Chess-Hero/')}>ნახვა</span>
                             </span>
                         </div>
                 </div>
@@ -199,10 +199,10 @@ function PagePrj() {
 
 
                         <div className="prj_inner">
-                            <h2>Devweb.Cc</h2>
+                            <h2>Devweb.cc</h2>
                             <p>Super light portfolio web page for Frontend Web Developer </p>
                             <span className="button_to_cont visitBTN">
-                                <span className="button_to_cont_inner" onClick={()=>redirect('https://devweb.cc/')}>Visit</span>
+                                <span className="button_to_cont_inner" onClick={()=>redirect('https://devweb.cc/')}>ნახვა</span>
                             </span>
                         </div>
                 </div>
@@ -218,7 +218,7 @@ function PagePrj() {
                             <h2>Carco.Ge Android APP</h2>
                             <p>Auto import Android APP with transportation and Customs Clearnece calculator.</p>
                             <span className="button_to_cont visitBTN">
-                                <span className="button_to_cont_inner" onClick={()=>redirect('https://drive.google.com/file/d/13f4GXvhRR9DFW4wAu0RFgsXPmbfm6RKH/view?usp=share_link')}>Visit</span>
+                                <span className="button_to_cont_inner" onClick={()=>redirect('https://drive.google.com/file/d/13f4GXvhRR9DFW4wAu0RFgsXPmbfm6RKH/view?usp=share_link')}>გადმოწერა</span>
                             </span>
                         </div>
                 </div>
@@ -240,13 +240,13 @@ function PagePrj() {
         <div className="footer">
             <div className="footer_top">
                 <div className="footer_top_left">
-                    <p className="footer_hedaer">TORNIKE DESPOTASHVILI</p>
+                    <p className="footer_hedaer geoStyle">თორნიკე დესპოტაშვილი</p>
                     <p className="footer_hedaer_txt" style={{color:'#fff'}}>A Frontend focused Web Developer building the Frontend of Websites and <br/>
                     Web Applications that leads to the success of the overall product</p>
                 </div>
 
                 <div className="footer_top_right">
-                    <p className="footer_hedaer">SOCIAL</p>
+                    <p className="footer_hedaer geoStyle">ქსელები</p>
                     <span className="footer_social">
                         <img className="footer_social_img" alt='linked' src={linkedLi} onClick={()=> socialLink("https://www.linkedin.com/in/tornike-despotashvili-250150219/")} />
                         <img className="footer_social_img" alt='twitter' src={twitterLi} onClick={()=> socialLink("https://twitter.com/TDespotashvili")} />
@@ -257,7 +257,7 @@ function PagePrj() {
             </div>
 
             <div className="footer_bottom">
-                <p style={{fontSize:'12px', color:'#fff', textAlign:'center'}}>©Made with love by Tornike Despotashvili</p>
+                <p style={{fontSize:'12px', color:'#fff', textAlign:'center'}}>©თორნიკე დესპოტაშვილი</p>
             </div>
         </div>
 

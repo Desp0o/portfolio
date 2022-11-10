@@ -117,7 +117,7 @@ function Home() {
 
             <div className="button_to_prj" onClick={()=> handleClick(projectRef)}>
                 <div className="button_to_prj_inner">
-                    <p>PROJECTS</p>
+                    <p>პროექტები</p>
                 </div>
             </div>
 
@@ -134,12 +134,12 @@ function Home() {
         {/* ებაუთ ფეიჯი ////////////////////////////////////////////////////// */}
         <span ref={aboutRef}></span>
         <div className="about_me" >
-                <h1 className="about_me_h1">ABOUT ME</h1>
+                <h1 className="about_me_h1">ჩემ შესახებ</h1>
                 <span className="underline"></span>
 
                 <div className="about_me_inner">
                     <div className="about_me_inner_left">
-                        <h2>Get to know me!</h2>
+                        <h2>გამიცანი!</h2>
                         <p>
                         I'm a <b>Frontend Web Developer</b> building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.<br/><br/>
                         
@@ -148,13 +148,13 @@ function Home() {
 
                         <div className="button_to_cont" onClick={()=> handleClick(contactRef)}>
                             <div className="button_to_cont_inner">
-                                <p>CONTACT</p>
+                                <p>კონტაქტი</p>
                         </div>
             </div>
                     </div>
                     
                     <div className="about_me_inner_right">
-                        <h2>My Skills!</h2>
+                        <h2>უნარები!</h2>
 
                         <div className="my_skills">
                             <span className="skill">HTML</span>
@@ -174,7 +174,7 @@ function Home() {
                             <span className="skill">Git</span>
                             <span className="skill">JQuery</span>
                             <span className="skill">Docker</span>
-                            <span className="skill">webView App</span> 
+                            <span className="skill">webView</span> 
                         </div>
 
                         
@@ -186,7 +186,7 @@ function Home() {
         <span ref={projectRef}></span>
         <div className="projects" >
                 <div className="header_underline">
-                    <h1 className="about_me_h1">PROJECTS</h1>
+                    <h1 className="about_me_h1">პროექტები</h1>
                     <span className="underline"></span>
                 </div>
 
@@ -202,7 +202,7 @@ function Home() {
                             <h3>Carco.Ge</h3>
                             <p>Auto import Web page, with transportation and Customs Clearnece calculator.  </p>
                             <span className="button_to_cont visitBTN">
-                                <span className="button_to_cont_inner" onClick={()=> redirect('https://carco.ge/')}>Visit</span>
+                                <span className="button_to_cont_inner" onClick={()=> redirect('https://carco.ge/')}>ნახვა</span>
                             </span>
                         </div>
                 </div>
@@ -217,7 +217,7 @@ function Home() {
                             <h3>3dlab.Group</h3>
                             <p>3Dlab is Animation studio, famous in social networks, with its funny projects</p>
                             <span className="button_to_cont visitBTN">
-                                <span className="button_to_cont_inner" onClick={()=> redirect('https://3dlab.group/')}>Visit</span>
+                                <span className="button_to_cont_inner" onClick={()=> redirect('https://3dlab.group/')}>ნახვა</span>
                             </span>
                         </div>
                 </div>
@@ -232,7 +232,7 @@ function Home() {
                             <h3>pixNFT.Me</h3>
                             <p>NFT project Landing page, with road map and OpenSea's account link</p>
                             <span className="button_to_cont visitBTN">
-                                <span className="button_to_cont_inner" onClick={()=> redirect('https://pixnft.me/')}>Visit</span>
+                                <span className="button_to_cont_inner" onClick={()=> redirect('https://pixnft.me/')}>ნახვა</span>
                             </span>
                         </div>
                 </div>
@@ -247,7 +247,7 @@ function Home() {
                             <h2>Moto Shop Clone</h2>
                             <p>Moto shop web page clone, with responsive navbar and links animation</p>
                             <span className="button_to_cont visitBTN">
-                                <span className="button_to_cont_inner" onClick={()=>redirect('https://desp0o.github.io/IndianMotorcycle/')}>Visit</span>
+                                <span className="button_to_cont_inner" onClick={()=>redirect('https://desp0o.github.io/IndianMotorcycle/')}>ნახვა</span>
                             </span>
                         </div>
                 </div>
@@ -256,7 +256,7 @@ function Home() {
 
 
             <span className="button_to_cont seeMore">
-               <Link style={{textDecoration:'none'}} to="./redProj"><span className="button_to_cont_inner seeMoteBTN" >See More Projects</span></Link>
+               <Link style={{textDecoration:'none'}} to="./redProj"><span className="button_to_cont_inner seeMoteBTN" >მეტი პროექტი</span></Link>
             </span>
 
 
@@ -267,21 +267,21 @@ function Home() {
         <span ref={contactRef}></span>
         <div className="contact" >
             <div className="contact_header">
-                <h1 className="about_me_h1">CONTACT</h1>
+                <h1 className="about_me_h1">კონტაქტი</h1>
                 <span className="underline"></span>
                 <p style={{textAlign:'center', marginTop:'20px'}}>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
             </div>
 
         <div className="form_parent">
             <form action="https://formsubmit.co/8e6d01b034a735685229e1724634d364" method="POST">
-                <input className="simpleInput" type="text" name="name" placeholder="სახელი" required />
-                <input className="simpleInput" type="email" name="email" placeholder="ელ. ფოსტა" required />
-                <input className="simpleInput" type="text" name="number" placeholder="ნომერი" required />
-                <input className="textarea" type="text" name="message" placeholder="თქვენი ტექსტი" required />
+                <input className="simpleInput geoStyle" type="text" name="name" placeholder="სახელი" required />
+                <input className="simpleInput geoStyle" type="email" name="email" placeholder="ელ. ფოსტა" required />
+                <input className="simpleInput geoStyle" type="text" name="number" placeholder="ნომერი" required />
+                <input className="textarea geoStyle" type="text" name="message" placeholder="თქვენი ტექსტი" required />
                 <input type="hidden" name="_next" value="https://devweb.cc/" />
                 <input type="hidden" name="_captcha" value="false" />
                 <div className="button_to_cont submit_parent">
-                    <button className="submitBTN button_to_cont_inner" type="submit">Send</button>
+                    <button className="submitBTN button_to_cont_inner geoStyle" type="submit">გაგზავნა</button>
                 </div>
             </form>
         </div>
@@ -292,13 +292,13 @@ function Home() {
         <div className="footer">
             <div className="footer_top">
                 <div className="footer_top_left">
-                    <p className="footer_hedaer">TORNIKE DESPOTASHVILI</p>
+                    <p className="footer_hedaer geoStyle">თორნიკე დესპოტაშვილი</p>
                     <p className="footer_hedaer_txt" style={{color:'#fff'}}>A Frontend focused Web Developer building the Frontend of Websites and <br/>
                     Web Applications that leads to the success of the overall product</p>
                 </div>
 
                 <div className="footer_top_right">
-                    <p className="footer_hedaer">SOCIAL</p>
+                    <p className="footer_hedaer geoStyle">ქსელები</p>
                     <span className="footer_social">
                         <img className="footer_social_img" alt="linkedin" src={linkedLi} onClick={()=> socialLink("https://www.linkedin.com/in/tornike-despotashvili-250150219/")} />
                         <img className="footer_social_img" alt="twitter" src={twitterLi} onClick={()=> socialLink("https://twitter.com/TDespotashvili")} />
@@ -309,7 +309,7 @@ function Home() {
             </div>
 
             <div className="footer_bottom">
-                <p style={{fontSize:'12px', color:'#fff', textAlign:'center'}}>©Made with love by Tornike Despotashvili</p>
+                <p style={{fontSize:'12px', color:'#fff', textAlign:'center'}}>©თორნიკე დესპოტაშვილი</p>
             </div>
         </div>
 

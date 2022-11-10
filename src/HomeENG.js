@@ -173,7 +173,7 @@ function Home() {
                             <span className="skill">Git</span>
                             <span className="skill">JQuery</span>
                             <span className="skill">Docker</span>
-                            <span className="skill">webView App</span> 
+                            <span className="skill">webView</span> 
                         </div>
 
                         
@@ -277,7 +277,7 @@ function Home() {
                 <input className="simpleInput" type="email" name="email" placeholder="Email" required />
                 <input className="simpleInput" type="text" name="number" placeholder="Number" required />
                 <input className="textarea" type="text" name="message" placeholder="Your Text" required />
-                <input type="hidden" name="_next" value="#" />
+                <input type="hidden" name="_next" value="https://devweb.cc/#/HomeENG" />
                 <input type="hidden" name="_captcha" value="false" />
                 <div className="button_to_cont submit_parent">
                     <button className="submitBTN button_to_cont_inner" type="submit">Send</button>

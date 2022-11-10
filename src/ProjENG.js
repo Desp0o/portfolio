@@ -198,7 +198,7 @@ function PagePrj() {
 
 
                         <div className="prj_inner">
-                            <h2>Devweb.Cc</h2>
+                            <h2>Devweb.cc</h2>
                             <p>Super light portfolio web page for Frontend Web Developer, built with React JS </p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=>redirect('https://devweb.cc/')}>Visit</span>
@@ -217,7 +217,7 @@ function PagePrj() {
                             <h2>Carco.Ge Android APP</h2>
                             <p>Auto import Android APP with transportation and Customs Clearnece calculator.</p>
                             <span className="button_to_cont visitBTN">
-                                <span className="button_to_cont_inner" onClick={()=>redirect('https://drive.google.com/file/d/13f4GXvhRR9DFW4wAu0RFgsXPmbfm6RKH/view?usp=share_link')}>Visit</span>
+                                <span className="button_to_cont_inner" onClick={()=>redirect('https://drive.google.com/file/d/13f4GXvhRR9DFW4wAu0RFgsXPmbfm6RKH/view?usp=share_link')}>Download</span>
                             </span>
                         </div>
                 </div>
