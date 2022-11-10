@@ -67,7 +67,7 @@ function PagePrj() {
         <nav>
             <div className="nav_left">
                 <img src={despoIMG} style={imageStyle} alt='logo'/>
-               <Link to="/.Home" style={{textDecoration:'none', color:'unset'}}> <p>Tornike Despotashvili</p></Link>
+               <Link to="/HomeENG" style={{textDecoration:'none', color:'unset'}}> <p>Tornike Despotashvili</p></Link>
             </div>
 
             <div className="nav_right">
@@ -80,14 +80,14 @@ function PagePrj() {
         </nav>
 
         <div className={dashbrd} id="proj_dashboard" onClick={()=> toggleMenu()}>
-            <div><Link to='' className="navLinks">Back To Home Page</Link></div>
+            <div><Link to='/HomeENG' className="navLinks">Back To Home Page</Link></div>
         </div>
 
         <div className={overlay} onClick={()=> toggleMenu()}></div>
 
 
         <div className="mainScreen">
-            <h1>პროექტები</h1>
+            <h1>Here You Are!</h1>
 
             <div className="projects" >
                 <div className="projects_inner" id="proj">
@@ -197,7 +197,7 @@ function PagePrj() {
 
                         <div className="prj_inner">
                             <h2>Devweb.Cc</h2>
-                            <p>Super light portfolio web page for Frontend Web Developer </p>
+                            <p>Super light portfolio web page for Frontend Web Developer, built with React JS </p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=>redirect('https://devweb.cc/')}>Visit</span>
                             </span>

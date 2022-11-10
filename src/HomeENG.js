@@ -77,7 +77,7 @@ function Home() {
         <nav>
             <div className="nav_left">
                 <img src={despoIMG} style={imageStyle} alt='logo'/>
-                <p>თორნიკე დესპოტაშვილი</p>
+                <p>Tornike Despotashvili</p>
             </div>
 
             <div className="nav_right">
@@ -85,7 +85,6 @@ function Home() {
                 <Link to='' className="navLinks" onClick={()=> handleClick(aboutRef)}>About</Link>
                 <Link to='' className="navLinks" onClick={()=> handleClick(projectRef)}>Projects</Link>
                 <Link to='' className="navLinks" onClick={()=> handleClick(contactRef)}>Contact</Link>
-                <Link to='./HomeENG' className="navLinks">ENG</Link>
             </div>
 
             <div className="burger_menu">
@@ -254,7 +253,7 @@ function Home() {
 
 
             <span className="button_to_cont seeMore">
-               <Link style={{textDecoration:'none'}} to="./redProj"><span className="button_to_cont_inner seeMoteBTN" >See More Projects</span></Link>
+               <Link style={{textDecoration:'none'}} to="./ProjENG"><span className="button_to_cont_inner seeMoteBTN" >See More Projects</span></Link>
             </span>
 
 
