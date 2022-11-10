@@ -85,6 +85,7 @@ function Home() {
                 <Link to='' className="navLinks" onClick={()=> handleClick(aboutRef)}>About</Link>
                 <Link to='' className="navLinks" onClick={()=> handleClick(projectRef)}>Projects</Link>
                 <Link to='' className="navLinks" onClick={()=> handleClick(contactRef)}>Contact</Link>
+                <Link to='/Home' className="navLinks">GEO</Link>
             </div>
 
             <div className="burger_menu">
@@ -97,6 +98,7 @@ function Home() {
             <div><Link to='' className="navLinks" onClick={()=> handleClick(aboutRef)}>About</Link></div>
             <div><Link to='' className="navLinks" onClick={()=> handleClick(projectRef)}>Projects</Link></div>
             <div><Link to='' className="navLinks" onClick={()=> handleClick(contactRef)}>Contact</Link></div>
+            <div><Link to='/Home' className="navLinks">GEO</Link></div>
         </div>
 
         <div className={overlay} onClick={()=> toggleMenu()}></div>
@@ -275,7 +277,7 @@ function Home() {
                 <input className="simpleInput" type="email" name="email" placeholder="Email" required />
                 <input className="simpleInput" type="text" name="number" placeholder="Number" required />
                 <input className="textarea" type="text" name="message" placeholder="Your Text" required />
-                <input type="hidden" name="_next" value="http://localhost:3000/" />
+                <input type="hidden" name="_next" value="#" />
                 <input type="hidden" name="_captcha" value="false" />
                 <div className="button_to_cont submit_parent">
                     <button className="submitBTN button_to_cont_inner" type="submit">Send</button>

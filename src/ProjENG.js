@@ -72,6 +72,7 @@ function PagePrj() {
 
             <div className="nav_right">
                 <Link to='./Home' className="navLinks">Back To Home Page</Link>
+                <Link to='/redProj' className="navLinks">GEO</Link>
             </div>
 
             <div className="burger_menu">
@@ -81,6 +82,7 @@ function PagePrj() {
 
         <div className={dashbrd} id="proj_dashboard" onClick={()=> toggleMenu()}>
             <div><Link to='/HomeENG' className="navLinks">Back To Home Page</Link></div>
+            <div><Link to='/redProj' className="navLinks">GEO</Link></div>
         </div>
 
         <div className={overlay} onClick={()=> toggleMenu()}></div>

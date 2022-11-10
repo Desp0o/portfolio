@@ -19,6 +19,7 @@ function App() {
         <Route exact path="*"        element={<Home />} />
         <Route exact path="/redProj" element={<Projs />} />
         <Route exact path="/HomeENG" element={<HomeENG />} />
+        <Route exact path="/ProjENG" element={<ProjENG />} />
         <Route exact path="/HomeENG/ProjENG" element={<ProjENG />} />
       </Routes>
       

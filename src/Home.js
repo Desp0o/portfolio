@@ -10,6 +10,7 @@ import './about.css'
 import './project.css'
 import './contact.css'
 import './footer.css'
+import './georgian.css'
 
 //images
 import despoIMG   from './images/despo_img.png'
@@ -71,20 +72,20 @@ function Home() {
     }
 
     return(
-    <div style={{width:'100%', height:'100vh'}}>
+    <div style={{width:'100%', height:'100vh'}} className="geoStyle">
 
         {/* ნავიგაცია /////////////////////////////////////////// */}
         <nav>
             <div className="nav_left">
                 <img src={despoIMG} style={imageStyle} alt='logo'/>
-                <p>თორნიკე დესპოტაშვილი</p>
+                <p className="heheh">თორნიკე დესპოტაშვილი</p>
             </div>
 
             <div className="nav_right">
-                <Link to='' className="navLinks" onClick={()=> handleClick(homeRef)}>Home</Link>
-                <Link to='' className="navLinks" onClick={()=> handleClick(aboutRef)}>About</Link>
-                <Link to='' className="navLinks" onClick={()=> handleClick(projectRef)}>Projects</Link>
-                <Link to='' className="navLinks" onClick={()=> handleClick(contactRef)}>Contact</Link>
+                <Link to='' className="navLinks" onClick={()=> handleClick(homeRef)}>მთავარი</Link>
+                <Link to='' className="navLinks" onClick={()=> handleClick(aboutRef)}>შესახებ</Link>
+                <Link to='' className="navLinks" onClick={()=> handleClick(projectRef)}>პროექტები</Link>
+                <Link to='' className="navLinks" onClick={()=> handleClick(contactRef)}>კონტაქტი</Link>
                 <Link to='./HomeENG' className="navLinks">ENG</Link>
             </div>
 
@@ -98,6 +99,7 @@ function Home() {
             <div><Link to='' className="navLinks" onClick={()=> handleClick(aboutRef)}>About</Link></div>
             <div><Link to='' className="navLinks" onClick={()=> handleClick(projectRef)}>Projects</Link></div>
             <div><Link to='' className="navLinks" onClick={()=> handleClick(contactRef)}>Contact</Link></div>
+            <div><Link to='/HomeENG' className="navLinks">ENG</Link></div>
         </div>
 
         <div className={overlay} onClick={()=> toggleMenu()}></div>
@@ -272,11 +274,11 @@ function Home() {
 
         <div className="form_parent">
             <form action="https://formsubmit.co/8e6d01b034a735685229e1724634d364" method="POST">
-                <input className="simpleInput" type="text" name="name" placeholder="Name" required />
-                <input className="simpleInput" type="email" name="email" placeholder="Email" required />
-                <input className="simpleInput" type="text" name="number" placeholder="Number" required />
-                <input className="textarea" type="text" name="message" placeholder="Your Text" required />
-                <input type="hidden" name="_next" value="http://localhost:3000/" />
+                <input className="simpleInput" type="text" name="name" placeholder="სახელი" required />
+                <input className="simpleInput" type="email" name="email" placeholder="ელ. ფოსტა" required />
+                <input className="simpleInput" type="text" name="number" placeholder="ნომერი" required />
+                <input className="textarea" type="text" name="message" placeholder="თქვენი ტექსტი" required />
+                <input type="hidden" name="_next" value="https://devweb.cc/" />
                 <input type="hidden" name="_captcha" value="false" />
                 <div className="button_to_cont submit_parent">
                     <button className="submitBTN button_to_cont_inner" type="submit">Send</button>

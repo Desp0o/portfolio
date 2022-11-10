@@ -5,6 +5,7 @@ import './project.css'
 import './navbar.css'
 import './footer.css'
 import './res_PROJ.css'
+import './georgian.css'
 
 import despoIMG   from './images/despo_img.png'
 import menu       from './images/menu.png'
@@ -60,18 +61,19 @@ function PagePrj() {
 
 
     return(
-        <div style={{width:'100%', height:'100vh'}}>
+        <div style={{width:'100%', height:'100vh'}} className="geoStyle">
 
 
         {/* ნავიგაცია /////////////////////////////////////////// */}
         <nav>
             <div className="nav_left">
                 <img src={despoIMG} style={imageStyle} alt='logo'/>
-               <Link to="/.Home" style={{textDecoration:'none', color:'unset'}}> <p>Tornike Despotashvili</p></Link>
+               <Link to="/.Home" style={{textDecoration:'none', color:'unset'}}> <p>თორნიკე დესპოტაშვილი</p></Link>
             </div>
 
             <div className="nav_right">
-                <Link to='./Home' className="navLinks">Back To Home Page</Link>
+                <Link to='./Home' className="navLinks">მთავარი გვერდი</Link>
+                <Link to='/ProjENG' className="navLinks">ENG</Link>
             </div>
 
             <div className="burger_menu">
@@ -80,7 +82,8 @@ function PagePrj() {
         </nav>
 
         <div className={dashbrd} id="proj_dashboard" onClick={()=> toggleMenu()}>
-            <div><Link to='' className="navLinks">Back To Home Page</Link></div>
+            <div><Link to='' className="navLinks">მთავარი გვერდი</Link></div>
+            <div><Link to='/ProjENG' className="navLinks">ENG</Link></div>
         </div>
 
         <div className={overlay} onClick={()=> toggleMenu()}></div>

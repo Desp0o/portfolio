@@ -1,0 +1,8 @@
+@import url('https://free.bboxtype.com/embedfonts/?family=FiraGO:700');
+
+
+.geoStyle{
+    font-family: 'FiraGO',sans-serif!important;
+    font-feature-settings: "case" !important;
+    font-weight: bolder !important;
+  }
