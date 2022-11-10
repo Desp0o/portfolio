@@ -179,7 +179,7 @@ function Home() {
                 </div>
         </div>
             
-        {/* ებაუთ ფეიჯი ////////////////////////////////////////////////////// */}
+        {/* პროექტები ფეიჯი ////////////////////////////////////////////////////// */}
         <span ref={projectRef}></span>
         <div className="projects" >
                 <div className="header_underline">
@@ -253,7 +253,7 @@ function Home() {
 
 
             <span className="button_to_cont seeMore">
-               <Link to="./redProj"><span className="button_to_cont_inner seeMoteBTN" >See More</span></Link>
+               <Link style={{textDecoration:'none'}} to="./redProj"><span className="button_to_cont_inner seeMoteBTN" >See More</span></Link>
             </span>
 
 
@@ -306,7 +306,7 @@ function Home() {
             </div>
 
             <div className="footer_bottom">
-                <p style={{fontSize:'12px', color:'#fff', textAlign:'center'}}>©Made with love by Despo</p>
+                <p style={{fontSize:'12px', color:'#fff', textAlign:'center'}}>©Made with love by Tornike Despotashvili</p>
             </div>
         </div>
 

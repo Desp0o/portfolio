@@ -11,9 +11,10 @@ import {
 function App() {
   return (
     <div>
+       
         
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="*" element={<Home />} />
         <Route exact path="/redProj" element={<Projs />} />
       </Routes>
       
