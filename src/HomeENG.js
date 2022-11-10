@@ -291,9 +291,8 @@ function Home() {
         <div className="footer">
             <div className="footer_top">
                 <div className="footer_top_left">
-                    <p className="footer_hedaer">TORNIKE DESPOTASHVILI</p>
-                    <p className="footer_hedaer_txt" style={{color:'#fff'}}>A Frontend focused Web Developer building the Frontend of Websites and <br/>
-                    Web Applications that leads to the success of the overall product</p>
+                    <p className="footer_hedaer">Email</p>
+                    <p className="footer_hedaer_txt" style={{color:'#fff'}}>info@devweb.cc</p>
                 </div>
 
                 <div className="footer_top_right">

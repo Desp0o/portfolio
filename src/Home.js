@@ -109,10 +109,10 @@ function Home() {
         {/* ჰიუმ ფეიჯი ////////////////////////////////////////////////////// */}
         <span ref={homeRef}></span>
         <div className="home" >
-            <h1>HEY, I'M TORNIKE DESPOTASHVILI</h1>
+            <h1>მე ვარ,თორნიკე დესპორაშვილი</h1>
 
             <div className="home_p_txt">
-                <p>A Frontend focused Web Developer building the Frontend of Websites and Web Applications <br/> that leads to the success of the overall product</p>
+                <p>frontend -ზე ფოკუსირებული ვებ დეველოპერი. ვაწყობ ვებ-გვერდებს, <br/>რომელიც დღეს ერთ-ერთი  ყველაზე მნიშვნელოვანი საფეხურია  წარმატების მისაღწევად.</p>
              </div>
 
             <div className="button_to_prj" onClick={()=> handleClick(projectRef)}>
@@ -139,11 +139,11 @@ function Home() {
 
                 <div className="about_me_inner">
                     <div className="about_me_inner_left">
-                        <h2>გამიცანი!</h2>
-                        <p>
-                        I'm a <b>Frontend Web Developer</b> building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.<br/><br/>
                         
-                        I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.
+                        <p>
+                        მე ვარ,თორნიკე დესპორაშვილი <b>Frontend</b> -ზე ფოკუსირებული ვებ დეველოპერი. ვაწყობ ვებ-გვერდებს, რომელიც დღეს ერთ-ერთი  ყველაზე მნიშვნელოვანი საფეხურია  წარმატების მისაღწევად.<br/><br/>
+                        
+                        მზად ვარ ახალი,საინტერესო გამოწვევებისთვის,ახალი პროექტებისთვის და თუ  კი ხარ ის,ვისაც აქვს    ინოვაციური,საინტერესო პროექტი სიამოვნებით ვითანამშრომლო თქვენთან.
                         </p>
 
                         <div className="button_to_cont" onClick={()=> handleClick(contactRef)}>
@@ -200,7 +200,7 @@ function Home() {
 
                         <div className="prj_inner">
                             <h3>Carco.Ge</h3>
-                            <p>Auto import Web page, with transportation and Customs Clearnece calculator.  </p>
+                            <p>ავტო იმპორტის ვებ-გვერდი,ტრანსპორტირებისა და განბაჟების კალკულატორით.</p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=> redirect('https://carco.ge/')}>ნახვა</span>
                             </span>
@@ -215,7 +215,7 @@ function Home() {
 
                         <div className="prj_inner">
                             <h3>3dlab.Group</h3>
-                            <p>3Dlab is Animation studio, famous in social networks, with its funny projects</p>
+                            <p>ანიმაციური სტუდია, რომელიც ქმნის სხვადასხვა ტიპის 3D სარეკლამო ანიმაციებს კომპანიებისთვის. 3D ლაბი ცნობილია მისი სახალისო კონტენტით სხვადასხვა სოციალურ ქსელში.</p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=> redirect('https://3dlab.group/')}>ნახვა</span>
                             </span>
@@ -230,7 +230,7 @@ function Home() {
 
                         <div className="prj_inner">
                             <h3>pixNFT.Me</h3>
-                            <p>NFT project Landing page, with road map and OpenSea's account link</p>
+                            <p>NFT ვებ-გვერდი, ინოვაციური გეგმებით. </p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=> redirect('https://pixnft.me/')}>ნახვა</span>
                             </span>
@@ -245,7 +245,7 @@ function Home() {
 
                         <div className="prj_inner">
                             <h2>Moto Shop Clone</h2>
-                            <p>Moto shop web page clone, with responsive navbar and links animation</p>
+                            <p>მოტოციკლეტების მაღაზის პროექტი</p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=>redirect('https://desp0o.github.io/IndianMotorcycle/')}>ნახვა</span>
                             </span>
@@ -269,7 +269,7 @@ function Home() {
             <div className="contact_header">
                 <h1 className="about_me_h1">კონტაქტი</h1>
                 <span className="underline"></span>
-                <p style={{textAlign:'center', marginTop:'20px'}}>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
+                <p style={{textAlign:'center', marginTop:'20px'}}>დასაკონტაქტებლად შეავსეთ ქვემოთ მოცემული ველები და შეძლებისდგავარად სწრაფად მიიღებთ პასუხს</p>
             </div>
 
         <div className="form_parent">
@@ -292,9 +292,8 @@ function Home() {
         <div className="footer">
             <div className="footer_top">
                 <div className="footer_top_left">
-                    <p className="footer_hedaer geoStyle">თორნიკე დესპოტაშვილი</p>
-                    <p className="footer_hedaer_txt" style={{color:'#fff'}}>A Frontend focused Web Developer building the Frontend of Websites and <br/>
-                    Web Applications that leads to the success of the overall product</p>
+                    <p className="footer_hedaer geoStyle">ელ. ფოსტა</p>
+                    <p className="footer_hedaer_txt" style={{color:'#fff'}}>info@devweb.cc</p>
                 </div>
 
                 <div className="footer_top_right">
