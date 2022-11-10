@@ -16,6 +16,10 @@ import linkedLi   from './images/linkedin-light.png'
 import twitterLi  from './images/twitter-light.png'
 import facebookLi from './images/facebook-light.png'
 import githubLi   from './images/github-light.png'
+import archic     from './images/archic_prj.png'
+import chess      from './images/chess_prj.png'
+import portfolio  from './images/portfolio_prj.png'
+import calApp     from './images/calculator_app.png'
 
 
 function PagePrj() {
@@ -87,6 +91,7 @@ function PagePrj() {
             <div className="projects" >
                 <div className="projects_inner" id="proj">
 
+                {/* carco პროექტი */}
                 <div className="prj">
                     <div className="prj_img">
                             <img className="project_image" src={carco} />
@@ -102,6 +107,7 @@ function PagePrj() {
                     </div>
                 </div>
 
+                {/* 3dlab პოექტი */}
                 <div className="prj">
                     <div className="prj_img">
                         <img className="project_image" src={dlab} />
@@ -117,6 +123,7 @@ function PagePrj() {
                     </div>
                 </div>
 
+                {/* nft პროექტი */}
                 <div className="prj">
                         <div className="prj_img">
                             <img className="project_image" src={pixnft} />
@@ -132,6 +139,7 @@ function PagePrj() {
                         </div>
                 </div>
 
+                {/* ინდიან პროექტი */}
                 <div className="prj">
                         <div className="prj_img">
                             <img className="project_image" src={indian} />
@@ -146,6 +154,73 @@ function PagePrj() {
                             </span>
                         </div>
                 </div>
+
+                {/* არქიტექტურა პროექტი */}
+                <div className="prj">
+                        <div className="prj_img">
+                            <img className="project_image" src={archic} />
+                        </div>
+
+
+                        <div className="prj_inner">
+                            <h2>Architect  Clone</h2>
+                            <p>Yubter is a platform that I created where people can join the community of their favorite youtube channels and can be part of the conversation.</p>
+                            <span className="button_to_cont visitBTN">
+                                <span className="button_to_cont_inner" onClick={()=>redirect('https://desp0o.github.io/IndianMotorcycle/')}>Visit</span>
+                            </span>
+                        </div>
+                </div>
+
+                {/* ჭადრაკი პროექტი */}
+                <div className="prj">
+                        <div className="prj_img">
+                            <img className="project_image" src={chess} />
+                        </div>
+
+
+                        <div className="prj_inner">
+                            <h2>Chess Championship</h2>
+                            <p>Yubter is a platform that I created where people can join the community of their favorite youtube channels and can be part of the conversation.</p>
+                            <span className="button_to_cont visitBTN">
+                                <span className="button_to_cont_inner" onClick={()=>redirect('https://desp0o.github.io/IndianMotorcycle/')}>Visit</span>
+                            </span>
+                        </div>
+                </div>
+
+                {/* პორტფელი პროექტი */}
+                <div className="prj">
+                        <div className="prj_img">
+                            <img className="project_image" src={portfolio} />
+                        </div>
+
+
+                        <div className="prj_inner">
+                            <h2>Devweb.Cc</h2>
+                            <p>Yubter is a platform that I created where people can join the community of their favorite youtube channels and can be part of the conversation.</p>
+                            <span className="button_to_cont visitBTN">
+                                <span className="button_to_cont_inner" onClick={()=>redirect('https://desp0o.github.io/IndianMotorcycle/')}>Visit</span>
+                            </span>
+                        </div>
+                </div>
+
+                {/* პორტფელი პროექტი */}
+                <div className="prj">
+                        <div className="prj_img">
+                            <img className="project_image" src={calApp} />
+                        </div>
+
+
+                        <div className="prj_inner">
+                            <h2>Carco.Ge Android APP</h2>
+                            <p>Yubter is a platform that I created where people can join the community of their favorite youtube channels and can be part of the conversation.</p>
+                            <span className="button_to_cont visitBTN">
+                                <span className="button_to_cont_inner" onClick={()=>redirect('https://desp0o.github.io/IndianMotorcycle/')}>Visit</span>
+                            </span>
+                        </div>
+                </div>
+
+
+
 
             </div>
 
