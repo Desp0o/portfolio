@@ -253,7 +253,7 @@ function Home() {
 
 
             <span className="button_to_cont seeMore">
-               <Link style={{textDecoration:'none'}} to="./redProj"><span className="button_to_cont_inner seeMoteBTN" >See More</span></Link>
+               <Link style={{textDecoration:'none'}} to="./redProj"><span className="button_to_cont_inner seeMoteBTN" >See More Projects</span></Link>
             </span>
 
 
