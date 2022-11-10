@@ -109,10 +109,10 @@ function Home() {
         {/* ჰიუმ ფეიჯი ////////////////////////////////////////////////////// */}
         <span ref={homeRef}></span>
         <div className="home" >
-            <h1 id="geoName">მე ვარ, <br className="brhidden"/>თორნიკე დესპოტაშვილი</h1>
+            
 
             <div className="home_p_txt">
-                <p id="geoTXT">frontend -ზე ფოკუსირებული ვებ დეველოპერი. ვაწყობ ვებ-გვერდებს, <br/>რომელიც დღეს ერთ-ერთი  ყველაზე მნიშვნელოვანი საფეხურია  წარმატების მისაღწევად.</p>
+                <p className="breckets"> {'<'}{'/'}{'>'}</p>
              </div>
 
             <div className="button_to_prj" onClick={()=> handleClick(projectRef)}>
@@ -141,7 +141,7 @@ function Home() {
                     <div className="about_me_inner_left">
                         
                         <p>
-                        მე ვარ,თორნიკე დესპორაშვილი <b>Frontend</b> -ზე ფოკუსირებული ვებ დეველოპერი. ვაწყობ ვებ-გვერდებს, რომელიც დღეს ერთ-ერთი  ყველაზე მნიშვნელოვანი საფეხურია  წარმატების მისაღწევად.<br/><br/>
+                        მე ვარ,თორნიკე დესპორაშვილი <b>Frontend</b> -ზე ფოკუსირებული ვებ დეველოპერი. ვაწყობ ვებ-გვერდებს, რომელიც დღეს ერთ-ერთი  ყველაზე მნიშვნელოვანი საფეხურია ბიზნესის წარმატებისთვის.<br/><br/>
                         
                         მზად ვარ ახალი,საინტერესო გამოწვევებისთვის,ახალი პროექტებისთვის და თუ  კი ხარ ის,ვისაც აქვს ინოვაციური,საინტერესო პროექტი სიამოვნებით ვითანამშრომლებ თქვენთან.
                         </p>
@@ -273,7 +273,7 @@ function Home() {
             </div>
 
         <div className="form_parent">
-            <form action="https://formsubmit.co/8e6d01b034a735685229e1724634d364" method="POST">
+            <form action="https://formsubmit.co/tornike.despotashvili@gmail.com" method="POST">
                 <input className="simpleInput geoStyle" type="text" name="name" placeholder="სახელი" required />
                 <input className="simpleInput geoStyle" type="email" name="email" placeholder="ელ. ფოსტა" required />
                 <input className="simpleInput geoStyle" type="text" name="number" placeholder="ნომერი" required />

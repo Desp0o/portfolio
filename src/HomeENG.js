@@ -10,6 +10,7 @@ import './about.css'
 import './project.css'
 import './contact.css'
 import './footer.css'
+import './georgian.css'
 
 //images
 import despoIMG   from './images/despo_img.png'
@@ -108,10 +109,10 @@ function Home() {
         {/* ჰიუმ ფეიჯი ////////////////////////////////////////////////////// */}
         <span ref={homeRef}></span>
         <div className="home" >
-            <h1>HEY, I'M TORNIKE DESPOTASHVILI</h1>
+            
 
             <div className="home_p_txt">
-                <p>A Frontend focused Web Developer building the Frontend of Websites and Web Applications <br/> that leads to the success of the overall product</p>
+                <p className="breckets geoStyle"> {'<'}{'/'}{'>'}</p>
              </div>
 
             <div className="button_to_prj" onClick={()=> handleClick(projectRef)}>
