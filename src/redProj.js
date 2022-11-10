@@ -100,7 +100,7 @@ function PagePrj() {
 
                     <div className="prj_inner">
                             <h3>Carco.Ge</h3>
-                            <p>Yubter is a platform that I created where people can join the community of their favorite youtube channels and can be part of the conversation.</p>
+                            <p>Auto import Web page, with transportation and Customs Clearnece calculator.</p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=> redirect('https://carco.ge/')}>Visit</span>
                             </span>
@@ -116,7 +116,7 @@ function PagePrj() {
 
                      <div className="prj_inner">
                         <h3>3dlab.Group</h3>
-                        <p>Yubter is a platform that I created where people can join the community of their favorite youtube channels and can be part of the conversation.</p>
+                        <p>3Dlab is Animation studio, famous in social networks, with its funny projects</p>
                         <span className="button_to_cont visitBTN">
                              <span className="button_to_cont_inner" onClick={()=> redirect('https://3dlab.group/')}>Visit</span>
                         </span>
@@ -132,7 +132,7 @@ function PagePrj() {
 
                         <div className="prj_inner">
                             <h3>pixNFT.Me</h3>
-                            <p>Yubter is a platform that I created where people can join the community of their favorite youtube channels and can be part of the conversation.</p>
+                            <p>NFT project Landing page, with road map and OpenSea's account link</p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=> redirect('https://pixnft.me/')}>Visit</span>
                             </span>
@@ -148,7 +148,7 @@ function PagePrj() {
 
                         <div className="prj_inner">
                             <h2>Moto Shop Clone</h2>
-                            <p>Yubter is a platform that I created where people can join the community of their favorite youtube channels and can be part of the conversation.</p>
+                            <p>Moto shop web page clone, with responsive design and links animation</p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=>redirect('https://desp0o.github.io/IndianMotorcycle/')}>Visit</span>
                             </span>
@@ -164,7 +164,7 @@ function PagePrj() {
 
                         <div className="prj_inner">
                             <h2>Architect  Clone</h2>
-                            <p>Yubter is a platform that I created where people can join the community of their favorite youtube channels and can be part of the conversation.</p>
+                            <p>Architecutre web page clone, with responsive design and animations</p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=>redirect('https://desp0o.github.io/IndianMotorcycle/')}>Visit</span>
                             </span>
@@ -180,7 +180,7 @@ function PagePrj() {
 
                         <div className="prj_inner">
                             <h2>Chess Championship</h2>
-                            <p>Yubter is a platform that I created where people can join the community of their favorite youtube channels and can be part of the conversation.</p>
+                            <p>Chess registration form built with React JS</p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=>redirect('https://desp0o.github.io/IndianMotorcycle/')}>Visit</span>
                             </span>
@@ -196,7 +196,7 @@ function PagePrj() {
 
                         <div className="prj_inner">
                             <h2>Devweb.Cc</h2>
-                            <p>Yubter is a platform that I created where people can join the community of their favorite youtube channels and can be part of the conversation.</p>
+                            <p>Super light portfolio web page for Frontend Web Developer </p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=>redirect('https://desp0o.github.io/IndianMotorcycle/')}>Visit</span>
                             </span>
@@ -212,7 +212,7 @@ function PagePrj() {
 
                         <div className="prj_inner">
                             <h2>Carco.Ge Android APP</h2>
-                            <p>Yubter is a platform that I created where people can join the community of their favorite youtube channels and can be part of the conversation.</p>
+                            <p>Auto import Android APP with transportation and Customs Clearnece calculator.</p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=>redirect('https://desp0o.github.io/IndianMotorcycle/')}>Visit</span>
                             </span>
