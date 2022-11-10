@@ -103,4 +103,7 @@ input:focus{
     .contact{
         height: unset;
     }
+    .geoContact{
+        font-size: 15px;
+    }
 }

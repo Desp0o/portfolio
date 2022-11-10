@@ -20,6 +20,7 @@ h1{
     width: 100%;
     font-size: 22px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .button_to_prj{
@@ -75,6 +76,9 @@ h1{
     cursor: pointer;
 }
 
+.brhidden{
+    display: none;
+}
 
 
 
@@ -87,6 +91,15 @@ h1{
     }
     .social{
         display: none;
+    }
+    /* .brhidden{
+        display: block;
+    } */
+    #geoName{
+        font-size: 30px !important;
+    }
+    #geoTXT{
+        font-size: 16px;
     }
     
 }

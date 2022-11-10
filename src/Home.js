@@ -78,7 +78,7 @@ function Home() {
         <nav>
             <div className="nav_left">
                 <img src={despoIMG} style={imageStyle} alt='logo'/>
-                <p className="heheh">თორნიკე დესპოტაშვილი</p>
+                <p>თორნიკე დესპოტაშვილი</p>
             </div>
 
             <div className="nav_right">
@@ -109,10 +109,10 @@ function Home() {
         {/* ჰიუმ ფეიჯი ////////////////////////////////////////////////////// */}
         <span ref={homeRef}></span>
         <div className="home" >
-            <h1>მე ვარ,თორნიკე დესპორაშვილი</h1>
+            <h1 id="geoName">მე ვარ, <br className="brhidden"/>თორნიკე დესპოტაშვილი</h1>
 
             <div className="home_p_txt">
-                <p>frontend -ზე ფოკუსირებული ვებ დეველოპერი. ვაწყობ ვებ-გვერდებს, <br/>რომელიც დღეს ერთ-ერთი  ყველაზე მნიშვნელოვანი საფეხურია  წარმატების მისაღწევად.</p>
+                <p id="geoTXT">frontend -ზე ფოკუსირებული ვებ დეველოპერი. ვაწყობ ვებ-გვერდებს, <br/>რომელიც დღეს ერთ-ერთი  ყველაზე მნიშვნელოვანი საფეხურია  წარმატების მისაღწევად.</p>
              </div>
 
             <div className="button_to_prj" onClick={()=> handleClick(projectRef)}>
@@ -143,7 +143,7 @@ function Home() {
                         <p>
                         მე ვარ,თორნიკე დესპორაშვილი <b>Frontend</b> -ზე ფოკუსირებული ვებ დეველოპერი. ვაწყობ ვებ-გვერდებს, რომელიც დღეს ერთ-ერთი  ყველაზე მნიშვნელოვანი საფეხურია  წარმატების მისაღწევად.<br/><br/>
                         
-                        მზად ვარ ახალი,საინტერესო გამოწვევებისთვის,ახალი პროექტებისთვის და თუ  კი ხარ ის,ვისაც აქვს    ინოვაციური,საინტერესო პროექტი სიამოვნებით ვითანამშრომლო თქვენთან.
+                        მზად ვარ ახალი,საინტერესო გამოწვევებისთვის,ახალი პროექტებისთვის და თუ  კი ხარ ის,ვისაც აქვს ინოვაციური,საინტერესო პროექტი სიამოვნებით ვითანამშრომლებ თქვენთან.
                         </p>
 
                         <div className="button_to_cont" onClick={()=> handleClick(contactRef)}>
@@ -245,7 +245,7 @@ function Home() {
 
                         <div className="prj_inner">
                             <h2>Moto Shop Clone</h2>
-                            <p>მოტოციკლეტების მაღაზის პროექტი</p>
+                            <p>მოტოციკლეტების მაღაზიის პროექტი</p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=>redirect('https://desp0o.github.io/IndianMotorcycle/')}>ნახვა</span>
                             </span>
@@ -269,7 +269,7 @@ function Home() {
             <div className="contact_header">
                 <h1 className="about_me_h1">კონტაქტი</h1>
                 <span className="underline"></span>
-                <p style={{textAlign:'center', marginTop:'20px'}}>დასაკონტაქტებლად შეავსეთ ქვემოთ მოცემული ველები და შეძლებისდგავარად სწრაფად მიიღებთ პასუხს</p>
+                <p className="geoContact" style={{textAlign:'center', marginTop:'20px'}}>დასაკონტაქტებლად შეავსეთ ქვემოთ მოცემული ველები და შეძლებისდგავარად სწრაფად მიიღებთ პასუხს</p>
             </div>
 
         <div className="form_parent">

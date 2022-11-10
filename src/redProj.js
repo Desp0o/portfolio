@@ -82,7 +82,7 @@ function PagePrj() {
         </nav>
 
         <div className={dashbrd} id="proj_dashboard" onClick={()=> toggleMenu()}>
-            <div><Link to='' className="navLinks">მთავარი გვერდი</Link></div>
+            <div><Link to='./Home' className="navLinks">მთავარი გვერდი</Link></div>
             <div><Link to='/ProjENG' className="navLinks">ENG</Link></div>
         </div>
 
@@ -104,7 +104,7 @@ function PagePrj() {
 
                     <div className="prj_inner">
                             <h3>Carco.Ge</h3>
-                            <p>Auto import Web page, with transportation and Customs Clearnece calculator.</p>
+                            <p>ავტო იმპორტის ვებ-გვერდი,ტრანსპორტირებისა და განბაჟების კალკულატორით.</p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=> redirect('https://carco.ge/')}>ნახვა</span>
                             </span>
@@ -120,7 +120,7 @@ function PagePrj() {
 
                      <div className="prj_inner">
                         <h3>3dlab.Group</h3>
-                        <p>3Dlab is Animation studio, famous in social networks, with its funny projects</p>
+                        <p>ანიმაციური სტუდია, რომელიც ქმნის სხვადასხვა ტიპის 3D სარეკლამო ანიმაციებს კომპანიებისთვის.</p>
                         <span className="button_to_cont visitBTN">
                              <span className="button_to_cont_inner" onClick={()=> redirect('https://3dlab.group/')}>ნახვა</span>
                         </span>
@@ -136,7 +136,7 @@ function PagePrj() {
 
                         <div className="prj_inner">
                             <h3>pixNFT.Me</h3>
-                            <p>NFT project Landing page, with road map and OpenSea's account link</p>
+                            <p>NFT - ვებ-გვერდი, ინოვაციური გეგმებით.</p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=> redirect('https://pixnft.me/')}>ნახვა</span>
                             </span>
@@ -152,7 +152,7 @@ function PagePrj() {
 
                         <div className="prj_inner">
                             <h2>Moto Shop Clone</h2>
-                            <p>Moto shop web page clone, with responsive design and links animation</p>
+                            <p>მოტოციკლეტების მაღაზიის პროექტი</p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=>redirect('https://desp0o.github.io/IndianMotorcycle/')}>ნახვა</span>
                             </span>
@@ -168,7 +168,7 @@ function PagePrj() {
 
                         <div className="prj_inner">
                             <h2>Architect  Clone</h2>
-                            <p>Architecutre web page clone, with responsive design and animations</p>
+                            <p>თანამედროვე,ესეთიკური, ტრადიციული ღირებულებების მქონე არქიტექტურული დიზაინები.</p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=>redirect('https://desp0o.github.io/Archic/')}>ნახვა</span>
                             </span>
@@ -184,7 +184,7 @@ function PagePrj() {
 
                         <div className="prj_inner">
                             <h2>Chess Championship</h2>
-                            <p>Chess registration form built with React JS</p>
+                            <p>ჭადრაკის ჩემპიონატის რეგისტრაციის ფორმა React Js</p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=>redirect('https://desp0o.github.io/RedBeryy-Chess-Hero/')}>ნახვა</span>
                             </span>
@@ -200,7 +200,7 @@ function PagePrj() {
 
                         <div className="prj_inner">
                             <h2>Devweb.cc</h2>
-                            <p>Super light portfolio web page for Frontend Web Developer </p>
+                            <p>პორტფოლიო ვებ დეველოპერისთვის React Js</p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=>redirect('https://devweb.cc/')}>ნახვა</span>
                             </span>
@@ -216,7 +216,7 @@ function PagePrj() {
 
                         <div className="prj_inner">
                             <h2>Carco.Ge Android APP</h2>
-                            <p>Auto import Android APP with transportation and Customs Clearnece calculator.</p>
+                            <p>ტრანსპორტირების და განბაჟების კალკუალტორის აპლიაკცია ანდორიდ სისტემისტვის.</p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=>redirect('https://drive.google.com/file/d/13f4GXvhRR9DFW4wAu0RFgsXPmbfm6RKH/view?usp=share_link')}>გადმოწერა</span>
                             </span>
@@ -240,9 +240,8 @@ function PagePrj() {
         <div className="footer">
             <div className="footer_top">
                 <div className="footer_top_left">
-                    <p className="footer_hedaer geoStyle">თორნიკე დესპოტაშვილი</p>
-                    <p className="footer_hedaer_txt" style={{color:'#fff'}}>A Frontend focused Web Developer building the Frontend of Websites and <br/>
-                    Web Applications that leads to the success of the overall product</p>
+                    <p className="footer_hedaer geoStyle">ელ. ფოსტა</p>
+                    <p className="footer_hedaer_txt" style={{color:'#fff'}}>info@devweb.cc</p>
                 </div>
 
                 <div className="footer_top_right">

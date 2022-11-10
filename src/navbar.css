@@ -134,7 +134,8 @@ nav{
         display: flex;
     }
     .nav_left p{
-        font-size: 15px;
+        font-size: 12px;
+        letter-spacing: 0;
     }
     /* .menu_dashboard{
         display: flex;
