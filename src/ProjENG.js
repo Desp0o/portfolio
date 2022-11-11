@@ -89,7 +89,7 @@ function PagePrj() {
 
 
         <div className="mainScreen">
-            <h1>Here You Are!</h1>
+            <h1 style={{textAlign:'center'}}>Here You Are!</h1>
 
             <div className="projects" >
                 <div className="projects_inner" id="proj">

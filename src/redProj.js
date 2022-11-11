@@ -90,7 +90,7 @@ function PagePrj() {
 
 
         <div className="mainScreen">
-            <h1>პროექტები</h1>
+            <h1 style={{textAlign:'center'}}>პროექტები</h1>
 
             <div className="projects" >
                 <div className="projects_inner" id="proj">
