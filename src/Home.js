@@ -1,6 +1,7 @@
 import {React, useState} from "react";
 import {useRef} from 'react';
 import {Link} from  "react-router-dom";
+import emailjs from '@emailjs/browser';
 
 
 //CSS
@@ -55,6 +56,7 @@ function Home() {
         }
     }
 
+    const form       = useRef()
     const homeRef    = useRef(null)
     const aboutRef   = useRef(null)
     const projectRef = useRef(null)
@@ -69,6 +71,18 @@ function Home() {
 
     const socialLink = (url) => {
         window.open(url, '_blank', 'noopener,noreferrer');
+    }
+
+    const sendEmail =(e)=>{
+        e.preventDefault();
+
+        emailjs.sendForm('service_bpng7e7', 'template_y2xffsh', form.current, 'k5sgg72-uloGuXB_E')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset()
     }
 
     return(
@@ -273,13 +287,11 @@ function Home() {
             </div>
 
         <div className="form_parent">
-            <form action="https://formsubmit.co/tornike.despotashvili@gmail.com" method="POST">
+        <form ref={form} onSubmit={sendEmail} >
                 <input className="simpleInput geoStyle" type="text" name="name" placeholder="სახელი" required />
                 <input className="simpleInput geoStyle" type="email" name="email" placeholder="ელ. ფოსტა" required />
                 <input className="simpleInput geoStyle" type="text" name="number" placeholder="ნომერი" required />
                 <input className="textarea geoStyle" type="text" name="message" placeholder="თქვენი ტექსტი" required />
-                <input type="hidden" name="_next" value="https://devweb.cc/" />
-                <input type="hidden" name="_captcha" value="false" />
                 <div className="button_to_cont submit_parent">
                     <button className="submitBTN button_to_cont_inner geoStyle" type="submit">გაგზავნა</button>
                 </div>
