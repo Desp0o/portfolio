@@ -5,60 +5,62 @@ import emailjs from '@emailjs/browser';
 
 
 //CSS
-import './home.css'
-import './navbar.css'
-import './about.css'
-import './project.css'
-import './contact.css'
-import './footer.css'
-import './georgian.css'
+import '../home.css'
+import '../navbar.css'
+import '../about.css'
+import '../project.css'
+import './contactDark.css'
+import '../footer.css'
+import '../georgian.css'
+import './darkcss.css'
 
 //images
-import despoIMG   from './images/despo_img.png'
-import menu       from './images/menu.png'
-import close      from './images/close.png'
-import carco      from './images/carco_prj.png'
-import dlab       from './images/3dlab.png'
-import pixnft     from './images/pixnft.png'
-import indian     from './images/indian.png'
-import linkedin   from './images/linkedin.svg'
-import facebook   from './images/facebook.svg'
-import github     from './images/github.svg'
-import twitter    from './images/twitter.svg'
-import linkedLi   from './images/linkedin-light.png'
-import twitterLi  from './images/twitter-light.png'
-import facebookLi from './images/facebook-light.png'
-import githubLi   from './images/github-light.png'
-import bulb       from './images/bulb.png' 
-import bulbDark   from './images/bulb-dark.png'
+import despoIMG   from '../images/despo_img.png'
+import menu       from '../images/menu.png'
+import close      from '../images/close.png'
+import carco      from '../images/carco_prj.png'
+import dlab       from '../images/3dlab.png'
+import pixnft     from '../images/pixnft.png'
+import indian     from '../images/indian.png'
+import linkedin   from '../images/linkedin.svg'
+import facebook   from '../images/facebook.svg'
+import github     from '../images/github.svg'
+import twitter    from '../images/twitter.svg'
+import linkedLi   from '../images/linkedin-light.png'
+import twitterLi  from '../images/twitter-light.png'
+import facebookLi from '../images/facebook-light.png'
+import githubLi   from '../images/github-light.png'
+import bulb       from '../images/bulb.png' 
+import bulbDark   from '../images/bulb-dark.png'
 
 const imageStyle = {
     width: '50px',
     borderRadius:'50%'
 }
 
-function Home() {
+function HomeDark() {
 
     const [toggle, setToggle]   = useState(false)
     const [menuIMG, setMenuIMG] = useState(menu)
-    const [dashbrd, setDashbrd] = useState('menu_dashboard')
+    const [dashbrd, setDashbrd] = useState('menu_dashboard darkthememode')
     const [overlay, setOverlay] = useState('overlay')
-    const [mode, setMode]       = useState(bulb)
+    const [mode, setMode]       = useState(bulbDark)
 
     function toggleMenu() {
         if(!toggle){
             setMenuIMG(close)
-            setDashbrd('menu_dashboard visible')
+            setDashbrd('menu_dashboard darkthememode visible')
             setOverlay('overlay visible')
             setToggle(true)
         }else{
             setMenuIMG(menu)
-            setDashbrd('menu_dashboard')
+            setDashbrd('menu_dashboard darkthememode')
             setOverlay('overlay')
             setToggle(false)
         }
     }
 
+   
 
     const form       = useRef()
     const homeRef    = useRef(null)
@@ -90,21 +92,21 @@ function Home() {
     }
 
     return(
-    <div style={{width:'100%', height:'100vh'}} className="geoStyle">
+    <div style={{width:'100%', height:'100vh'}} className="geoStyle darkthememode">
 
         {/* ნავიგაცია /////////////////////////////////////////// */}
-        <nav>
+        <nav className="navbar_dark">
             <div className="nav_left">
                 <img src={despoIMG} style={imageStyle} alt='logo'/>
                 <p>თორნიკე დესპოტაშვილი</p>
             </div>
 
             <div className="nav_right">
-                <Link to='' className="navLinks" onClick={()=> handleClick(homeRef)}>მთავარი</Link>
-                <Link to='' className="navLinks" onClick={()=> handleClick(aboutRef)}>შესახებ</Link>
-                <Link to='' className="navLinks" onClick={()=> handleClick(projectRef)}>პროექტები</Link>
-                <Link to='' className="navLinks" onClick={()=> handleClick(contactRef)}>კონტაქტი</Link>
-                <Link to='./HomeENG' className="navLinks">ENG</Link>
+                <Link to='' className="navLinks links_dark_mode" onClick={()=> handleClick(homeRef)}>მთავარი</Link>
+                <Link to='' className="navLinks links_dark_mode" onClick={()=> handleClick(aboutRef)}>შესახებ</Link>
+                <Link to='' className="navLinks links_dark_mode" onClick={()=> handleClick(projectRef)}>პროექტები</Link>
+                <Link to='' className="navLinks links_dark_mode" onClick={()=> handleClick(contactRef)}>კონტაქტი</Link>
+                <Link to='/homeEngDark' className="navLinks links_dark_mode">ENG</Link>
             </div>
 
             <div className="burger_menu">
@@ -113,11 +115,11 @@ function Home() {
         </nav>
 
         <div className={dashbrd} onClick={()=> toggleMenu()}>
-            <div><Link to='' className="navLinks" onClick={()=> handleClick(homeRef)}>Home</Link></div>
-            <div><Link to='' className="navLinks" onClick={()=> handleClick(aboutRef)}>About</Link></div>
-            <div><Link to='' className="navLinks" onClick={()=> handleClick(projectRef)}>Projects</Link></div>
-            <div><Link to='' className="navLinks" onClick={()=> handleClick(contactRef)}>Contact</Link></div>
-            <div><Link to='/HomeENG' className="navLinks">ENG</Link></div>
+            <div><Link to='' className="navLinks links_dark_mode" onClick={()=> handleClick(homeRef)}>Home</Link></div>
+            <div><Link to='' className="navLinks links_dark_mode" onClick={()=> handleClick(aboutRef)}>About</Link></div>
+            <div><Link to='' className="navLinks links_dark_mode" onClick={()=> handleClick(projectRef)}>Projects</Link></div>
+            <div><Link to='' className="navLinks links_dark_mode" onClick={()=> handleClick(contactRef)}>Contact</Link></div>
+            <div><Link to='/HomeENG' className="navLinks links_dark_mode">ENG</Link></div>
         </div>
 
         <div className={overlay} onClick={()=> toggleMenu()}></div>
@@ -130,17 +132,17 @@ function Home() {
             
 
             <div className="home_p_txt">
-                <p className="breckets"> {'<'}{'/'}{'>'}</p>
+                <p className="breckets darkmodetext"> {'<'}{'/'}{'>'}</p>
              </div>
 
             <div className="button_to_prj" onClick={()=> handleClick(projectRef)}>
                 <div className="button_to_prj_inner">
-                    <p>პროექტები</p>
+                    <p style={{color:'black'}}>პროექტები</p>
                 </div>
             </div>
 
             <div className="modes">
-                <Link to='./darkmode/homeDark'><img src={mode} alt="mode"/></Link>
+                <Link to='../Home'><img src={mode} alt="mode"/></Link>
             </div>
 
             {/* სოციალური ქსელები */}
@@ -162,7 +164,7 @@ function Home() {
                 <div className="about_me_inner">
                     <div className="about_me_inner_left">
                         
-                        <p>
+                        <p className="darkmodetext">
                         მე ვარ,თორნიკე დესპორაშვილი <b>Frontend</b> -ზე ფოკუსირებული ვებ დეველოპერი. ვაწყობ ვებ-გვერდებს, რომელიც დღეს ერთ-ერთი  ყველაზე მნიშვნელოვანი საფეხურია ბიზნესის წარმატებისთვის.<br/><br/>
                         
                         მზად ვარ ახალი,საინტერესო გამოწვევებისთვის,ახალი პროექტებისთვის და თუ  კი ხარ ის,ვისაც აქვს ინოვაციური,საინტერესო პროექტი სიამოვნებით ვითანამშრომლებ თქვენთან.
@@ -221,8 +223,8 @@ function Home() {
 
 
                         <div className="prj_inner">
-                            <h3>Carco.Ge</h3>
-                            <p>ავტო იმპორტის ვებ-გვერდი,ტრანსპორტირებისა და განბაჟების კალკულატორით.</p>
+                            <h3 className="darkmodetext">Carco.Ge</h3>
+                            <p className="darkmodetext">ავტო იმპორტის ვებ-გვერდი,ტრანსპორტირებისა და განბაჟების კალკულატორით.</p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=> redirect('https://carco.ge/')}>ნახვა</span>
                             </span>
@@ -236,8 +238,8 @@ function Home() {
 
 
                         <div className="prj_inner">
-                            <h3>3dlab.Group</h3>
-                            <p>ანიმაციური სტუდია, რომელიც ქმნის სხვადასხვა ტიპის 3D სარეკლამო ანიმაციებს კომპანიებისთვის. 3D ლაბი ცნობილია მისი სახალისო კონტენტით სხვადასხვა სოციალურ ქსელში.</p>
+                            <h3 className="darkmodetext">3dlab.Group</h3>
+                            <p className="darkmodetext">ანიმაციური სტუდია, რომელიც ქმნის სხვადასხვა ტიპის 3D სარეკლამო ანიმაციებს კომპანიებისთვის. 3D ლაბი ცნობილია მისი სახალისო კონტენტით სხვადასხვა სოციალურ ქსელში.</p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=> redirect('https://3dlab.group/')}>ნახვა</span>
                             </span>
@@ -251,8 +253,8 @@ function Home() {
 
 
                         <div className="prj_inner">
-                            <h3>pixNFT.Me</h3>
-                            <p>NFT ვებ-გვერდი, ინოვაციური გეგმებით. </p>
+                            <h3 className="darkmodetext">pixNFT.Me</h3>
+                            <p className="darkmodetext">NFT ვებ-გვერდი, ინოვაციური გეგმებით. </p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=> redirect('https://pixnft.me/')}>ნახვა</span>
                             </span>
@@ -266,8 +268,8 @@ function Home() {
 
 
                         <div className="prj_inner">
-                            <h2>Moto Shop Clone</h2>
-                            <p>მოტოციკლეტების მაღაზიის პროექტი</p>
+                            <h2 className="darkmodetext">Moto Shop Clone</h2>
+                            <p className="darkmodetext">მოტოციკლეტების მაღაზიის პროექტი</p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=>redirect('https://desp0o.github.io/IndianMotorcycle/')}>ნახვა</span>
                             </span>
@@ -278,7 +280,7 @@ function Home() {
 
 
             <span className="button_to_cont seeMore">
-               <Link style={{textDecoration:'none'}} to="./homeDark/projDark"><span className="button_to_cont_inner seeMoteBTN" >მეტი პროექტი</span></Link>
+               <Link style={{textDecoration:'none'}} to="/projDark"><span className="button_to_cont_inner seeMoteBTN" >მეტი პროექტი</span></Link>
             </span>
 
 
@@ -293,9 +295,9 @@ function Home() {
                 <span className="underline"></span>
                 <p className="geoContact" style={{textAlign:'center', marginTop:'20px'}}>დასაკონტაქტებლად შეავსეთ ქვემოთ მოცემული ველები და შეძლებისდგავარად სწრაფად მიიღებთ პასუხს</p>
             </div>
-
-        <div className="form_parent">
-        <form ref={form} onSubmit={sendEmail} >
+  
+        <div className="form_parent_dark darkmodetext">
+        <form ref={form} onSubmit={sendEmail} className="darkthememode">
                 <input className="simpleInput geoStyle" type="text" name="name" placeholder="სახელი" required />
                 <input className="simpleInput geoStyle" type="email" name="email" placeholder="ელ. ფოსტა" required />
                 <input className="simpleInput geoStyle" type="text" name="number" placeholder="ნომერი" required />
@@ -336,7 +338,7 @@ function Home() {
     )
 }
 
-export default Home;
+export default HomeDark;
 
 
     

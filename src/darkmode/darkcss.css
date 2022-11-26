@@ -1,0 +1,33 @@
+.darkthememode{
+    background-color: rgb(39, 39, 39) !important;
+    color: white !important;
+}
+
+.darkmodetext{
+    color: white !important;
+}
+
+.links_dark_mode{
+    color: white !important;
+    transition: all 0.4s ease;
+}
+
+.links_dark_mode:hover{
+    color: yellow !important;
+}
+
+.navbar_dark{
+    background-color: rgb(26, 25, 25);
+}
+
+::-webkit-scrollbar {
+    background-color: rgb(207, 207, 207);
+    
+  }
+
+
+  ::-webkit-scrollbar-thumb {
+    background:#FACF0F;
+    height: 110px;
+    border-radius: 5px;
+  }

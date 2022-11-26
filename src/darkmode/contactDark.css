@@ -16,13 +16,13 @@
     flex-direction: column;
 }
 
-.form_parent{
+.form_parent_dark{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 70%;
     width: 70%;
-    background-color: #fff;
+    background-color: rgb(39, 39, 39) !important;
     box-sizing: border-box;
     border-radius: 5px;
 }
@@ -108,4 +108,3 @@ input:focus{
         font-size: 15px;
     }
 }
-
