@@ -68,11 +68,11 @@ function PagePrjDark() {
         <nav className="navbar_dark">
             <div className="nav_left">
                 <img src={despoIMG} style={imageStyle} alt='logo'/>
-               <Link to="/darkmode/homeDark" style={{textDecoration:'none', color:'unset'}}> <p className="links_dark_mode">თორნიკე დესპოტაშვილი</p></Link>
+               <Link to="/darkmode/homdeDark" style={{textDecoration:'none', color:'unset'}}> <p className="links_dark_mode">თორნიკე დესპოტაშვილი</p></Link>
             </div>
 
             <div className="nav_right">
-                <Link to='/darkmode/homeDark' className="navLinks links_dark_mode">მთავარი გვერდი</Link>
+                <Link to='/darkmode/homdeDark' className="navLinks links_dark_mode">მთავარი გვერდი</Link>
                 <Link to='/projDarkEng' className="navLinks links_dark_mode">ENG</Link>
             </div>
 

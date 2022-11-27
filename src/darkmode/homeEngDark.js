@@ -29,6 +29,7 @@ import linkedLi   from '../images/linkedin-light.png'
 import twitterLi  from '../images/twitter-light.png'
 import facebookLi from '../images/facebook-light.png'
 import githubLi   from '../images/github-light.png'
+import bulbDark   from '../images/bulb-dark.png'
 
 const imageStyle = {
     width: '50px',
@@ -41,6 +42,7 @@ function HomeEngDark() {
     const [menuIMG, setMenuIMG] = useState(menu)
     const [dashbrd, setDashbrd] = useState('menu_dashboard darkthememode')
     const [overlay, setOverlay] = useState('overlay')
+    const [mode, setMode]       = useState(bulbDark)
 
     function toggleMenu() {
         if(!toggle){
@@ -122,12 +124,16 @@ function HomeEngDark() {
                 </div>
             </div>
 
+            <div className="modes black">
+                <Link to='/HomeENG'><img src={mode} alt="mode"/></Link>
+            </div>
+
             {/* სოციალური ქსელები */}
-            <span className="social">
-                <img className="social_img" alt='linkedin' src={linkedin} onClick={()=> socialLink("https://www.linkedin.com/in/tornike-despotashvili-250150219/")} />
-                <img className="social_img" alt='twitter' src={twitter} onClick={()=> socialLink("https://twitter.com/TDespotashvili")} />
-                <img className="social_img" alt='facebook' src={facebook} onClick={()=> socialLink("https://www.facebook.com/tornike.despotashvili/")} />
-                <img className="social_img" alt='github' src={github} onClick={()=> socialLink("https://github.com/Desp0o")} />
+            <span className="social black">
+                <img className="social_img" alt='linkedin' src={linkedLi} onClick={()=> socialLink("https://www.linkedin.com/in/tornike-despotashvili-250150219/")} />
+                <img className="social_img" alt='twitter' src={twitterLi} onClick={()=> socialLink("https://twitter.com/TDespotashvili")} />
+                <img className="social_img" alt='facebook' src={facebookLi} onClick={()=> socialLink("https://www.facebook.com/tornike.despotashvili/")} />
+                <img className="social_img" alt='github' src={githubLi} onClick={()=> socialLink("https://github.com/Desp0o")} />
             </span>
             
         </div>

@@ -30,7 +30,7 @@ import twitterLi  from './images/twitter-light.png'
 import facebookLi from './images/facebook-light.png'
 import githubLi   from './images/github-light.png'
 import bulb       from './images/bulb.png' 
-import bulbDark   from './images/bulb-dark.png'
+
 
 const imageStyle = {
     width: '50px',
@@ -140,7 +140,7 @@ function Home() {
             </div>
 
             <div className="modes">
-                <Link to='./darkmode/homeDark'><img src={mode} alt="mode"/></Link>
+                <Link to='/darkmode/homdeDark'><img src={mode} alt="mode"/></Link>
             </div>
 
             {/* სოციალური ქსელები */}
@@ -278,7 +278,7 @@ function Home() {
 
 
             <span className="button_to_cont seeMore">
-               <Link style={{textDecoration:'none'}} to="./homeDark/projDark"><span className="button_to_cont_inner seeMoteBTN" >მეტი პროექტი</span></Link>
+               <Link style={{textDecoration:'none'}} to="/redProj"><span className="button_to_cont_inner seeMoteBTN" >მეტი პროექტი</span></Link>
             </span>
 
 

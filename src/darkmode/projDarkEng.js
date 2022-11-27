@@ -72,7 +72,7 @@ function ProjectDarkEng() {
 
             <div className="nav_right">
                 <Link to='/homeEngDark' className="navLinks links_dark_mode">Back To Home Page</Link>
-                <Link to='/projDark' className="navLinks links_dark_mode">GEO</Link>
+                <Link to='/darkmode/projDark' className="navLinks links_dark_mode">GEO</Link>
             </div>
 
             <div className="burger_menu">
@@ -82,7 +82,7 @@ function ProjectDarkEng() {
 
         <div className={dashbrd} id="proj_dashboard" onClick={()=> toggleMenu()}>
             <div><Link to='/homeEngDark' className="navLinks links_dark_mode">Back To Home Page</Link></div>
-            <div><Link to='/projDark' className="navLinks links_dark_mode">GEO</Link></div>
+            <div><Link to='/darkmode/projDark' className="navLinks links_dark_mode">GEO</Link></div>
         </div>
 
         <div className={overlay} onClick={()=> toggleMenu()}></div>

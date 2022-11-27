@@ -119,7 +119,7 @@ function HomeDark() {
             <div><Link to='' className="navLinks links_dark_mode" onClick={()=> handleClick(aboutRef)}>About</Link></div>
             <div><Link to='' className="navLinks links_dark_mode" onClick={()=> handleClick(projectRef)}>Projects</Link></div>
             <div><Link to='' className="navLinks links_dark_mode" onClick={()=> handleClick(contactRef)}>Contact</Link></div>
-            <div><Link to='/HomeENG' className="navLinks links_dark_mode">ENG</Link></div>
+            <div><Link to='/homeEngDark' className="navLinks links_dark_mode">ENG</Link></div>
         </div>
 
         <div className={overlay} onClick={()=> toggleMenu()}></div>
@@ -141,16 +141,16 @@ function HomeDark() {
                 </div>
             </div>
 
-            <div className="modes">
+            <div className="modes black">
                 <Link to='../Home'><img src={mode} alt="mode"/></Link>
             </div>
 
             {/* სოციალური ქსელები */}
-            <span className="social">
-                <img className="social_img" alt='linkedin' src={linkedin} onClick={()=> socialLink("https://www.linkedin.com/in/tornike-despotashvili-250150219/")} />
-                <img className="social_img" alt='twitter' src={twitter} onClick={()=> socialLink("https://twitter.com/TDespotashvili")} />
-                <img className="social_img" alt='facebook' src={facebook} onClick={()=> socialLink("https://www.facebook.com/tornike.despotashvili/")} />
-                <img className="social_img" alt='github' src={github} onClick={()=> socialLink("https://github.com/Desp0o")} />
+            <span className="social black">
+                <img className="social_img" alt='linkedin' src={linkedLi} onClick={()=> socialLink("https://www.linkedin.com/in/tornike-despotashvili-250150219/")} />
+                <img className="social_img" alt='twitter' src={twitterLi} onClick={()=> socialLink("https://twitter.com/TDespotashvili")} />
+                <img className="social_img" alt='facebook' src={facebookLi} onClick={()=> socialLink("https://www.facebook.com/tornike.despotashvili/")} />
+                <img className="social_img" alt='github' src={githubLi} onClick={()=> socialLink("https://github.com/Desp0o")} />
             </span>
             
         </div>
@@ -280,7 +280,7 @@ function HomeDark() {
 
 
             <span className="button_to_cont seeMore">
-               <Link style={{textDecoration:'none'}} to="/projDark"><span className="button_to_cont_inner seeMoteBTN" >მეტი პროექტი</span></Link>
+               <Link style={{textDecoration:'none'}} to="/darkmode/projDark"><span className="button_to_cont_inner seeMoteBTN" >მეტი პროექტი</span></Link>
             </span>
 
 

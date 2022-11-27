@@ -28,6 +28,7 @@ import linkedLi   from './images/linkedin-light.png'
 import twitterLi  from './images/twitter-light.png'
 import facebookLi from './images/facebook-light.png'
 import githubLi   from './images/github-light.png'
+import bulb       from './images/bulb.png' 
 
 const imageStyle = {
     width: '50px',
@@ -40,6 +41,7 @@ function Home() {
     const [menuIMG, setMenuIMG] = useState(menu)
     const [dashbrd, setDashbrd] = useState('menu_dashboard')
     const [overlay, setOverlay] = useState('overlay')
+    const [mode, setMode]       = useState(bulb)
 
     function toggleMenu() {
         if(!toggle){
@@ -119,6 +121,10 @@ function Home() {
                 <div className="button_to_prj_inner">
                     <p>PROJECTS</p>
                 </div>
+            </div>
+
+            <div className="modes">
+                <Link to='/homeEngDark'><img src={mode} alt="mode"/></Link>
             </div>
 
             {/* სოციალური ქსელები */}
@@ -256,7 +262,7 @@ function Home() {
 
 
             <span className="button_to_cont seeMore">
-               <Link style={{textDecoration:'none'}} to="./ProjENG"><span className="button_to_cont_inner seeMoteBTN" >See More Projects</span></Link>
+               <Link style={{textDecoration:'none'}} to="/ProjENG"><span className="button_to_cont_inner seeMoteBTN" >See More Projects</span></Link>
             </span>
 
 
