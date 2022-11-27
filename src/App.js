@@ -26,11 +26,11 @@ function App() {
         <Route exact path="/ProjENG" element={<ProjENG />} />
 
         
-        <Route exact path="/darkmode/homdeDark" element={<HomeDark />} />
+        {/* <Route exact path="/darkmode/homdeDark" element={<HomeDark />} />
         <Route exact path="/darkmode/projDark" element={<PagePrjDark />} />
 
         <Route exact path="/homeEngDark" element={<HomeEngDark />} />
-        <Route exact path="/projDarkEng" element={<ProjectDarkEng />} />
+        <Route exact path="/projDarkEng" element={<ProjectDarkEng />} /> */}
         
       </Routes>
       

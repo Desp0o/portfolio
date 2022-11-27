@@ -123,9 +123,9 @@ function Home() {
                 </div>
             </div>
 
-            <div className="modes">
+            {/* <div className="modes">
                 <Link to='/homeEngDark'><img src={mode} alt="mode"/></Link>
-            </div>
+            </div> */}
 
             {/* სოციალური ქსელები */}
             <span className="social">
