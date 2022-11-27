@@ -1,29 +1,30 @@
 {
   "files": {
-    "main.css": "/Desp0o/portfolio.git/static/css/main.1ad9a65d.css",
-    "main.js": "/Desp0o/portfolio.git/static/js/main.7a7e7df0.js",
-    "static/js/787.128fc6e9.chunk.js": "/Desp0o/portfolio.git/static/js/787.128fc6e9.chunk.js",
-    "static/media/FiraGO-Bold.ttf": "/Desp0o/portfolio.git/static/media/FiraGO-Bold.6873f2abdb06d26ed2be.ttf",
-    "static/media/carco_prj.png": "/Desp0o/portfolio.git/static/media/carco_prj.89ff2c573d571c13c918.png",
-    "static/media/indian.png": "/Desp0o/portfolio.git/static/media/indian.7bd430cc991d4799bd7c.png",
-    "static/media/archic_prj.png": "/Desp0o/portfolio.git/static/media/archic_prj.c4d2a6c041cbf7b84021.png",
-    "static/media/pixnft.png": "/Desp0o/portfolio.git/static/media/pixnft.26f1bf12857e0934991f.png",
-    "static/media/chess_prj.png": "/Desp0o/portfolio.git/static/media/chess_prj.a3cf2de9a12288e2d890.png",
-    "static/media/portfolio_prj.png": "/Desp0o/portfolio.git/static/media/portfolio_prj.40e95299807b86bdb02a.png",
-    "static/media/3dlab.png": "/Desp0o/portfolio.git/static/media/3dlab.d3128ad22618cf43067d.png",
-    "static/media/calculator_app.png": "/Desp0o/portfolio.git/static/media/calculator_app.a5e11fb07c73dc63275f.png",
-    "static/media/despo_img.png": "/Desp0o/portfolio.git/static/media/despo_img.59fe330819c9a9131b84.png",
-    "index.html": "/Desp0o/portfolio.git/index.html",
-    "static/media/github.svg": "/Desp0o/portfolio.git/static/media/github.080591513b1a3eb8fdfe0257830eaff1.svg",
-    "static/media/twitter.svg": "/Desp0o/portfolio.git/static/media/twitter.62976c081dee9df5e089714a43f81083.svg",
-    "static/media/linkedin.svg": "/Desp0o/portfolio.git/static/media/linkedin.9ab1461c9a828786baf729f786e1c2f3.svg",
-    "static/media/facebook.svg": "/Desp0o/portfolio.git/static/media/facebook.b545c7f1bd807fc5279ea5ae94d4660a.svg",
-    "main.1ad9a65d.css.map": "/Desp0o/portfolio.git/static/css/main.1ad9a65d.css.map",
-    "main.7a7e7df0.js.map": "/Desp0o/portfolio.git/static/js/main.7a7e7df0.js.map",
-    "787.128fc6e9.chunk.js.map": "/Desp0o/portfolio.git/static/js/787.128fc6e9.chunk.js.map"
+    "main.css": "/static/css/main.55c8f97e.css",
+    "main.js": "/static/js/main.e3874a95.js",
+    "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/FiraGO-Bold.ttf": "/static/media/FiraGO-Bold.6873f2abdb06d26ed2be.ttf",
+    "static/media/carco_prj.png": "/static/media/carco_prj.89ff2c573d571c13c918.png",
+    "static/media/indian.png": "/static/media/indian.7bd430cc991d4799bd7c.png",
+    "static/media/archic_prj.png": "/static/media/archic_prj.c4d2a6c041cbf7b84021.png",
+    "static/media/pixnft.png": "/static/media/pixnft.26f1bf12857e0934991f.png",
+    "static/media/chess_prj.png": "/static/media/chess_prj.a3cf2de9a12288e2d890.png",
+    "static/media/portfolio_prj.png": "/static/media/portfolio_prj.40e95299807b86bdb02a.png",
+    "static/media/3dlab.png": "/static/media/3dlab.d3128ad22618cf43067d.png",
+    "static/media/calculator_app.png": "/static/media/calculator_app.a5e11fb07c73dc63275f.png",
+    "static/media/despo_img.png": "/static/media/despo_img.59fe330819c9a9131b84.png",
+    "static/media/bulb.png": "/static/media/bulb.f871897f8169a4a462ce.png",
+    "index.html": "/index.html",
+    "static/media/github.svg": "/static/media/github.080591513b1a3eb8fdfe0257830eaff1.svg",
+    "static/media/twitter.svg": "/static/media/twitter.62976c081dee9df5e089714a43f81083.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.9ab1461c9a828786baf729f786e1c2f3.svg",
+    "static/media/facebook.svg": "/static/media/facebook.b545c7f1bd807fc5279ea5ae94d4660a.svg",
+    "main.55c8f97e.css.map": "/static/css/main.55c8f97e.css.map",
+    "main.e3874a95.js.map": "/static/js/main.e3874a95.js.map",
+    "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ad9a65d.css",
-    "static/js/main.7a7e7df0.js"
+    "static/css/main.55c8f97e.css",
+    "static/js/main.e3874a95.js"
   ]
 }
