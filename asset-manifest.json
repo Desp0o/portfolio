@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.55c8f97e.css",
-    "main.js": "/static/js/main.e3874a95.js",
+    "main.js": "/static/js/main.8b9af631.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/FiraGO-Bold.ttf": "/static/media/FiraGO-Bold.6873f2abdb06d26ed2be.ttf",
     "static/media/carco_prj.png": "/static/media/carco_prj.89ff2c573d571c13c918.png",
@@ -20,11 +20,11 @@
     "static/media/linkedin.svg": "/static/media/linkedin.9ab1461c9a828786baf729f786e1c2f3.svg",
     "static/media/facebook.svg": "/static/media/facebook.b545c7f1bd807fc5279ea5ae94d4660a.svg",
     "main.55c8f97e.css.map": "/static/css/main.55c8f97e.css.map",
-    "main.e3874a95.js.map": "/static/js/main.e3874a95.js.map",
+    "main.8b9af631.js.map": "/static/js/main.8b9af631.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.55c8f97e.css",
-    "static/js/main.e3874a95.js"
+    "static/js/main.8b9af631.js"
   ]
 }
