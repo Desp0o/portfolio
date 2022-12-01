@@ -130,8 +130,10 @@ function Home() {
         <div className="home" >
             
 
+            
+
             <div className="home_p_txt">
-                <p className="breckets"> {'<'}{'/'}{'>'}</p>
+                <h1 className="breckets"> {'<'}{'/'}{'>'}</h1>
              </div>
 
             <div className="button_to_prj" onClick={()=> handleClick(projectRef)}>

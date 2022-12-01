@@ -8,7 +8,6 @@
     justify-content: center;
     position: relative;
     gap: 30px;
-    margin-top: 70px;
 }
 
 .breckets{
@@ -20,6 +19,7 @@
     text-align: center;
     opacity: 0.8;
 }
+
 
 .home_p_txt{
     width: 100%;
