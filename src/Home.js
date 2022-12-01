@@ -12,6 +12,7 @@ import './project.css'
 import './contact.css'
 import './footer.css'
 import './georgian.css'
+import './index.css'
 
 //images
 import despoIMG   from './images/despo_img.png'
@@ -90,7 +91,7 @@ function Home() {
     }
 
     return(
-    <div style={{width:'100%', height:'100vh'}} className="geoStyle">
+    <div className="geoStyle app">
 
         {/* ნავიგაცია /////////////////////////////////////////// */}
         <nav>
@@ -154,7 +155,7 @@ function Home() {
         </div>
 
         {/* ებაუთ ფეიჯი ////////////////////////////////////////////////////// */}
-        <span ref={aboutRef}></span>
+        <div ref={aboutRef}></div>
         <div className="about_me" >
                 <h1 className="about_me_h1">ჩემ შესახებ</h1>
                 <span className="underline"></span>
