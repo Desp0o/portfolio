@@ -28,7 +28,7 @@ const projectArray = [
     {id:1, image:`${carco}`, title:'Carco.Ge', description:'ავტო იმპორტის ვებ-გვერდი,ტრანსპორტირებისა და განბაჟების კალკულატორით.', button:'ნახვა', link:'https://carco.ge/'},
     {id:2, image:`${dlab}`, title:'3Dlab.Group', description:'ანიმაციური სტუდია, რომელიც ქმნის სხვადასხვა ტიპის 3D სარეკლამო ანიმაციებს კომპანიებისთვის.', button:'ნახვა', link:'https://3dlab.group/'},
     {id:3, image:`${pixnft}`, title:'pixnft.me', description:'NFT - ვებ-გვერდი, ინოვაციური გეგმებით.', button:'ნახვა', link:'https://pixnft.me/'},
-    {id:4, image:`${nexus}`, title:'Nexus Logistic LLC', description:'ამერიკული გადამზიდი კომპანია.', button:'ნახვა', link:'https://teamofnexus.com/'}, 
+    {id:4, image:`${nexus}`, title:'Nexus Logistic LLC', description:'ამერიკული გადამზიდი კომპანია React Js.', button:'ნახვა', link:'https://teamofnexus.com/'}, 
     {id:5, image:`${indian}`, title:'Moto Shop Clone', description:'მოტოციკლეტების მაღაზიის პროექტი.', button:'ნახვა', link:'https://desp0o.github.io/IndianMotorcycle/'},
     {id:6, image:`${archic}`, title:'Architect Clone', description:'თანამედროვე,ესეთიკური, ტრადიციული ღირებულებების მქონე არქიტექტურული დიზაინები.', button:'ნახვა', link:'https://desp0o.github.io/Archic/'},
     {id:7, image:`${chess}`, title:'Chess Championship', description:'ჭადრაკის ჩემპიონატის რეგისტრაციის ფორმა React Js.', button:'ნახვა', link:'https://desp0o.github.io/RedBeryy-Chess-Hero/'},

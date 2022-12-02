@@ -27,7 +27,7 @@ const projectArray = [
     {id:1, image:`${carco}`,     title:'Carco.Ge',             description:'Auto import Web page, with transportation and Customs Clearnece calculator.',     button:'Visit',    link:'https://carco.ge/'},
     {id:2, image:`${dlab}`,      title:'3Dlab.Group',          description:'3Dlab is Animation studio, famous in social networks, with its funny projects.',  button:'Visit',    link:'https://3dlab.group/'},
     {id:3, image:`${pixnft}`,    title:'pixnft.me',            description:'NFT project Landing page, with road map and OpenSea account link',                button:'Visit',    link:'https://pixnft.me/'},
-    {id:4, image:`${nexus}`,     title:'Nexus Logistic LLC',   description:'Nexus Logistics LLC is a 24/7 delivery/dispatching/carrier company.',             button:'Visit',    link:'https://teamofnexus.com/'}, 
+    {id:4, image:`${nexus}`,     title:'Nexus Logistic LLC',   description:'Nexus Logistics LLC is a 24/7 delivery/dispatching/carrier company. React Js.',   button:'Visit',    link:'https://teamofnexus.com/'}, 
     {id:5, image:`${indian}`,    title:'Moto Shop Clone',      description:'Moto shop web page clone, with responsive design and links animation.',           button:'Visit',    link:'https://desp0o.github.io/IndianMotorcycle/'},
     {id:6, image:`${archic}`,    title:'Architect Clone',      description:'Architecutre web page clone, with responsive design and animations.',             button:'Visit',    link:'https://desp0o.github.io/Archic/'},
     {id:7, image:`${chess}`,     title:'Chess Championship',   description:'Chess registration form built with React JS.',                                    button:'Visit',    link:'https://desp0o.github.io/RedBeryy-Chess-Hero/'},
