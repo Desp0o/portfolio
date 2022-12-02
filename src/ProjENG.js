@@ -27,11 +27,11 @@ const projectArray = [
     {id:1, image:`${carco}`,     title:'Carco.Ge',             description:'Auto import Web page, with transportation and Customs Clearnece calculator.',     button:'Visit',    link:'https://carco.ge/'},
     {id:2, image:`${dlab}`,      title:'3Dlab.Group',          description:'3Dlab is Animation studio, famous in social networks, with its funny projects.',  button:'Visit',    link:'https://3dlab.group/'},
     {id:3, image:`${pixnft}`,    title:'pixnft.me',            description:'NFT project Landing page, with road map and OpenSea account link',                button:'Visit',    link:'https://pixnft.me/'},
-    {id:4, image:`${nexus}`,     title:'Nexus Logistic LLC',   description:'Nexus Logistics LLC is a 24/7 delivery/dispatching/carrier company. React Js.',   button:'Visit',    link:'https://teamofnexus.com/'}, 
+    {id:4, image:`${nexus}`,     title:'Nexus Logistic LLC',   description:'Nexus Logistics LLC is a 24/7 delivery/dispatching/carrier company',   button:'Visit',    link:'https://teamofnexus.com/', framework:' React Js.'}, 
     {id:5, image:`${indian}`,    title:'Moto Shop Clone',      description:'Moto shop web page clone, with responsive design and links animation.',           button:'Visit',    link:'https://desp0o.github.io/IndianMotorcycle/'},
     {id:6, image:`${archic}`,    title:'Architect Clone',      description:'Architecutre web page clone, with responsive design and animations.',             button:'Visit',    link:'https://desp0o.github.io/Archic/'},
-    {id:7, image:`${chess}`,     title:'Chess Championship',   description:'Chess registration form built with React JS.',                                    button:'Visit',    link:'https://desp0o.github.io/RedBeryy-Chess-Hero/'},
-    {id:8, image:`${portfolio}`, title:'Devweb.cc',            description:'Super light portfolio web page for Frontend Web Developer, built with React JS.', button:'Visit',    link:'https://devweb.cc/'},
+    {id:7, image:`${chess}`,     title:'Chess Championship',   description:'Chess registration form built with',                                    button:'Visit',    link:'https://desp0o.github.io/RedBeryy-Chess-Hero/', framework:' React Js.'},
+    {id:8, image:`${portfolio}`, title:'Devweb.cc',            description:'Super light portfolio web page for Frontend Web Developer, built with', button:'Visit',    link:'https://devweb.cc/', framework:' React Js.'},
     {id:9, image:`${calApp}`,    title:'Carco.Ge Android APP', description:'Auto import Android APP with transportation and Customs Clearnece calculator.',   button:'Download', link:'https://drive.google.com/file/d/13f4GXvhRR9DFW4wAu0RFgsXPmbfm6RKH/view'}
 
 ]
@@ -119,7 +119,7 @@ function PagePrj() {
 
                             <div className="prj_inner">
                                 <h3>{project.title}</h3>
-                                <p>{project.description}</p>
+                                <p>{project.description}<b>{project.framework}</b></p>
 
                                 <span className="button_to_cont visitBTN">
                                     <span className="button_to_cont_inner" onClick={()=> redirect(project.link)}>{project.button}</span>

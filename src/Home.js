@@ -241,7 +241,7 @@ function Home() {
 
                         <div className="prj_inner">
                             <h3>3dlab.Group</h3>
-                            <p>ანიმაციური სტუდია, რომელიც ქმნის სხვადასხვა ტიპის 3D სარეკლამო ანიმაციებს კომპანიებისთვის. 3D ლაბი ცნობილია მისი სახალისო კონტენტით სხვადასხვა სოციალურ ქსელში.</p>
+                            <p>ანიმაციური სტუდია, რომელიც ქმნის სხვადასხვა ტიპის 3D სარეკლამო ანიმაციებს კომპანიებისთვის.</p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=> redirect('https://3dlab.group/')}>ნახვა</span>
                             </span>
@@ -271,7 +271,7 @@ function Home() {
 
                         <div className="prj_inner">
                             <h2>Nexus Logistic LLC</h2>
-                            <p>ამერიკული გადამზიდი კომპანია.</p>
+                            <p>ამერიკული გადამზიდი კომპანია React Js.</p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=>redirect('https://teamofnexus.com/')}>ნახვა</span>
                             </span>

@@ -252,7 +252,7 @@ function Home() {
 
                         <div className="prj_inner">
                             <h2>Nexus Logistic LLC</h2>
-                            <p>Nexus Logistics LLC is a 24/7 delivery/dispatching/carrier company</p>
+                            <p>Nexus Logistics LLC is a 24/7 delivery/dispatching/carrier company <b>React Js.</b></p>
                             <span className="button_to_cont visitBTN">
                                 <span className="button_to_cont_inner" onClick={()=>redirect('https://teamofnexus.com/')}>Visit</span>
                             </span>
