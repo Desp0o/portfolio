@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.55c8f97e.css",
-    "main.js": "/static/js/main.8b9af631.js",
+    "main.css": "/static/css/main.c6e83b15.css",
+    "main.js": "/static/js/main.aced164c.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/FiraGO-Bold.ttf": "/static/media/FiraGO-Bold.6873f2abdb06d26ed2be.ttf",
     "static/media/carco_prj.png": "/static/media/carco_prj.89ff2c573d571c13c918.png",
     "static/media/indian.png": "/static/media/indian.7bd430cc991d4799bd7c.png",
     "static/media/archic_prj.png": "/static/media/archic_prj.c4d2a6c041cbf7b84021.png",
+    "static/media/nexus.png": "/static/media/nexus.2ebb45c4a8a47c6b41f3.png",
     "static/media/pixnft.png": "/static/media/pixnft.26f1bf12857e0934991f.png",
     "static/media/chess_prj.png": "/static/media/chess_prj.a3cf2de9a12288e2d890.png",
     "static/media/portfolio_prj.png": "/static/media/portfolio_prj.40e95299807b86bdb02a.png",
@@ -19,12 +20,12 @@
     "static/media/twitter.svg": "/static/media/twitter.62976c081dee9df5e089714a43f81083.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.9ab1461c9a828786baf729f786e1c2f3.svg",
     "static/media/facebook.svg": "/static/media/facebook.b545c7f1bd807fc5279ea5ae94d4660a.svg",
-    "main.55c8f97e.css.map": "/static/css/main.55c8f97e.css.map",
-    "main.8b9af631.js.map": "/static/js/main.8b9af631.js.map",
+    "main.c6e83b15.css.map": "/static/css/main.c6e83b15.css.map",
+    "main.aced164c.js.map": "/static/js/main.aced164c.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.55c8f97e.css",
-    "static/js/main.8b9af631.js"
+    "static/css/main.c6e83b15.css",
+    "static/js/main.aced164c.js"
   ]
 }
