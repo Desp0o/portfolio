@@ -98,3 +98,14 @@
     }
     
 }
+
+
+.footer_svg{
+    fill: #fff !important;
+    width: 25px;
+    cursor: pointer;
+}
+
+.footer_svg_path{
+    fill: #111;
+}
