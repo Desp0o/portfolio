@@ -21,6 +21,20 @@ import archic     from './images/archic_prj.png'
 import chess      from './images/chess_prj.png'
 import portfolio  from './images/portfolio_prj.png'
 import calApp     from './images/calculator_app.png'
+import nexus      from './images/nexus.png'
+
+const projectArray = [
+    {id:1, image:`${carco}`,     title:'Carco.Ge',             description:'Auto import Web page, with transportation and Customs Clearnece calculator.',     button:'Visit',    link:'https://carco.ge/'},
+    {id:2, image:`${dlab}`,      title:'3Dlab.Group',          description:'3Dlab is Animation studio, famous in social networks, with its funny projects.',  button:'Visit',    link:'https://3dlab.group/'},
+    {id:3, image:`${pixnft}`,    title:'pixnft.me',            description:'NFT project Landing page, with road map and OpenSea account link',                button:'Visit',    link:'https://pixnft.me/'},
+    {id:4, image:`${nexus}`,     title:'Nexus Logistic LLC',   description:'Nexus Logistics LLC is a 24/7 delivery/dispatching/carrier company.',             button:'Visit',    link:'https://teamofnexus.com/'}, 
+    {id:5, image:`${indian}`,    title:'Moto Shop Clone',      description:'Moto shop web page clone, with responsive design and links animation.',           button:'Visit',    link:'https://desp0o.github.io/IndianMotorcycle/'},
+    {id:6, image:`${archic}`,    title:'Architect Clone',      description:'Architecutre web page clone, with responsive design and animations.',             button:'Visit',    link:'https://desp0o.github.io/Archic/'},
+    {id:7, image:`${chess}`,     title:'Chess Championship',   description:'Chess registration form built with React JS.',                                    button:'Visit',    link:'https://desp0o.github.io/RedBeryy-Chess-Hero/'},
+    {id:8, image:`${portfolio}`, title:'Devweb.cc',            description:'Super light portfolio web page for Frontend Web Developer, built with React JS.', button:'Visit',    link:'https://devweb.cc/'},
+    {id:9, image:`${calApp}`,    title:'Carco.Ge Android APP', description:'Auto import Android APP with transportation and Customs Clearnece calculator.',   button:'Download', link:'https://drive.google.com/file/d/13f4GXvhRR9DFW4wAu0RFgsXPmbfm6RKH/view'}
+
+]
 
 
 function PagePrj() {
@@ -94,146 +108,30 @@ function PagePrj() {
             <div className="projects" >
                 <div className="projects_inner" id="proj">
 
-                {/* carco პროექტი */}
-                <div className="prj">
-                    <div className="prj_img">
-                            <img className="project_image" src={carco} alt='carco'/>
-                    </div>
+                {projectArray.map((project)=>{
+                    return(
+                        <>
+                        <div className="prj">
+                            <div className="prj_img">
+                                <img className="project_image" src={project.image} alt='3dlab'/>
+                            </div>
 
 
-                    <div className="prj_inner">
-                            <h3>Carco.Ge</h3>
-                            <p>Auto import Web page, with transportation and Customs Clearnece calculator.</p>
-                            <span className="button_to_cont visitBTN">
-                                <span className="button_to_cont_inner" onClick={()=> redirect('https://carco.ge/')}>Visit</span>
-                            </span>
-                    </div>
+                            <div className="prj_inner">
+                                <h3>{project.title}</h3>
+                                <p>{project.description}</p>
+
+                                <span className="button_to_cont visitBTN">
+                                    <span className="button_to_cont_inner" onClick={()=> redirect(project.link)}>{project.button}</span>
+                                </span>
+                            </div>
+                        </div>
+                        </>
+                        )
+                    })}
                 </div>
-
-                {/* 3dlab პოექტი */}
-                <div className="prj">
-                    <div className="prj_img">
-                        <img className="project_image" src={dlab} alt='3dlab'/>
-                    </div>
-
-
-                     <div className="prj_inner">
-                        <h3>3dlab.Group</h3>
-                        <p>3Dlab is Animation studio, famous in social networks, with its funny projects</p>
-                        <span className="button_to_cont visitBTN">
-                             <span className="button_to_cont_inner" onClick={()=> redirect('https://3dlab.group/')}>Visit</span>
-                        </span>
-                    </div>
-                </div>
-
-                {/* nft პროექტი */}
-                <div className="prj">
-                        <div className="prj_img">
-                            <img className="project_image" src={pixnft} alt='nft'/>
-                        </div>
-
-
-                        <div className="prj_inner">
-                            <h3>pixNFT.Me</h3>
-                            <p>NFT project Landing page, with road map and OpenSea's account link</p>
-                            <span className="button_to_cont visitBTN">
-                                <span className="button_to_cont_inner" onClick={()=> redirect('https://pixnft.me/')}>Visit</span>
-                            </span>
-                        </div>
-                </div>
-
-                {/* ინდიან პროექტი */}
-                <div className="prj">
-                        <div className="prj_img">
-                            <img className="project_image" src={indian} alt='indian'/>
-                        </div>
-
-
-                        <div className="prj_inner">
-                            <h2>Moto Shop Clone</h2>
-                            <p>Moto shop web page clone, with responsive design and links animation</p>
-                            <span className="button_to_cont visitBTN">
-                                <span className="button_to_cont_inner" onClick={()=>redirect('https://desp0o.github.io/IndianMotorcycle/')}>Visit</span>
-                            </span>
-                        </div>
-                </div>
-
-                {/* არქიტექტურა პროექტი */}
-                <div className="prj">
-                        <div className="prj_img">
-                            <img className="project_image" src={archic} alt='archic'/>
-                        </div>
-
-
-                        <div className="prj_inner">
-                            <h2>Architect  Clone</h2>
-                            <p>Architecutre web page clone, with responsive design and animations</p>
-                            <span className="button_to_cont visitBTN">
-                                <span className="button_to_cont_inner" onClick={()=>redirect('https://desp0o.github.io/Archic/')}>Visit</span>
-                            </span>
-                        </div>
-                </div>
-
-                {/* ჭადრაკი პროექტი */}
-                <div className="prj">
-                        <div className="prj_img">
-                            <img className="project_image" src={chess} alt='chess'/>
-                        </div>
-
-
-                        <div className="prj_inner">
-                            <h2>Chess Championship</h2>
-                            <p>Chess registration form built with React JS</p>
-                            <span className="button_to_cont visitBTN">
-                                <span className="button_to_cont_inner" onClick={()=>redirect('https://desp0o.github.io/RedBeryy-Chess-Hero/')}>Visit</span>
-                            </span>
-                        </div>
-                </div>
-
-                {/* პორტფელი პროექტი */}
-                <div className="prj">
-                        <div className="prj_img">
-                            <img className="project_image" src={portfolio} alt='portfolio'/>
-                        </div>
-
-
-                        <div className="prj_inner">
-                            <h2>Devweb.cc</h2>
-                            <p>Super light portfolio web page for Frontend Web Developer, built with React JS </p>
-                            <span className="button_to_cont visitBTN">
-                                <span className="button_to_cont_inner" onClick={()=>redirect('https://devweb.cc/')}>Visit</span>
-                            </span>
-                        </div>
-                </div>
-
-                {/* carco APP პროექტი */}
-                <div className="prj">
-                        <div className="prj_img">
-                            <img className="project_image APP" src={calApp} alt='carcoAPP'/>
-                        </div>
-
-
-                        <div className="prj_inner">
-                            <h2>Carco.Ge Android APP</h2>
-                            <p>Auto import Android APP with transportation and Customs Clearnece calculator.</p>
-                            <span className="button_to_cont visitBTN">
-                                <span className="button_to_cont_inner" onClick={()=>redirect('https://drive.google.com/file/d/13f4GXvhRR9DFW4wAu0RFgsXPmbfm6RKH/view?usp=share_link')}>Download</span>
-                            </span>
-                        </div>
-                </div>
-
-
-
-
             </div>
-
-
-           
-
-
-
         </div>
-            </div>
 
         {/* footer ///////////////////// */}
         <div className="footer">

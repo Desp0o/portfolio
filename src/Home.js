@@ -31,6 +31,7 @@ import twitterLi  from './images/twitter-light.png'
 import facebookLi from './images/facebook-light.png'
 import githubLi   from './images/github-light.png'
 import bulb       from './images/bulb.png' 
+import nexus      from './images/nexus.png'
 
 
 const imageStyle = {
@@ -264,15 +265,15 @@ function Home() {
 
                 <div className="prj">
                         <div className="prj_img">
-                            <img className="project_image" src={indian} alt='indian'/>
+                            <img className="project_image" src={nexus} alt='indian'/>
                         </div>
 
 
                         <div className="prj_inner">
-                            <h2>Moto Shop Clone</h2>
-                            <p>მოტოციკლეტების მაღაზიის პროექტი</p>
+                            <h2>Nexus Logistic LLC</h2>
+                            <p>ამერიკული გადამზიდი კომპანია.</p>
                             <span className="button_to_cont visitBTN">
-                                <span className="button_to_cont_inner" onClick={()=>redirect('https://desp0o.github.io/IndianMotorcycle/')}>ნახვა</span>
+                                <span className="button_to_cont_inner" onClick={()=>redirect('https://teamofnexus.com/')}>ნახვა</span>
                             </span>
                         </div>
                 </div>
