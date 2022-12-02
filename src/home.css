@@ -78,8 +78,27 @@
 }
 
 .social_img{
+    width: 30px !important;
+    cursor: pointer;
+    fill: black;
+    transition: all 0.4s ease;
+}
+
+.svg_path{
+    fill: white;
+    transition: all 0.2s ease;
+}
+
+.social_img:hover{
     width: 30px;
     cursor: pointer;
+    fill: #FACF0F;
+}
+
+.social_img:hover .svg_path{
+    width: 30px;
+    cursor: pointer;
+    fill: #000000;
 }
 
 .modes{
