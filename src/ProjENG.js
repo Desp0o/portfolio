@@ -13,10 +13,6 @@ import carco      from './images/carco_prj.png'
 import dlab       from './images/3dlab.png'
 import pixnft     from './images/pixnft.png'
 import indian     from './images/indian.png'
-import linkedLi   from './images/linkedin-light.png'
-import twitterLi  from './images/twitter-light.png'
-import facebookLi from './images/facebook-light.png'
-import githubLi   from './images/github-light.png'
 import archic     from './images/archic_prj.png'
 import chess      from './images/chess_prj.png'
 import portfolio  from './images/portfolio_prj.png'
@@ -108,9 +104,9 @@ function PagePrj() {
             <div className="projects" >
                 <div className="projects_inner" id="proj">
 
-                {projectArray.map((project)=>{
+                {projectArray.map((project, index)=>{
                     return(
-                        <>
+                        <div key={index}>
                         <div className="prj">
                             <div className="prj_img">
                                 <img className="project_image" src={project.image} alt='3dlab'/>
@@ -126,7 +122,7 @@ function PagePrj() {
                                 </span>
                             </div>
                         </div>
-                        </>
+                        </div>
                         )
                     })}
                 </div>
@@ -145,7 +141,7 @@ function PagePrj() {
                     <p className="footer_hedaer">SOCIAL</p>
                     <span className="footer_social">
                     <svg className="footer_svg" viewBox="0 0 72 72" version="1.1" onClick={()=> socialLink("https://github.com/Desp0o")}>
-                        <g id="Page-1" stroke="none" stroke-width="1">
+                        <g id="Page-1" stroke="none" >
                             <g id="Social-Icons---Rounded-Black" transform="translate(-264.000000, -939.000000)">
                                 <g id="Github" transform="translate(264.000000, 939.000000)">
                                     <path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" id="Rounded" ></path>
@@ -156,7 +152,7 @@ function PagePrj() {
                     </svg>
 
                     <svg className="footer_svg" viewBox="0 0 72 72" version="1.1" onClick={()=> socialLink("https://www.linkedin.com/in/tornike-despotashvili-250150219/")}>
-                        <g id="Page-1" stroke="none" stroke-width="1"  fill-rule="evenodd">
+                        <g id="Page-1" stroke="none"   fillRule="evenodd">
                             <g id="Social-Icons---Rounded-Black" transform="translate(-376.000000, -267.000000)">
                                 <g id="Linkedin" transform="translate(376.000000, 267.000000)">
                                     <path  d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" id="Rounded" ></path>
@@ -167,7 +163,7 @@ function PagePrj() {
                     </svg>
 
                     <svg className="footer_svg" viewBox="0 0 72 72" version="1.1" onClick={()=> socialLink("https://twitter.com/TDespotashvili")}>
-                        <g id="Page-1" stroke="none" stroke-width="1">
+                        <g id="Page-1" stroke="none" >
                             <g id="Social-Icons---Rounded" transform="translate(-264.000000, -43.000000)">
                                 <g id="Twitter" transform="translate(264.000000, 43.000000)">
                                     <path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" id="Rounded" ></path>
