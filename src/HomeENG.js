@@ -143,7 +143,7 @@ function Home() {
             </svg>
 
             <svg className="social_img" viewBox="0 0 72 72" version="1.1" onClick={()=> socialLink("https://www.linkedin.com/in/tornike-despotashvili-250150219/")}>
-                <g id="Page-1" stroke="none"   fill-rule="evenodd">
+                <g id="Page-1" stroke="none"   fillRule="evenodd">
                     <g id="Social-Icons---Rounded-Black" transform="translate(-376.000000, -267.000000)">
                         <g id="Linkedin" transform="translate(376.000000, 267.000000)">
                             <path  d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" id="Rounded" ></path>
@@ -361,7 +361,7 @@ function Home() {
                     </svg>
 
                     <svg className="footer_svg" viewBox="0 0 72 72" version="1.1" onClick={()=> socialLink("https://www.linkedin.com/in/tornike-despotashvili-250150219/")}>
-                        <g id="Page-1" stroke="none"   fill-rule="evenodd">
+                        <g id="Page-1" stroke="none"   fillRule="evenodd">
                             <g id="Social-Icons---Rounded-Black" transform="translate(-376.000000, -267.000000)">
                                 <g id="Linkedin" transform="translate(376.000000, 267.000000)">
                                     <path  d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" id="Rounded" ></path>
