@@ -1,4 +1,4 @@
-import {React, useState} from "react";
+import {React, useEffect, useState} from "react";
 import {Link} from  "react-router-dom";
 import './PROJ_mian_screen.css'
 import './project.css'
@@ -33,7 +33,6 @@ const projectArray = [
 
 ]
 
-
 function PagePrj() {
     const socialLink = (url) => {
         window.open(url, '_blank', 'noopener,noreferrer');
@@ -66,6 +65,18 @@ function PagePrj() {
             setToggle(false)
         }
     }
+
+    
+useEffect(()=>{
+    if (localStorage.language === 'geo') {
+        console.log(1);
+    }
+
+    if (localStorage.language === 'eng') {
+        console.log(2);
+    }
+},[])
+
 
     
     return(

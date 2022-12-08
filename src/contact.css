@@ -36,6 +36,7 @@ form{
     width: 100%;
 }
 
+.simpleInputENG,
 .simpleInput{
     appearance: none;
     -webkit-appearance: none;
@@ -52,6 +53,11 @@ form{
     background-color: #E9E8E8;
 }
 
+.simpleInputENG{
+    display: none;
+}
+
+.textareaENG,
 .textarea{
     height: 120px;
     border-radius: 5px;
@@ -63,6 +69,10 @@ form{
     background-color: #E9E8E8;
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+.textareaENG{
+    display: none;
 }
 
 .submitBTN{
@@ -95,9 +105,11 @@ input:focus{
         width: 90%;
         padding: 20px 0;
     }
+    .simpleInputENG,
     .simpleInput{
         width: 80%;
     }
+    .textareaENG,
     .textarea{
         width: 80%;
     }
