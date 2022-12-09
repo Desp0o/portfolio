@@ -1,4 +1,4 @@
-import {React, useEffect, useState} from "react";
+import {React, useEffect, useRef, useState} from "react";
 import {Link} from  "react-router-dom";
 import './PROJ_mian_screen.css'
 import './project.css'
@@ -21,19 +21,44 @@ import calApp     from './images/calculator_app.png'
 import nexus      from './images/nexus.png'
 
 const projectArray = [
-    {id:1, image:`${carco}`, title:'Carco.Ge', description:'ავტო იმპორტის ვებ-გვერდი,ტრანსპორტირებისა და განბაჟების კალკულატორით.', button:'ნახვა', link:'https://carco.ge/'},
-    {id:2, image:`${dlab}`, title:'3Dlab.Group', description:'ანიმაციური სტუდია, რომელიც ქმნის სხვადასხვა ტიპის 3D სარეკლამო ანიმაციებს კომპანიებისთვის.', button:'ნახვა', link:'https://3dlab.group/'},
-    {id:3, image:`${pixnft}`, title:'pixnft.me', description:'NFT - ვებ-გვერდი, ინოვაციური გეგმებით.', button:'ნახვა', link:'https://pixnft.me/'},
-    {id:4, image:`${nexus}`, title:'Nexus Logistic LLC', description:'ამერიკული გადამზიდი კომპანია', button:'ნახვა', link:'https://teamofnexus.com/', framework:' React Js.'}, 
-    {id:5, image:`${indian}`, title:'Moto Shop Clone', description:'მოტოციკლეტების მაღაზიის პროექტი.', button:'ნახვა', link:'https://desp0o.github.io/IndianMotorcycle/'},
-    {id:6, image:`${archic}`, title:'Architect Clone', description:'თანამედროვე,ესეთიკური, ტრადიციული ღირებულებების მქონე არქიტექტურული დიზაინები.', button:'ნახვა', link:'https://desp0o.github.io/Archic/'},
-    {id:7, image:`${chess}`, title:'Chess Championship', description:'ჭადრაკის ჩემპიონატის რეგისტრაციის ფორმა', button:'ნახვა', link:'https://desp0o.github.io/RedBeryy-Chess-Hero/', framework:' React Js.'},
-    {id:8, image:`${portfolio}`, title:'Devweb.cc', description:'პორტფოლიო ვებ დეველოპერისთვის', button:'ნახვა', link:'https://devweb.cc/', framework:' React Js.'},
-    {id:9, image:`${calApp}`, title:'Carco.Ge Android APP', description:'ტრანსპორტირების და განბაჟების კალკუალტორის აპლიაკცია ანდორიდ სისტემისტვის.', button:'გადმოწერა', link:'https://drive.google.com/file/d/13f4GXvhRR9DFW4wAu0RFgsXPmbfm6RKH/view'}
+    {id:1, image:`${carco}`, title:'Carco.Ge', description:'ავტო იმპორტის ვებ-გვერდი,ტრანსპორტირებისა და განბაჟების კალკულატორით.', button:'ნახვა',
+                                                descriptionEng:'Auto import Web page, with transportation and Customs Clearnece calculator.', buttonEng:'Visit',  link:'https://carco.ge/'},
+
+    {id:2, image:`${dlab}`, title:'3Dlab.Group', description:'ანიმაციური სტუდია, რომელიც ქმნის სხვადასხვა ტიპის 3D სარეკლამო ანიმაციებს კომპანიებისთვის.', button:'ნახვა',
+                                                descriptionEng:'3Dlab is Animation studio, famous in social networks, with its funny projects.', buttonEng:'Visit',  link:'https://3dlab.group/'},
+
+    {id:3, image:`${pixnft}`, title:'pixnft.me', description:'NFT - ვებ-გვერდი, ინოვაციური გეგმებით.', button:'ნახვა',
+                                                descriptionEng:'NFT project Landing page, with road map and OpenSea account link', buttonEng:'Visit', link:'https://pixnft.me/'},
+
+    {id:4, image:`${nexus}`, title:'Nexus Logistic LLC', description:'ამერიკული გადამზიდი კომპანია', button:'ნახვა',
+                                                descriptionEng:'Nexus Logistics LLC is a 24/7 delivery/dispatching/carrier company', buttonEng:'Visit', link:'https://teamofnexus.com/', framework:' React Js.'},
+
+    {id:5, image:`${indian}`, title:'Moto Shop Clone', description:'მოტოციკლეტების მაღაზიის პროექტი.', button:'ნახვა',
+                                                descriptionEng:'Moto shop web page clone, with responsive design and links animation.', buttonEng:'Visit', link:'https://desp0o.github.io/IndianMotorcycle/'},
+
+    {id:6, image:`${archic}`, title:'Architect Clone', description:'თანამედროვე,ესეთიკური, ტრადიციული ღირებულებების მქონე არქიტექტურული დიზაინები.', button:'ნახვა',
+                                                descriptionEng:'Architecutre web page clone, with responsive design and animations.', buttonEng:'Visit', link:'https://desp0o.github.io/Archic/'},
+
+    {id:7, image:`${chess}`, title:'Chess Championship', description:'ჭადრაკის ჩემპიონატის რეგისტრაციის ფორმა', button:'ნახვა',
+                                                descriptionEng:'Chess registration form built with.', buttonEng:'Visit', link:'https://desp0o.github.io/RedBeryy-Chess-Hero/', framework:' React Js.'},
+
+    {id:8, image:`${portfolio}`, title:'Devweb.cc', description:'პორტფოლიო ვებ დეველოპერისთვის', button:'ნახვა',
+                                                descriptionEng:'Super light portfolio web page for Frontend Web Developer, built with', buttonEng:'Visit', link:'https://devweb.cc/', framework:' React Js.'},
+    
+    {id:9, image:`${calApp}`, title:'Carco.Ge Android APP', description:'ტრანსპორტირების და განბაჟების კალკუალტორის აპლიაკცია ანდორიდ სისტემისტვის.', button:'გადმოწერა',
+                                                descriptionEng:'Auto import Android APP with transportation and Customs Clearnece calculator.', buttonEng:'Download', link:'https://drive.google.com/file/d/13f4GXvhRR9DFW4wAu0RFgsXPmbfm6RKH/view'}
 
 ]
 
 function PagePrj() {
+
+    const despriptionGeo = useRef()
+    const despriptionEng = useRef()
+    const buttonGeo = useRef()
+    const buttonEng = useRef()
+
+
+
     const socialLink = (url) => {
         window.open(url, '_blank', 'noopener,noreferrer');
     }
@@ -68,12 +93,18 @@ function PagePrj() {
 
     
 useEffect(()=>{
+    console.log(1);
+
+    despriptionGeo.current.style.display = 'none'
+    
     if (localStorage.language === 'geo') {
-        console.log(1);
+        
+        despriptionGeo.current.style.display = 'none'
+        console.log('geo');
     }
 
     if (localStorage.language === 'eng') {
-        console.log(2);
+        
     }
 },[])
 
@@ -125,10 +156,12 @@ useEffect(()=>{
 
                             <div className="prj_inner">
                                 <h3>{project.title}</h3>
-                                <p>{project.description}<b>{project.framework}</b></p>
+                                <p ref={despriptionGeo}>{project.description}<b>{project.framework}</b></p>
+                                <p ref={despriptionEng}>{project.descriptionEng}<b>{project.framework}</b></p>
 
                                 <span className="button_to_cont visitBTN">
-                                    <span className="button_to_cont_inner" onClick={()=> redirect(project.link)}>{project.button}</span>
+                                    <span ref={buttonGeo} className="button_to_cont_inner" onClick={()=> redirect(project.link)}>{project.button}</span>
+                                    <span ref={buttonEng} className="button_to_cont_inner" onClick={()=> redirect(project.link)}>{project.buttonEng}</span>
                                 </span>
                             </div>
                         </div>

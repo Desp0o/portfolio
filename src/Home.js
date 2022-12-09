@@ -70,8 +70,8 @@ function Home() {
      }
 
     useEffect(()=>{
-        console.log(isEng);
         navLanguageGeo.current.style.display = 'none'
+        burgerLanguageGeo.current.style.display = 'none'
          if(lg === 'eng') {
             setIsEng(true)
              navbarTitleHref.current.innerHTML = 'tornike despotashvili';
