@@ -70,7 +70,10 @@ function Home() {
      }
 
     useEffect(()=>{
+        console.log(isEng);
+        navLanguageGeo.current.style.display = 'none'
          if(lg === 'eng') {
+            setIsEng(true)
              navbarTitleHref.current.innerHTML = 'tornike despotashvili';
              navHomeRef.current.innerHTML = 'Home'
              navAboutRef.current.innerHTML = 'About'
@@ -117,6 +120,7 @@ function Home() {
         }
 
         if(lg === 'geo') {
+            setIsEng(false)
             navbarTitleHref.current.innerHTML = 'თორნიკე დესპოტაშვილი';
             navHomeRef.current.innerHTML = 'მთავარი'
             navAboutRef.current.innerHTML = 'შესახებ'
@@ -144,7 +148,14 @@ function Home() {
             contactTitleRef.current.innerHTML = 'კონტაქტი'
             contactParRef.current.innerHTML = 'დასაკონტაქტებლად შეავსეთ ქვემოთ მოცემული ველები და შეძლებისდგავარად სწრაფად მიიღებთ პასუხს'
             contactSendBtnRef.current.innerHTML = 'გაგზავნა'
-            footerMailRef.current.innerHTML = 'ელ.ფოსტა'
+            nameENG.current.style.display = 'none'
+            nameGeo.current.style.display = 'block'
+            mailGeo.current.style.display = 'block'
+            mailEng.current.style.display = 'none'
+            numberGeo.current.style.display = 'block'
+            numberEng.current.style.display = 'none'
+            textareaGeo.current.style.display = 'block'
+            textareaEng.current.style.display = 'none'
             footerSocialRef.current.innerHTML = 'ქსელები'
             authorRef.current.innerHTML = '© თორნიკე დესპოტაშვილი'
             navLanguageEng.current.style.display = 'block'
