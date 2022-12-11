@@ -50,6 +50,8 @@ const projectArray = [
 
 ]
 
+
+
 function PagePrj() {
 
     const despriptionGeo = useRef()
@@ -62,6 +64,17 @@ function PagePrj() {
     const footerSocialRef = useRef()
     const authorRef = useRef()
 
+    function  geoLang() {
+        localStorage.setItem("language", "geo");
+        setIsEng(false)
+    }
+    
+    function engLang() {
+        localStorage.setItem("language", "eng");
+        setIsEng(true)
+    }
+    
+    const lg = localStorage.getItem('language');
 
 
     const socialLink = (url) => {
@@ -88,6 +101,8 @@ function PagePrj() {
     const [btnGeo, setBtnGeo] = useState('button_to_cont_inner')
     const [btnEng, setBtnEng] = useState('button_to_cont_inner')
 
+    const [isEng, setIsEng] = useState(false)
+
 
     function toggleMenu() {
         if(!toggle){
@@ -105,13 +120,13 @@ function PagePrj() {
 
     
 useEffect(()=>{
-    console.log(1);
 
-    
-    
-    if (localStorage.language === 'geo') {
+    if (localStorage.language === 'geo' || lg === 'geo') {
+        setIsEng(false)
         setDescEng('displayNone')
+        setDescGeo('')
         setBtnEng('button_to_cont_inner displayNone')
+        setBtnGeo('button_to_cont_inner')
         mainTitelRef.current.innerHTML = 'პროექტები'
         navbarNameRef.current.innerHTML = 'თორნიკე დესპოტაშვილი'
         footerMailRef.current.innerHTML = 'ელ.ფოსტა'
@@ -119,16 +134,21 @@ useEffect(()=>{
         authorRef.current.innerHTML = '© თორნიკე დესპოტაშვილი'
     }
 
-    if (localStorage.language === 'eng') {
+    if (localStorage.language === 'eng' || lg === 'eng') {
+        setIsEng(true)
         setDescGeo('displayNone')
+        setDescEng('')
         setBtnGeo('button_to_cont_inner displayNone')
+        setBtnEng('button_to_cont_inner')
         mainTitelRef.current.innerHTML = 'Here You Are!'
         navbarNameRef.current.innerHTML = 'Tornike Despotashvili'
         footerMailRef.current.innerHTML = 'Email'
         footerSocialRef.current.innerHTML = 'Social'
         authorRef.current.innerHTML = '© TORNIKE DESPOTASHVILI'
     }
-},[])
+
+    return
+},[isEng])
 
 
     
@@ -140,12 +160,12 @@ useEffect(()=>{
         <nav>
             <div className="nav_left">
                 <img src={despoIMG} style={imageStyle} alt='logo'/>
-               <Link to="/.Home" style={{textDecoration:'none', color:'unset', fontSize:'12px'}} ref={navbarNameRef}> <p>თორნიკე დესპოტაშვილი</p></Link>
+               <Link to="/.Home" style={{textDecoration:'none', color:'unset'}} ref={navbarNameRef}> <p>თორნიკე დესპოტაშვილი</p></Link>
             </div>
 
             <div className="nav_right">
                 <Link to='./Home' className="navLinks">მთავარი გვერდი</Link>
-                <Link to='#' className="navLinks">ENG</Link>
+                <Link className="navLinks" onClick={() => engLang()}>ENG</Link>
             </div>
 
             <div className="burger_menu">
@@ -155,7 +175,7 @@ useEffect(()=>{
 
         <div className={dashbrd} id="proj_dashboard" onClick={()=> toggleMenu()}>
             <div><Link to='./Home' className="navLinks">მთავარი გვერდი</Link></div>
-            <div><Link to='/ProjENG' className="navLinks">ENG</Link></div>
+            <div><Link to='' className="navLinks" onClick={() => engLang()}>ENG</Link></div>
         </div>
 
         <div className={overlay} onClick={()=> toggleMenu()}></div>
