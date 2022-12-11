@@ -145,7 +145,7 @@ useEffect(()=>{
 
             <div className="nav_right">
                 <Link to='./Home' className="navLinks">მთავარი გვერდი</Link>
-                <Link to='/ProjENG' className="navLinks">ENG</Link>
+                <Link to='#' className="navLinks">ENG</Link>
             </div>
 
             <div className="burger_menu">
