@@ -1,5 +1,5 @@
 import {React, useEffect, useRef, useState} from "react";
-import {Link} from  "react-router-dom";
+import {Link, useFormAction} from  "react-router-dom";
 import './PROJ_mian_screen.css'
 import './project.css'
 import './navbar.css'
@@ -56,6 +56,11 @@ function PagePrj() {
     const despriptionEng = useRef()
     const buttonGeo = useRef()
     const buttonEng = useRef()
+    const mainTitelRef = useRef()
+    const navbarNameRef = useRef()
+    const footerMailRef = useRef()
+    const footerSocialRef = useRef()
+    const authorRef = useRef()
 
 
 
@@ -77,6 +82,13 @@ function PagePrj() {
     const [dashbrd, setDashbrd] = useState('menu_dashboard')
     const [overlay, setOverlay] = useState('overlay')
 
+    const [descGeo, setDescGeo] = useState('')
+    const [descEng, setDescEng] = useState('')
+
+    const [btnGeo, setBtnGeo] = useState('button_to_cont_inner')
+    const [btnEng, setBtnEng] = useState('button_to_cont_inner')
+
+
     function toggleMenu() {
         if(!toggle){
             setMenuIMG(close)
@@ -95,16 +107,26 @@ function PagePrj() {
 useEffect(()=>{
     console.log(1);
 
-    despriptionGeo.current.style.display = 'none'
+    
     
     if (localStorage.language === 'geo') {
-        
-        despriptionGeo.current.style.display = 'none'
-        console.log('geo');
+        setDescEng('displayNone')
+        setBtnEng('button_to_cont_inner displayNone')
+        mainTitelRef.current.innerHTML = 'პროექტები'
+        navbarNameRef.current.innerHTML = 'თორნიკე დესპოტაშვილი'
+        footerMailRef.current.innerHTML = 'ელ.ფოსტა'
+        footerSocialRef.current.innerHTML = 'ქსელები'
+        authorRef.current.innerHTML = '© თორნიკე დესპოტაშვილი'
     }
 
     if (localStorage.language === 'eng') {
-        
+        setDescGeo('displayNone')
+        setBtnGeo('button_to_cont_inner displayNone')
+        mainTitelRef.current.innerHTML = 'Here You Are!'
+        navbarNameRef.current.innerHTML = 'Tornike Despotashvili'
+        footerMailRef.current.innerHTML = 'Email'
+        footerSocialRef.current.innerHTML = 'Social'
+        authorRef.current.innerHTML = '© TORNIKE DESPOTASHVILI'
     }
 },[])
 
@@ -118,7 +140,7 @@ useEffect(()=>{
         <nav>
             <div className="nav_left">
                 <img src={despoIMG} style={imageStyle} alt='logo'/>
-               <Link to="/.Home" style={{textDecoration:'none', color:'unset'}}> <p>თორნიკე დესპოტაშვილი</p></Link>
+               <Link to="/.Home" style={{textDecoration:'none', color:'unset', fontSize:'12px'}} ref={navbarNameRef}> <p>თორნიკე დესპოტაშვილი</p></Link>
             </div>
 
             <div className="nav_right">
@@ -140,7 +162,7 @@ useEffect(()=>{
 
 
         <div className="mainScreen">
-            <h1 style={{textAlign:'center'}}>პროექტები</h1>
+            <h1 ref={mainTitelRef} style={{textAlign:'center'}}>პროექტები</h1>
 
         <div className="projects" >
             <div className="projects_inner" id="proj">
@@ -156,12 +178,12 @@ useEffect(()=>{
 
                             <div className="prj_inner">
                                 <h3>{project.title}</h3>
-                                <p ref={despriptionGeo}>{project.description}<b>{project.framework}</b></p>
-                                <p ref={despriptionEng}>{project.descriptionEng}<b>{project.framework}</b></p>
+                                <p className={descGeo} ref={despriptionGeo}>{project.description}<b>{project.framework}</b></p>
+                                <p className={descEng} ref={despriptionEng}>{project.descriptionEng}<b>{project.framework}</b></p>
 
                                 <span className="button_to_cont visitBTN">
-                                    <span ref={buttonGeo} className="button_to_cont_inner" onClick={()=> redirect(project.link)}>{project.button}</span>
-                                    <span ref={buttonEng} className="button_to_cont_inner" onClick={()=> redirect(project.link)}>{project.buttonEng}</span>
+                                    <span ref={buttonGeo} className={btnGeo} onClick={()=> redirect(project.link)}>{project.button}</span>
+                                    <span ref={buttonEng} className={btnEng} onClick={()=> redirect(project.link)}>{project.buttonEng}</span>
                                 </span>
                             </div>
                         </div>
@@ -176,12 +198,12 @@ useEffect(()=>{
         <div className="footer">
             <div className="footer_top">
                 <div className="footer_top_left">
-                    <p className="footer_hedaer geoStyle">ელ. ფოსტა</p>
+                    <p className="footer_hedaer geoStyle" ref={footerMailRef}>ელ. ფოსტა</p>
                     <p className="footer_hedaer_txt" style={{color:'#fff'}}>info@devweb.cc</p>
                 </div>
 
                 <div className="footer_top_right">
-                    <p className="footer_hedaer geoStyle">ქსელები</p>
+                    <p className="footer_hedaer geoStyle" ref={footerSocialRef}>ქსელები</p>
                     <span className="footer_social">
                     <svg className="footer_svg" viewBox="0 0 72 72" version="1.1" onClick={()=> socialLink("https://github.com/Desp0o")}>
                         <g id="Page-1" stroke="none" >
@@ -231,7 +253,7 @@ useEffect(()=>{
             </div>
 
             <div className="footer_bottom">
-                <p style={{fontSize:'12px', color:'#fff', textAlign:'center'}}>©თორნიკე დესპოტაშვილი</p>
+                <p style={{fontSize:'12px', color:'#fff', textAlign:'center'}} ref={authorRef}>©თორნიკე დესპოტაშვილი</p>
             </div>
         </div>
 
