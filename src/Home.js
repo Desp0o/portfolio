@@ -283,7 +283,7 @@ function Home() {
 
         {/* ჰიუმ ფეიჯი ////////////////////////////////////////////////////// */}
         <span ref={homeRef}></span>
-        <div className="home" >
+        <div className="home">
             
 
             
@@ -292,7 +292,7 @@ function Home() {
                 <h1 className="breckets"> {'<'}{'/'}{'>'}</h1>
              </div>
 
-            <div className="button_to_prj" onClick={()=> handleClick(projectRef)}>
+            <div className="button_to_prj" onClick={()=> handleClick(projectRef)} style={{width:'fit-content'}}>
                 <div className="button_to_prj_inner">
                     <p ref={projBtnRef}>პროექტები</p>
                 </div>
@@ -326,8 +326,7 @@ function Home() {
                     </g>
                 </g>
             </svg>
-
-            
+     
             <svg className="social_img" viewBox="0 0 72 72" version="1.1" onClick={()=> socialLink("https://twitter.com/TDespotashvili")}>
                 <g id="Page-1" stroke="none" >
                     <g id="Social-Icons---Rounded" transform="translate(-264.000000, -43.000000)">
