@@ -41,6 +41,10 @@ nav{
     color: #FACF0F;
 }
 
+.navbar_title{
+    font-size: 18px;
+}
+
 .nav_right{
     width: 50%;
     height: 100%;
@@ -134,6 +138,11 @@ nav{
         display: flex;
     }
     .nav_left p{
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+
+    .navbar_title{
         font-size: 12px;
         letter-spacing: 0;
     }

@@ -2,8 +2,6 @@ import {React} from 'react';
 import './App.css';
 import Home from './Home';
 import Projs from './redProj'
-import HomeENG from './HomeENG'
-import ProjENG from './ProjENG'
 
 import {
   Routes,
@@ -18,10 +16,6 @@ function App() {
       <Routes>
         <Route exact path="*"        element={<Home />} />
         <Route exact path="/redProj" element={<Projs />} />
-        <Route exact path="/HomeENG" element={<HomeENG />} />
-        <Route exact path="/ProjENG" element={<ProjENG />} />
-
-        
         
       </Routes>
       

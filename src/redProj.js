@@ -125,6 +125,13 @@ function PagePrj() {
         }
     }
 
+    useEffect(()=>{
+        burgerLanguageGeo.current.style.display = 'none'
+        setDescEng('displayNone')
+        setGeoSwitch('navLinks displayNone')
+        setBtnEng('button_to_cont_inner displayNone')
+
+    }, [])
     
 useEffect(()=>{
 
@@ -179,7 +186,7 @@ useEffect(()=>{
         <nav>
             <div className="nav_left">
                 <img src={despoIMG} style={imageStyle} alt='logo'/>
-               <Link to="/.Home" style={{textDecoration:'none', color:'unset', fontSize:'18px'}} ref={navbarNameRef}> <p className="navbartitle">თორნიკე დესპოტაშვილი</p></Link>
+               <Link to="/.Home" className="navbar_title" style={{textDecoration:'none', color:'unset'}} ref={navbarNameRef}><p >თორნიკე დესპოტაშვილი</p></Link>
             </div>
 
             <div className="nav_right">
