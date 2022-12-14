@@ -53,21 +53,17 @@ function Home() {
     }
 
     function engLang() {
-        localStorage.removeItem("language")
         localStorage.setItem("language", "eng");
-        translate()
+        setIsEng(true)
     }
 
     function geoLang() {
-        localStorage.removeItem("language")
         localStorage.setItem("language", "geo");
         setIsEng(false)
     }
 
     const lg = localStorage.getItem('language');
-    function translate() {
-        setIsEng(true)
-     }
+
 
     useEffect(()=>{
         navLanguageGeo.current.style.display = 'none'
