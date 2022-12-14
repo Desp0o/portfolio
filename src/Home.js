@@ -38,6 +38,56 @@ function Home() {
     const [overlay, setOverlay] = useState('overlay')
     // const [mode, setMode]       = useState(bulb)
 
+    const navbarTitleHref    = useRef()
+    const navHomeRef         = useRef()
+    const projBtnRef         = useRef()
+    const navAboutRef        = useRef()
+    const navProjRef         = useRef()
+    const navContRef         = useRef()
+    const burgerMain         = useRef()
+    const burgerAbout        = useRef()
+    const burgerProj         = useRef()
+    const burgerCont         = useRef()
+    const aboutMeTitle       = useRef()
+    const aboutMeParag       = useRef()
+    const aboutMeSkill       = useRef()
+    const aboutMeBtn         = useRef()
+    const projTitleRef       = useRef()
+    const carcoRef           = useRef()
+    const labref             = useRef()
+    const nftRef             = useRef()
+    const nexusRef           = useRef()
+    const seeMoreRef1        = useRef()
+    const seeMoreRef2        = useRef()
+    const seeMoreRef3        = useRef()
+    const seeMoreRef4        = useRef()
+    const seeMoreBtnBlackRef = useRef()
+    const contactTitleRef    = useRef()
+    const contactParRef      = useRef()
+    const contactSendBtnRef  = useRef()
+    const footerMailRef      = useRef()
+    const footerSocialRef    = useRef()
+    const authorRef          = useRef()
+    const nameGeo            = useRef()
+    const nameENG            = useRef()
+    const mailGeo            = useRef()
+    const mailEng            = useRef()
+    const numberGeo          = useRef()
+    const numberEng          = useRef()
+    const textareaGeo        = useRef()
+    const textareaEng        = useRef()
+    const navLanguageEng     = useRef()
+    const navLanguageGeo     = useRef()
+    const burgerLanguageEng  = useRef()
+    const burgerLanguageGeo  = useRef()
+
+    
+    const form       = useRef()
+    const homeRef    = useRef(null)
+    const aboutRef   = useRef(null)
+    const projectRef = useRef(null)
+    const contactRef = useRef(null)
+
     function toggleMenu() {
         if(!toggle){
             setMenuIMG(close)
@@ -81,7 +131,7 @@ function Home() {
              burgerCont.current.innerHTML = 'Contact'
              projBtnRef.current.innerHTML = 'PROJECTS'
              aboutMeTitle.current.innerHTML = 'ABOUT ME'
-             aboutMeParag.current.innerHTML = 'Im a <b>Frontend Web Developer</b> building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.<br/><br/> Im open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then dont hesitate to contact me.'
+             aboutMeParag.current.innerHTML = 'Im a Frontend Web Developer building the Front-End of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.<br/><br/> Im open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then dont hesitate to contact me.'
              aboutMeSkill.current.innerHTML = 'Skills!'
              aboutMeBtn.current.innerHTML = 'CONTACT'
              projTitleRef.current.innerHTML = 'PROJECTS'
@@ -128,7 +178,7 @@ function Home() {
             burgerCont.current.innerHTML = 'კონტაქტი'
             projBtnRef.current.innerHTML = 'პროექტები'
             aboutMeTitle.current.innerHTML = 'ჩემ შესახებ'
-            aboutMeParag.current.innerHTML = 'მე ვარ,თორნიკე დესპორაშვილი <b>Frontend</b> -ზე ფოკუსირებული ვებ დეველოპერი. ვაწყობ ვებ-გვერდებს, რომელიც დღეს ერთ-ერთი  ყველაზე მნიშვნელოვანი საფეხურია ბიზნესის წარმატებისთვის.<br/><br/> მზად ვარ ახალი,საინტერესო გამოწვევებისთვის,ახალი პროექტებისთვის და თუ  კი ხარ ის,ვისაც აქვს ინოვაციური,საინტერესო პროექტი სიამოვნებით ვითანამშრომლებ თქვენთან.'
+            aboutMeParag.current.innerHTML = 'მე ვარ,თორნიკე დესპორაშვილი Front-End -ზე ფოკუსირებული ვებ დეველოპერი. ვაწყობ ვებ-გვერდებს, რომელიც დღეს ერთ-ერთი  ყველაზე მნიშვნელოვანი საფეხურია ბიზნესის წარმატებისთვის.<br/><br/> მზად ვარ ახალი,საინტერესო გამოწვევებისთვის,ახალი პროექტებისთვის და თუ  კი ხარ ის,ვისაც აქვს ინოვაციური,საინტერესო პროექტი სიამოვნებით ვითანამშრომლებ თქვენთან.'
             aboutMeSkill.current.innerHTML = 'უნარები!'
             aboutMeBtn.current.innerHTML = 'კონტაქტი'
             projTitleRef.current.innerHTML = 'პროექტები'
@@ -156,64 +206,18 @@ function Home() {
             authorRef.current.innerHTML = '© თორნიკე დესპოტაშვილი'
             navLanguageEng.current.style.display = 'block'
             navLanguageGeo.current.style.display = 'none'
-             burgerLanguageEng.current.style.display = 'flex'
-             burgerLanguageGeo.current.style.display = 'none'
+            burgerLanguageEng.current.style.display = 'flex'
+            burgerLanguageGeo.current.style.display = 'none'
        }
+
+       return
     },[isEng])
 
-
-    const navbarTitleHref    = useRef()
-    const navHomeRef         = useRef()
-    const projBtnRef         = useRef()
-    const navAboutRef        = useRef()
-    const navProjRef         = useRef()
-    const navContRef         = useRef()
-    const burgerMain         = useRef()
-    const burgerAbout        = useRef()
-    const burgerProj         = useRef()
-    const burgerCont         = useRef()
-    const aboutMeTitle       = useRef()
-    const aboutMeParag       = useRef()
-    const aboutMeSkill       = useRef()
-    const aboutMeBtn         = useRef()
-    const projTitleRef       = useRef()
-    const carcoRef           = useRef()
-    const labref             = useRef()
-    const nftRef             = useRef()
-    const nexusRef           = useRef()
-    const seeMoreRef1        = useRef()
-    const seeMoreRef2        = useRef()
-    const seeMoreRef3        = useRef()
-    const seeMoreRef4        = useRef()
-    const seeMoreBtnBlackRef = useRef()
-    const contactTitleRef    = useRef()
-    const contactParRef      = useRef()
-    const contactSendBtnRef  = useRef()
-    const footerMailRef      = useRef()
-    const footerSocialRef    = useRef()
-    const authorRef          = useRef()
-    const nameGeo            = useRef()
-    const nameENG            = useRef()
-    const mailGeo            = useRef()
-    const mailEng            = useRef()
-    const numberGeo          = useRef()
-    const numberEng          = useRef()
-    const textareaGeo        = useRef()
-    const textareaEng        = useRef()
-    const navLanguageEng     = useRef()
-    const navLanguageGeo     = useRef()
-    const burgerLanguageEng  = useRef()
-    const burgerLanguageGeo  = useRef()
-
-    const form       = useRef()
-    const homeRef    = useRef(null)
-    const aboutRef   = useRef(null)
-    const projectRef = useRef(null)
-    const contactRef = useRef(null)
+    console.log(aboutMeTitle);
 
     const handleClick = (refname) => {
         refname.current?.scrollIntoView({behavior: 'smooth'});
-      };
+    };
 
     const redirect = (url) => {
         window.open(url, '_blank', 'noopener,noreferrer');
@@ -357,7 +361,7 @@ function Home() {
                     <div className="about_me_inner_left">
                         
                         <p ref={aboutMeParag}>
-                        მე ვარ,თორნიკე დესპორაშვილი <b>Frontend</b> -ზე ფოკუსირებული ვებ დეველოპერი. ვაწყობ ვებ-გვერდებს, რომელიც დღეს ერთ-ერთი  ყველაზე მნიშვნელოვანი საფეხურია ბიზნესის წარმატებისთვის.<br/><br/>
+                        მე ვარ,თორნიკე დესპორაშვილი Front-End -ზე ფოკუსირებული ვებ დეველოპერი. ვაწყობ ვებ-გვერდებს, რომელიც დღეს ერთ-ერთი  ყველაზე მნიშვნელოვანი საფეხურია ბიზნესის წარმატებისთვის.<br/><br/>
                         
                         მზად ვარ ახალი,საინტერესო გამოწვევებისთვის,ახალი პროექტებისთვის და თუ  კი ხარ ის,ვისაც აქვს ინოვაციური,საინტერესო პროექტი სიამოვნებით ვითანამშრომლებ თქვენთან.
                         </p>
@@ -365,8 +369,8 @@ function Home() {
                         <div className="button_to_cont" onClick={()=> handleClick(contactRef)}>
                             <div className="button_to_cont_inner">
                                 <p ref={aboutMeBtn}>კონტაქტი</p>
+                            </div>
                         </div>
-            </div>
                     </div>
                     
                     <div className="about_me_inner_right">

@@ -69,16 +69,16 @@ function PagePrj() {
     const burgerLanguageEng = useRef()
 
     function  geoLang() {
-        sessionStorage.setItem("language", "geo");
+        localStorage.setItem("language", "geo");
         setIsEng(false)
     }
     
     function engLang() {
-        sessionStorage.setItem("language", "eng");
+        localStorage.setItem("language", "eng");
         setIsEng(true)
     }
     
-    const lg = sessionStorage.getItem('language');
+    const lg = localStorage.getItem('language');
 
 
     const socialLink = (url) => {
@@ -125,14 +125,10 @@ function PagePrj() {
         }
     }
 
-useEffect(()=>{
-    setDescEng('displayNone')
-    setBtnEng('displayNone')
-},[])
     
 useEffect(()=>{
 
-    if (sessionStorage.language === 'geo' || lg === 'geo') {
+    if (localStorage.language === 'geo' || lg === 'geo') {
         setIsEng(false)
         setDescEng('displayNone')
         setDescGeo('')
@@ -151,7 +147,7 @@ useEffect(()=>{
         navBackHomeRef.current.innerHTML = 'მთავარი გვერდი'
     }
 
-    if (sessionStorage.language === 'eng' || lg === 'eng') {
+    if (localStorage.language === 'eng' || lg === 'eng') {
         setIsEng(true)
         setDescGeo('displayNone')
         setDescEng('')
