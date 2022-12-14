@@ -53,16 +53,18 @@ function Home() {
     }
 
     function engLang() {
-        sessionStorage.setItem("language", "eng");
+        localStorage.removeItem("language")
+        localStorage.setItem("language", "eng");
         translate()
     }
 
     function geoLang() {
-        sessionStorage.setItem("language", "geo");
+        localStorage.removeItem("language")
+        localStorage.setItem("language", "geo");
         setIsEng(false)
     }
 
-    const lg = sessionStorage.getItem('language');
+    const lg = localStorage.getItem('language');
     function translate() {
         setIsEng(true)
      }

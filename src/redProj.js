@@ -125,10 +125,14 @@ function PagePrj() {
         }
     }
 
+useEffect(()=>{
+    setDescEng('displayNone')
+    setBtnEng('displayNone')
+},[])
     
 useEffect(()=>{
 
-    if (localStorage.language === 'geo' || lg === 'geo') {
+    if (sessionStorage.language === 'geo' || lg === 'geo') {
         setIsEng(false)
         setDescEng('displayNone')
         setDescGeo('')
@@ -147,7 +151,7 @@ useEffect(()=>{
         navBackHomeRef.current.innerHTML = 'მთავარი გვერდი'
     }
 
-    if (localStorage.language === 'eng' || lg === 'eng') {
+    if (sessionStorage.language === 'eng' || lg === 'eng') {
         setIsEng(true)
         setDescGeo('displayNone')
         setDescEng('')
