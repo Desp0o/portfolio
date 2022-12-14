@@ -7,6 +7,14 @@
 }
 
 
+@font-face {
+  font-family: blabla;
+  src: url("./FiraGO-Bold.ttf");
+}
+
+
+
+
 html{
   scroll-padding-top:210px;
 }
@@ -23,7 +31,19 @@ body {
   height: 100vh;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+.geoStyle{
+  font-family: blabla !important;
+  font-feature-settings: "case" !important;
+  font-weight: bolder !important;
+}
+
+
+.app{
+  width: 100%;
+  height: 100vh;
 }

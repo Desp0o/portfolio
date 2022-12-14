@@ -1,3 +1,8 @@
+.mainScreen{
+    width: 100%;
+    padding-top: 150px;
+}
+
 .projects{
     width: 100%;
     padding-top: 110px;
@@ -63,7 +68,6 @@
 }
 @media only screen and (max-width:679px){
     .projects_inner{
-        margin-top: 50px;
         gap: 100px;
     }
     .prj{

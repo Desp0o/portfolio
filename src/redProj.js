@@ -1,11 +1,9 @@
 import {React, useEffect, useRef, useState} from "react";
-import {Link, useFormAction} from  "react-router-dom";
-import './PROJ_mian_screen.css'
+import {Link} from  "react-router-dom";
 import './project.css'
 import './navbar.css'
 import './footer.css'
-import './res_PROJ.css'
-import './georgian.css'
+import './index.css'
 
 import despoIMG   from './images/despo_img.png'
 import menu       from './images/menu.png'
@@ -200,7 +198,7 @@ useEffect(()=>{
             </div>
         </nav>
 
-        <div className={dashbrd} id="proj_dashboard" onClick={()=> toggleMenu()}>
+        <div className={dashbrd}  onClick={()=> toggleMenu()}>
             <div><Link to='./Home' className="navLinks" ref={backHomeref}>მთავარი გვერდი</Link></div>
             <div ref={burgerLanguageEng}><Link to='' className="navLinks"  onClick={() => engLang()}>ENG</Link></div>
             <div ref={burgerLanguageGeo}><Link to='' className="navLinks"  onClick={() => geoLang()}>GEO</Link></div>

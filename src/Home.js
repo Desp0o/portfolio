@@ -11,7 +11,6 @@ import './about.css'
 import './project.css'
 import './contact.css'
 import './footer.css'
-import './georgian.css'
 import './index.css'
 
 //images
