@@ -69,16 +69,16 @@ function PagePrj() {
     const burgerLanguageEng = useRef()
 
     function  geoLang() {
-        localStorage.setItem("language", "geo");
+        sessionStorage.setItem("language", "geo");
         setIsEng(false)
     }
     
     function engLang() {
-        localStorage.setItem("language", "eng");
+        sessionStorage.setItem("language", "eng");
         setIsEng(true)
     }
     
-    const lg = localStorage.getItem('language');
+    const lg = sessionStorage.getItem('language');
 
 
     const socialLink = (url) => {
@@ -179,7 +179,7 @@ useEffect(()=>{
         <nav>
             <div className="nav_left">
                 <img src={despoIMG} style={imageStyle} alt='logo'/>
-               <Link to="/.Home" style={{textDecoration:'none', color:'unset', fontSize:'18px'}} ref={navbarNameRef}> <p>თორნიკე დესპოტაშვილი</p></Link>
+               <Link to="/.Home" style={{textDecoration:'none', color:'unset', fontSize:'18px'}} ref={navbarNameRef}> <p className="navbartitle">თორნიკე დესპოტაშვილი</p></Link>
             </div>
 
             <div className="nav_right">

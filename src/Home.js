@@ -53,18 +53,16 @@ function Home() {
     }
 
     function engLang() {
-        localStorage.removeItem("language")
-        localStorage.setItem("language", "eng");
+        sessionStorage.setItem("language", "eng");
         translate()
     }
 
     function geoLang() {
-        localStorage.removeItem("language")
-        localStorage.setItem("language", "geo");
+        sessionStorage.setItem("language", "geo");
         setIsEng(false)
     }
 
-    const lg = localStorage.getItem('language');
+    const lg = sessionStorage.getItem('language');
     function translate() {
         setIsEng(true)
      }
@@ -116,7 +114,7 @@ function Home() {
              navLanguageGeo.current.style.display = 'block'
              burgerLanguageEng.current.style.display = 'none'
              burgerLanguageGeo.current.style.display = 'flex'
-             
+
         }
 
         if(lg === 'geo') {
@@ -208,8 +206,6 @@ function Home() {
     const navLanguageGeo     = useRef()
     const burgerLanguageEng  = useRef()
     const burgerLanguageGeo  = useRef()
-
-
 
     const form       = useRef()
     const homeRef    = useRef(null)
