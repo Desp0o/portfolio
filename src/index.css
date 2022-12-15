@@ -8,7 +8,7 @@
 
 
 @font-face {
-  font-family: blabla;
+  font-family: FiragoBold;
   src: url("./FiraGO-Bold.ttf");
 }
 
@@ -37,7 +37,7 @@ body {
 } */
 
 .geoStyle{
-  font-family: blabla !important;
+  font-family: FiragoBold !important;
   font-feature-settings: "case" !important;
   font-weight: bolder !important;
 }

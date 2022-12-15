@@ -20,7 +20,6 @@ import close      from './images/close.png'
 import carco      from './images/carco_prj.png'
 import dlab       from './images/3dlab.png'
 import pixnft     from './images/pixnft.png'
-import bulb       from './images/bulb.png' 
 import nexus      from './images/nexus.png'
 
 
@@ -35,7 +34,6 @@ function Home() {
     const [menuIMG, setMenuIMG] = useState(menu)
     const [dashbrd, setDashbrd] = useState('menu_dashboard')
     const [overlay, setOverlay] = useState('overlay')
-    // const [mode, setMode]       = useState(bulb)
 
     const navbarTitleHref    = useRef()
     const navHomeRef         = useRef()
@@ -112,7 +110,6 @@ function Home() {
     }
 
     const lg = localStorage.getItem('language');
-
 
     useEffect(()=>{
         navLanguageGeo.current.style.display = 'none'
@@ -212,7 +209,6 @@ function Home() {
        return
     },[isEng])
 
-    console.log(aboutMeTitle);
 
     const handleClick = (refname) => {
         refname.current?.scrollIntoView({behavior: 'smooth'});
