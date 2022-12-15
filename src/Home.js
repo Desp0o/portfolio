@@ -17,10 +17,10 @@ import './index.css'
 import despoIMG   from './images/despo_img.png'
 import menu       from './images/menu.png'
 import close      from './images/close.png'
-import carco      from './images/carco_prj.png'
-import dlab       from './images/3dlab.png'
-import pixnft     from './images/pixnft.png'
-import nexus      from './images/nexus.png'
+import carco      from './images/carco_prj.webp'
+import dlab       from './images/3dlab.webp'
+import pixnft     from './images/pixnft.webp'
+import nexus      from './images/nexus.webp'
 
 
 const imageStyle = {
@@ -414,7 +414,7 @@ function Home() {
 
 
                         <div className="prj_inner">
-                            <h3>Carco.Ge</h3>
+                            <h2>Carco.Ge</h2>
                             <p ref={carcoRef}>ავტო იმპორტის ვებ-გვერდი,ტრანსპორტირებისა და განბაჟების კალკულატორით.</p>
                             <span className="button_to_cont visitBTN">
                                 <span ref={seeMoreRef1} className="button_to_cont_inner" onClick={()=> redirect('https://carco.ge/')}>ნახვა</span>
@@ -429,7 +429,7 @@ function Home() {
 
 
                         <div className="prj_inner">
-                            <h3>3dlab.Group</h3>
+                            <h2>3dlab.Group</h2>
                             <p ref={labref}>ანიმაციური სტუდია, რომელიც ქმნის სხვადასხვა ტიპის 3D სარეკლამო ანიმაციებს კომპანიებისთვის.</p>
                             <span className="button_to_cont visitBTN">
                                 <span ref={seeMoreRef2} className="button_to_cont_inner" onClick={()=> redirect('https://3dlab.group/')}>ნახვა</span>
@@ -444,7 +444,7 @@ function Home() {
 
 
                         <div className="prj_inner">
-                            <h3>pixNFT.Me</h3>
+                            <h2>pixNFT.Me</h2>
                             <p ref={nftRef}>NFT ვებ-გვერდი, ინოვაციური გეგმებით. </p>
                             <span className="button_to_cont visitBTN">
                                 <span ref={seeMoreRef3} className="button_to_cont_inner" onClick={()=> redirect('https://pixnft.me/')}>ნახვა</span>

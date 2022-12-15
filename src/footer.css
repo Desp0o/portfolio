@@ -22,10 +22,8 @@
     gap: 50px;
     box-sizing: border-box;
     padding-left: 100px;
-    font-family: 'Source Sans Pro', sans-serif;
 }
 .footer_top_right{
-    font-family: 'Source Sans Pro', sans-serif;
     height: 100%;
     width: 20%;
     display: flex;

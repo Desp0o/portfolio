@@ -49,7 +49,7 @@ form{
     font-size: 20px;
     padding-left: 10px;
     box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: FiragoBold;
     background-color: #E9E8E8;
 }
 
@@ -68,7 +68,7 @@ form{
     padding-left: 10px;
     background-color: #E9E8E8;
     box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: FiragoBold;
 }
 
 .textareaENG{
@@ -81,7 +81,7 @@ form{
     -moz-appearance: none;
     outline: none;
     border: none;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: FiragoBold;
     background-color: #FACF0F;
     color: #111 !important;
     width: 200px;
