@@ -206,7 +206,7 @@ function Home() {
             burgerLanguageGeo.current.style.display = 'none'
        }
 
-       return
+       
     },[isEng])
 
 
