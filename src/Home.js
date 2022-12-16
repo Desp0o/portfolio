@@ -77,6 +77,10 @@ function Home() {
     const navLanguageGeo     = useRef()
     const burgerLanguageEng  = useRef()
     const burgerLanguageGeo  = useRef()
+    const carRef             = useRef()
+    const dlabRef             = useRef()
+    const pixRef             = useRef()
+    const nexusHeaderRef     = useRef()
 
     
     const form       = useRef()
@@ -114,8 +118,56 @@ function Home() {
     useEffect(()=>{
         navLanguageGeo.current.style.display = 'none'
         burgerLanguageGeo.current.style.display = 'none'
+
+        carRef.current.innerHTML = 'Carco.Ge'
+        dlabRef.current.innerHTML = '3dlab.Group'
+        pixRef.current.innerHTML = 'pixnft.me'
+        nexusHeaderRef.current.innerHTML = 'teamofnexus.com'
+        navbarTitleHref.current.innerHTML = 'თორნიკე დესპოტაშვილი'
+        navHomeRef.current.innerHTML = 'მთავარი'
+        navAboutRef.current.innerHTML = 'შესახებ'
+        navProjRef.current.innerHTML = 'პროექტები'
+        navContRef.current.innerHTML = 'კონტაქტი'
+        burgerMain.current.innerHTML = 'მთავარი'
+        burgerAbout.current.innerHTML = 'შესახებ'
+        burgerProj.current.innerHTML = 'პროექტები'
+        burgerCont.current.innerHTML = 'კონტაქტი'
+        projBtnRef.current.innerHTML = 'პროექტები'
+        aboutMeTitle.current.innerHTML = 'ჩემ შესახებ'
+        aboutMeParag.current.innerHTML = 'მე ვარ,თორნიკე დესპორაშვილი Front-End -ზე ფოკუსირებული ვებ დეველოპერი. ვაწყობ ვებ-გვერდებს, რომელიც დღეს ერთ-ერთი  ყველაზე მნიშვნელოვანი საფეხურია ბიზნესის წარმატებისთვის.<br/><br/> მზად ვარ ახალი,საინტერესო გამოწვევებისთვის,ახალი პროექტებისთვის და თუ  კი ხარ ის,ვისაც აქვს ინოვაციური,საინტერესო პროექტი სიამოვნებით ვითანამშრომლებ თქვენთან.'
+        aboutMeSkill.current.innerHTML = 'უნარები!'
+        aboutMeBtn.current.innerHTML = 'კონტაქტი'
+        projTitleRef.current.innerHTML = 'პროექტები'
+        carcoRef.current.innerHTML = 'ავტო იმპორტის ვებ-გვერდი,ტრანსპორტირებისა და განბაჟების კალკულატორით.'
+        labref.current.innerHTML = 'ანიმაციური სტუდია, რომელიც ქმნის სხვადასხვა ტიპის 3D სარეკლამო ანიმაციებს კომპანიებისთვის.' 
+        nftRef.current.innerHTML = 'NFT ვებ-გვერდი, ინოვაციური გეგმებით.'
+        nexusRef.current.innerHTML = 'ამერიკული გადამზიდი კომპანია React Js.'
+        seeMoreRef1.current.innerHTML = 'ნახვა'
+        seeMoreRef2.current.innerHTML = 'ნახვა'
+        seeMoreRef3.current.innerHTML = 'ნახვა'
+        seeMoreRef4.current.innerHTML = 'ნახვა'
+        seeMoreBtnBlackRef.current.innerHTML = 'მეტი პროექტი'
+        contactTitleRef.current.innerHTML = 'კონტაქტი'
+        contactParRef.current.innerHTML = 'დასაკონტაქტებლად შეავსეთ ქვემოთ მოცემული ველები და შეძლებისდგავარად სწრაფად მიიღებთ პასუხს'
+        contactSendBtnRef.current.innerHTML = 'გაგზავნა'
+        nameENG.current.style.display = 'none'
+        nameGeo.current.style.display = 'block'
+        mailGeo.current.style.display = 'block'
+        mailEng.current.style.display = 'none'
+        numberGeo.current.style.display = 'block'
+        numberEng.current.style.display = 'none'
+        textareaGeo.current.style.display = 'block'
+        textareaEng.current.style.display = 'none'
+        footerSocialRef.current.innerHTML = 'ქსელები'
+        authorRef.current.innerHTML = '© თორნიკე დესპოტაშვილი'
+        navLanguageEng.current.style.display = 'block'
+        navLanguageGeo.current.style.display = 'none'
+        burgerLanguageEng.current.style.display = 'flex'
+        burgerLanguageGeo.current.style.display = 'none'
+        setIsEng(false);
+
          if(lg === 'eng') {
-            setIsEng(true)
+            setIsEng(true);
              navbarTitleHref.current.innerHTML = 'tornike despotashvili';
              navHomeRef.current.innerHTML = 'Home'
              navAboutRef.current.innerHTML = 'About'
@@ -160,53 +212,6 @@ function Home() {
              burgerLanguageGeo.current.style.display = 'flex'
 
         }
-
-        if(lg === 'geo') {
-            setIsEng(false)
-            navbarTitleHref.current.innerHTML = 'თორნიკე დესპოტაშვილი';
-            navHomeRef.current.innerHTML = 'მთავარი'
-            navAboutRef.current.innerHTML = 'შესახებ'
-            navProjRef.current.innerHTML = 'პროექტები'
-            navContRef.current.innerHTML = 'კონტაქტი'
-            burgerMain.current.innerHTML = 'მთავარი'
-            burgerAbout.current.innerHTML = 'შესახებ'
-            burgerProj.current.innerHTML = 'პროექტები'
-            burgerCont.current.innerHTML = 'კონტაქტი'
-            projBtnRef.current.innerHTML = 'პროექტები'
-            aboutMeTitle.current.innerHTML = 'ჩემ შესახებ'
-            aboutMeParag.current.innerHTML = 'მე ვარ,თორნიკე დესპორაშვილი Front-End -ზე ფოკუსირებული ვებ დეველოპერი. ვაწყობ ვებ-გვერდებს, რომელიც დღეს ერთ-ერთი  ყველაზე მნიშვნელოვანი საფეხურია ბიზნესის წარმატებისთვის.<br/><br/> მზად ვარ ახალი,საინტერესო გამოწვევებისთვის,ახალი პროექტებისთვის და თუ  კი ხარ ის,ვისაც აქვს ინოვაციური,საინტერესო პროექტი სიამოვნებით ვითანამშრომლებ თქვენთან.'
-            aboutMeSkill.current.innerHTML = 'უნარები!'
-            aboutMeBtn.current.innerHTML = 'კონტაქტი'
-            projTitleRef.current.innerHTML = 'პროექტები'
-            carcoRef.current.innerHTML = 'ავტო იმპორტის ვებ-გვერდი,ტრანსპორტირებისა და განბაჟების კალკულატორით.'
-            labref.current.innerHTML = 'ანიმაციური სტუდია, რომელიც ქმნის სხვადასხვა ტიპის 3D სარეკლამო ანიმაციებს კომპანიებისთვის.' 
-            nftRef.current.innerHTML = 'NFT ვებ-გვერდი, ინოვაციური გეგმებით.'
-            nexusRef.current.innerHTML = 'ამერიკული გადამზიდი კომპანია React Js.'
-            seeMoreRef1.current.innerHTML = 'ნახვა'
-            seeMoreRef2.current.innerHTML = 'ნახვა'
-            seeMoreRef3.current.innerHTML = 'ნახვა'
-            seeMoreRef4.current.innerHTML = 'ნახვა'
-            seeMoreBtnBlackRef.current.innerHTML = 'მეტი პროექტი'
-            contactTitleRef.current.innerHTML = 'კონტაქტი'
-            contactParRef.current.innerHTML = 'დასაკონტაქტებლად შეავსეთ ქვემოთ მოცემული ველები და შეძლებისდგავარად სწრაფად მიიღებთ პასუხს'
-            contactSendBtnRef.current.innerHTML = 'გაგზავნა'
-            nameENG.current.style.display = 'none'
-            nameGeo.current.style.display = 'block'
-            mailGeo.current.style.display = 'block'
-            mailEng.current.style.display = 'none'
-            numberGeo.current.style.display = 'block'
-            numberEng.current.style.display = 'none'
-            textareaGeo.current.style.display = 'block'
-            textareaEng.current.style.display = 'none'
-            footerSocialRef.current.innerHTML = 'ქსელები'
-            authorRef.current.innerHTML = '© თორნიკე დესპოტაშვილი'
-            navLanguageEng.current.style.display = 'block'
-            navLanguageGeo.current.style.display = 'none'
-            burgerLanguageEng.current.style.display = 'flex'
-            burgerLanguageGeo.current.style.display = 'none'
-       }
-
-       
     },[isEng])
 
 
@@ -244,14 +249,14 @@ function Home() {
         <nav>
             <div className="nav_left">
                 <img src={despoIMG} style={imageStyle} alt='logo'/>
-                <p ref={navbarTitleHref}>თორნიკე დესპოტაშვილი</p>
+                <p ref={navbarTitleHref}></p>
             </div>
 
             <div className="nav_right">
-                <Link to='' className="navLinks" onClick={()=> handleClick(homeRef)} ref={navHomeRef}>მთავარი</Link>
-                <Link to='' className="navLinks" onClick={()=> handleClick(aboutRef)} ref={navAboutRef}>შესახებ</Link>
-                <Link to='' className="navLinks" onClick={()=> handleClick(projectRef)} ref={navProjRef}>პროექტები</Link>
-                <Link to='' className="navLinks" onClick={()=> handleClick(contactRef)} ref={navContRef}>კონტაქტი</Link>
+                <Link to='' className="navLinks" onClick={()=> handleClick(homeRef)} ref={navHomeRef}></Link>
+                <Link to='' className="navLinks" onClick={()=> handleClick(aboutRef)} ref={navAboutRef}></Link>
+                <Link to='' className="navLinks" onClick={()=> handleClick(projectRef)} ref={navProjRef}></Link>
+                <Link to='' className="navLinks" onClick={()=> handleClick(contactRef)} ref={navContRef}></Link>
                 <Link to='' className="navLinks" ref={navLanguageEng} onClick={()=> engLang()}>ENG</Link>
                 <Link to='' className="navLinks" ref={navLanguageGeo} onClick={()=> geoLang()}>GEO</Link>
             </div>
@@ -262,10 +267,10 @@ function Home() {
         </nav>
 
         <div className={dashbrd} onClick={()=> toggleMenu()}>
-            <div><Link to='' className="navLinks" onClick={()=> handleClick(homeRef)} ref={burgerMain}>მთავარი</Link></div>
-            <div><Link to='' className="navLinks" onClick={()=> handleClick(aboutRef)} ref={burgerAbout}>შესახებ</Link></div>
-            <div><Link to='' className="navLinks" onClick={()=> handleClick(projectRef)} ref={burgerProj}>პროექტები</Link></div>
-            <div><Link to='' className="navLinks" onClick={()=> handleClick(contactRef)} ref={burgerCont}>კონტაქტი</Link></div>
+            <div><Link to='' className="navLinks" onClick={()=> handleClick(homeRef)} ref={burgerMain}></Link></div>
+            <div><Link to='' className="navLinks" onClick={()=> handleClick(aboutRef)} ref={burgerAbout}></Link></div>
+            <div><Link to='' className="navLinks" onClick={()=> handleClick(projectRef)} ref={burgerProj}></Link></div>
+            <div><Link to='' className="navLinks" onClick={()=> handleClick(contactRef)} ref={burgerCont}></Link></div>
             <div ref={burgerLanguageEng}><Link to='' className="navLinks" onClick={()=> engLang()}>ENG</Link></div>
             <div ref={burgerLanguageGeo}><Link to='' className="navLinks" onClick={()=> geoLang()}>GEO</Link></div>
         </div>
@@ -287,7 +292,7 @@ function Home() {
 
             <div className="button_to_prj" onClick={()=> handleClick(projectRef)} style={{width:'fit-content'}}>
                 <div className="button_to_prj_inner">
-                    <p ref={projBtnRef}>პროექტები</p>
+                    <p ref={projBtnRef}></p>
                 </div>
             </div>
 
@@ -349,27 +354,23 @@ function Home() {
         {/* ებაუთ ფეიჯი ////////////////////////////////////////////////////// */}
         <div ref={aboutRef}></div>
         <div className="about_me" >
-                <h1 className="about_me_h1" ref={aboutMeTitle}>ჩემ შესახებ</h1>
+                <h1 className="about_me_h1" ref={aboutMeTitle}></h1>
                 <span className="underline"></span>
 
                 <div className="about_me_inner">
                     <div className="about_me_inner_left">
                         
-                        <p ref={aboutMeParag}>
-                        მე ვარ,თორნიკე დესპორაშვილი Front-End -ზე ფოკუსირებული ვებ დეველოპერი. ვაწყობ ვებ-გვერდებს, რომელიც დღეს ერთ-ერთი  ყველაზე მნიშვნელოვანი საფეხურია ბიზნესის წარმატებისთვის.<br/><br/>
-                        
-                        მზად ვარ ახალი,საინტერესო გამოწვევებისთვის,ახალი პროექტებისთვის და თუ  კი ხარ ის,ვისაც აქვს ინოვაციური,საინტერესო პროექტი სიამოვნებით ვითანამშრომლებ თქვენთან.
-                        </p>
+                        <p ref={aboutMeParag}></p>
 
                         <div className="button_to_cont" onClick={()=> handleClick(contactRef)}>
                             <div className="button_to_cont_inner">
-                                <p ref={aboutMeBtn}>კონტაქტი</p>
+                                <p ref={aboutMeBtn}></p>
                             </div>
                         </div>
                     </div>
                     
                     <div className="about_me_inner_right">
-                        <h2 ref={aboutMeSkill}>უნარები!</h2>
+                        <h2 ref={aboutMeSkill}></h2>
 
                         <div className="my_skills">
                             <span className="skill">HTML</span>
@@ -401,7 +402,7 @@ function Home() {
         <span ref={projectRef}></span>
         <div className="projects" >
                 <div className="header_underline">
-                    <h1 className="about_me_h1" ref={projTitleRef}>პროექტები</h1>
+                    <h1 className="about_me_h1" ref={projTitleRef}></h1>
                     <span className="underline"></span>
                 </div>
 
@@ -414,10 +415,10 @@ function Home() {
 
 
                         <div className="prj_inner">
-                            <h2>Carco.Ge</h2>
-                            <p ref={carcoRef}>ავტო იმპორტის ვებ-გვერდი,ტრანსპორტირებისა და განბაჟების კალკულატორით.</p>
+                            <h2 ref={carRef}></h2>
+                            <p ref={carcoRef}></p>
                             <span className="button_to_cont visitBTN">
-                                <span ref={seeMoreRef1} className="button_to_cont_inner" onClick={()=> redirect('https://carco.ge/')}>ნახვა</span>
+                                <span ref={seeMoreRef1} className="button_to_cont_inner" onClick={()=> redirect('https://carco.ge/')}></span>
                             </span>
                         </div>
                 </div>
@@ -429,10 +430,10 @@ function Home() {
 
 
                         <div className="prj_inner">
-                            <h2>3dlab.Group</h2>
-                            <p ref={labref}>ანიმაციური სტუდია, რომელიც ქმნის სხვადასხვა ტიპის 3D სარეკლამო ანიმაციებს კომპანიებისთვის.</p>
+                            <h2 ref={dlabRef}></h2>
+                            <p ref={labref}></p>
                             <span className="button_to_cont visitBTN">
-                                <span ref={seeMoreRef2} className="button_to_cont_inner" onClick={()=> redirect('https://3dlab.group/')}>ნახვა</span>
+                                <span ref={seeMoreRef2} className="button_to_cont_inner" onClick={()=> redirect('https://3dlab.group/')}></span>
                             </span>
                         </div>
                 </div>
@@ -444,8 +445,8 @@ function Home() {
 
 
                         <div className="prj_inner">
-                            <h2>pixNFT.Me</h2>
-                            <p ref={nftRef}>NFT ვებ-გვერდი, ინოვაციური გეგმებით. </p>
+                            <h2 ref={pixRef}></h2>
+                            <p ref={nftRef}></p>
                             <span className="button_to_cont visitBTN">
                                 <span ref={seeMoreRef3} className="button_to_cont_inner" onClick={()=> redirect('https://pixnft.me/')}>ნახვა</span>
                             </span>
@@ -459,8 +460,8 @@ function Home() {
 
 
                         <div className="prj_inner">
-                            <h2>Nexus Logistic LLC</h2>
-                            <p ref={nexusRef}>ამერიკული გადამზიდი კომპანია React Js.</p>
+                            <h2 ref={nexusHeaderRef}></h2>
+                            <p ref={nexusRef}></p>
                             <span className="button_to_cont visitBTN">
                                 <span ref={seeMoreRef4} className="button_to_cont_inner" onClick={()=>redirect('https://teamofnexus.com/')}>ნახვა</span>
                             </span>
@@ -482,9 +483,9 @@ function Home() {
         <span ref={contactRef}></span>
         <div className="contact" >
             <div className="contact_header">
-                <h1 className="about_me_h1" ref={contactTitleRef}>კონტაქტი</h1>
+                <h1 className="about_me_h1" ref={contactTitleRef}></h1>
                 <span className="underline"></span>
-                <p className="geoContact" style={{textAlign:'center', marginTop:'20px'}} ref={contactParRef}>დასაკონტაქტებლად შეავსეთ ქვემოთ მოცემული ველები და შეძლებისდგავარად სწრაფად მიიღებთ პასუხს</p>
+                <p className="geoContact" style={{textAlign:'center', marginTop:'20px'}} ref={contactParRef}></p>
             </div>
 
         <div className="form_parent">
@@ -502,7 +503,7 @@ function Home() {
                 <input ref={textareaEng} className="textareaENG geoStyle" type="text" name="message" placeholder="Your text here" required />
 
                 <div className="button_to_cont submit_parent">
-                    <button className="submitBTN button_to_cont_inner geoStyle" type="submit" ref={contactSendBtnRef}>გაგზავნა</button>
+                    <button className="submitBTN button_to_cont_inner geoStyle" type="submit" ref={contactSendBtnRef}></button>
                 </div>
             </form>
         </div>
@@ -513,12 +514,12 @@ function Home() {
         <div className="footer">
             <div className="footer_top">
                 <div className="footer_top_left">
-                    <p className="footer_hedaer geoStyle" ref={footerMailRef}>ელ. ფოსტა</p>
+                    <p className="footer_hedaer geoStyle" ref={footerMailRef}></p>
                     <p className="footer_hedaer_txt" style={{color:'#fff'}}>info@devweb.cc</p>
                 </div>
 
                 <div className="footer_top_right">
-                    <p className="footer_hedaer geoStyle" ref={footerSocialRef}>ქსელები</p>
+                    <p className="footer_hedaer geoStyle" ref={footerSocialRef}></p>
                     <span className="footer_social">
 
                     <svg className="footer_svg" viewBox="0 0 72 72" version="1.1" onClick={()=> socialLink("https://github.com/Desp0o")}>
@@ -570,7 +571,7 @@ function Home() {
             </div>
 
             <div className="footer_bottom">
-                <p style={{fontSize:'12px', color:'#fff', textAlign:'center'}} ref={authorRef}>© თორნიკე დესპოტაშვილი</p>
+                <p style={{fontSize:'12px', color:'#fff', textAlign:'center'}} ref={authorRef}></p>
             </div>
         </div>
 
