@@ -65,14 +65,10 @@ function Home() {
     const footerMailRef      = useRef()
     const footerSocialRef    = useRef()
     const authorRef          = useRef()
-    const nameGeo            = useRef()
-    const nameENG            = useRef()
-    const mailGeo            = useRef()
-    const mailEng            = useRef()
-    const numberGeo          = useRef()
-    const numberEng          = useRef()
-    const textareaGeo        = useRef()
-    const textareaEng        = useRef()
+    const inputName          = useRef()
+    const inputMail          = useRef()
+    const inputNumber        = useRef()
+    const inputText          = useRef()
     const navLanguageEng     = useRef()
     const navLanguageGeo     = useRef()
     const burgerLanguageEng  = useRef()
@@ -118,11 +114,15 @@ function Home() {
     useEffect(()=>{
         navLanguageGeo.current.style.display = 'none'
         burgerLanguageGeo.current.style.display = 'none'
+        inputName.current.placeholder = 'სახელი'
+        inputMail.current.placeholder = 'ელფოსტა'
+        inputNumber.current.placeholder = 'ნომერი'
+        inputText.current.placeholder = 'თქვენი შეტყობინება'
 
         carRef.current.innerHTML = 'Carco.Ge'
         dlabRef.current.innerHTML = '3dlab.Group'
         pixRef.current.innerHTML = 'pixnft.me'
-        nexusHeaderRef.current.innerHTML = 'teamofnexus.com'
+        nexusHeaderRef.current.innerHTML = 'teamofnexus.coms'
         navbarTitleHref.current.innerHTML = 'თორნიკე დესპოტაშვილი'
         navHomeRef.current.innerHTML = 'მთავარი'
         navAboutRef.current.innerHTML = 'შესახებ'
@@ -150,14 +150,6 @@ function Home() {
         contactTitleRef.current.innerHTML = 'კონტაქტი'
         contactParRef.current.innerHTML = 'დასაკონტაქტებლად შეავსეთ ქვემოთ მოცემული ველები და შეძლებისდგავარად სწრაფად მიიღებთ პასუხს'
         contactSendBtnRef.current.innerHTML = 'გაგზავნა'
-        nameENG.current.style.display = 'none'
-        nameGeo.current.style.display = 'block'
-        mailGeo.current.style.display = 'block'
-        mailEng.current.style.display = 'none'
-        numberGeo.current.style.display = 'block'
-        numberEng.current.style.display = 'none'
-        textareaGeo.current.style.display = 'block'
-        textareaEng.current.style.display = 'none'
         footerSocialRef.current.innerHTML = 'ქსელები'
         authorRef.current.innerHTML = '© თორნიკე დესპოტაშვილი'
         navLanguageEng.current.style.display = 'block'
@@ -198,14 +190,10 @@ function Home() {
              footerMailRef.current.innerHTML = 'Email'
              footerSocialRef.current.innerHTML = 'SOCIAL'
              authorRef.current.innerHTML = '© TORNIKE DESPOTASHVILI'
-             nameENG.current.style.display = 'block'
-             nameGeo.current.style.display = 'none'
-             mailGeo.current.style.display = 'none'
-             mailEng.current.style.display = 'block'
-             numberGeo.current.style.display = 'none'
-             numberEng.current.style.display = 'block'
-             textareaGeo.current.style.display = 'none'
-             textareaEng.current.style.display = 'block'
+             inputName.current.placeholder = 'Name'
+             inputMail.current.placeholder = 'Email'
+             inputNumber.current.placeholder = 'Number'
+             inputText.current.placeholder = 'Your Message'
              navLanguageEng.current.style.display = 'none'
              navLanguageGeo.current.style.display = 'block'
              burgerLanguageEng.current.style.display = 'none'
@@ -490,18 +478,11 @@ function Home() {
 
         <div className="form_parent">
         <form ref={form} onSubmit={sendEmail} >
-                <input ref={nameGeo} className="simpleInput geoStyle" type="text" name="name" placeholder="სახელი" required />
-                <input ref={nameENG} className="simpleInputENG geoStyle" type="text" name="name" placeholder="Name" required />
-
-                <input ref={mailGeo} className="simpleInput geoStyle" type="email" name="email" placeholder="ელ. ფოსტა" required />
-                <input ref={mailEng} className="simpleInputENG geoStyle" type="email" name="email" placeholder="Email" required />
-                
-                <input ref={numberGeo} className="simpleInput geoStyle" type="text" name="number" placeholder="ნომერი" required />
-                <input ref={numberEng} className="simpleInputENG geoStyle" type="text" name="number" placeholder="Number" required />
-
-                <input ref={textareaGeo} className="textarea geoStyle" type="text" name="message" placeholder="თქვენი ტექსტი" required />
-                <input ref={textareaEng} className="textareaENG geoStyle" type="text" name="message" placeholder="Your text here" required />
-
+                <input ref={inputName} className="simpleInput geoStyle" type="text" name="name"  required />
+                <input ref={inputMail} className="simpleInput geoStyle" type="email" name="email" required />
+                <input ref={inputNumber} className="simpleInput geoStyle" type="text" name="number"  required />
+                <input ref={inputText} className="textarea geoStyle" type="text" name="message"  required />
+    
                 <div className="button_to_cont submit_parent">
                     <button className="submitBTN button_to_cont_inner geoStyle" type="submit" ref={contactSendBtnRef}></button>
                 </div>
