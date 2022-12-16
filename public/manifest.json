@@ -3,18 +3,18 @@
   "name": "Tornike Despotashvili Front-End Developer",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "despo_img_64.webp",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "despo_img"
+      "type": "image/webp"
     },
     {
-      "src": "despo_img.png",
-      "type": "despo_img",
+      "src": "despo_img_192.webp",
+      "type": "image/webp",
       "sizes": "192x192"
     },
     {
-      "src": "despo_img.png",
-      "type": "image/png",
+      "src": "despo_img_512.webp",
+      "type": "image/webp",
       "sizes": "512x512"
     }
   ],

@@ -5,7 +5,7 @@ import './navbar.css'
 import './footer.css'
 import './index.css'
 
-import despoIMG   from './images/despo_img.png'
+import despoIMG   from './images/despo_img_512.webp'
 import menu       from './images/menu.png'
 import close      from './images/close.png'
 import pixnft     from './images/pixnft.webp'

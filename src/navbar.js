@@ -3,7 +3,7 @@ import {Link} from  "react-router-dom";
 //CSS
 import "./navbar.css"
 //images
-import despoIMG from './images/despo_img.png'
+import despoIMG from './images/despo_img_512.webp'
 import menu from './images/menu.png'
 import close from './images/close.png'
 

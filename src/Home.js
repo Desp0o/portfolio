@@ -14,7 +14,7 @@ import './footer.css'
 import './index.css'
 
 //images
-import despoIMG   from './images/despo_img.png'
+import despoIMG   from './images/despo_img_512.webp'
 import menu       from './images/menu.png'
 import close      from './images/close.png'
 import carco      from './images/carco_prj.webp'
@@ -152,6 +152,7 @@ function Home() {
         contactSendBtnRef.current.innerHTML = 'გაგზავნა'
         footerSocialRef.current.innerHTML = 'ქსელები'
         authorRef.current.innerHTML = '© თორნიკე დესპოტაშვილი'
+        footerMailRef.current.innerHTML = 'ელ. ფოსტა'
         navLanguageEng.current.style.display = 'block'
         navLanguageGeo.current.style.display = 'none'
         burgerLanguageEng.current.style.display = 'flex'
