@@ -122,7 +122,7 @@ function Home() {
         carRef.current.innerHTML = 'Carco.Ge'
         dlabRef.current.innerHTML = '3dlab.Group'
         pixRef.current.innerHTML = 'pixnft.me'
-        nexusHeaderRef.current.innerHTML = 'teamofnexus.coms'
+        nexusHeaderRef.current.innerHTML = 'teamofnexus.com'
         navbarTitleHref.current.innerHTML = 'თორნიკე დესპოტაშვილი'
         navHomeRef.current.innerHTML = 'მთავარი'
         navAboutRef.current.innerHTML = 'შესახებ'
