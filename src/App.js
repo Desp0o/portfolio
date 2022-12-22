@@ -1,6 +1,6 @@
 import {React} from 'react';
 import Home from './Home';
-import Projs from './redProj'
+import Projs from './components/Projects/Projects'
 
 import {
   Routes,
@@ -12,7 +12,7 @@ function App() {
     <div>
       <Routes>
         <Route exact path="*"        element={<Home />} />
-        <Route exact path="/redProj" element={<Projs />} />
+        <Route exact path="/Projects" element={<Projs />} />
       </Routes>
     </div>
     
