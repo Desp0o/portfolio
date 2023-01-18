@@ -1,31 +1,25 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.749faeb8.css",
-    "main.js": "/portfolio/static/js/main.faa6c326.js",
-    "static/js/787.128fc6e9.chunk.js": "/portfolio/static/js/787.128fc6e9.chunk.js",
-    "static/media/FiraGO-Bold.ttf": "/portfolio/static/media/FiraGO-Bold.6873f2abdb06d26ed2be.ttf",
-    "static/media/carco_prj.png": "/portfolio/static/media/carco_prj.89ff2c573d571c13c918.png",
-    "static/media/indian.png": "/portfolio/static/media/indian.7bd430cc991d4799bd7c.png",
-    "static/media/archic_prj.png": "/portfolio/static/media/archic_prj.c4d2a6c041cbf7b84021.png",
-    "static/media/nexus.png": "/portfolio/static/media/nexus.2ebb45c4a8a47c6b41f3.png",
-    "static/media/pixnft.png": "/portfolio/static/media/pixnft.26f1bf12857e0934991f.png",
-    "static/media/chess_prj.png": "/portfolio/static/media/chess_prj.a3cf2de9a12288e2d890.png",
-    "static/media/portfolio_prj.png": "/portfolio/static/media/portfolio_prj.40e95299807b86bdb02a.png",
-    "static/media/3dlab.png": "/portfolio/static/media/3dlab.d3128ad22618cf43067d.png",
-    "static/media/calculator_app.png": "/portfolio/static/media/calculator_app.a5e11fb07c73dc63275f.png",
-    "static/media/despo_img.png": "/portfolio/static/media/despo_img.59fe330819c9a9131b84.png",
-    "static/media/bulb.png": "/portfolio/static/media/bulb.f871897f8169a4a462ce.png",
-    "index.html": "/portfolio/index.html",
-    "static/media/github.svg": "/portfolio/static/media/github.080591513b1a3eb8fdfe0257830eaff1.svg",
-    "static/media/twitter.svg": "/portfolio/static/media/twitter.62976c081dee9df5e089714a43f81083.svg",
-    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.9ab1461c9a828786baf729f786e1c2f3.svg",
-    "static/media/facebook.svg": "/portfolio/static/media/facebook.b545c7f1bd807fc5279ea5ae94d4660a.svg",
-    "main.749faeb8.css.map": "/portfolio/static/css/main.749faeb8.css.map",
-    "main.faa6c326.js.map": "/portfolio/static/js/main.faa6c326.js.map",
-    "787.128fc6e9.chunk.js.map": "/portfolio/static/js/787.128fc6e9.chunk.js.map"
+    "main.css": "/static/css/main.bdd077a7.css",
+    "main.js": "/static/js/main.95ffa148.js",
+    "static/media/FiraGO-Bold.woff2": "/static/media/FiraGO-Bold.041550c3c362797e4350.woff2",
+    "static/media/carco_prj.webp": "/static/media/carco_prj.08051f67cf72aec23de1.webp",
+    "static/media/archic_prj.webp": "/static/media/archic_prj.158b6e9bc84309c81d73.webp",
+    "static/media/indian.webp": "/static/media/indian.e76594de05afb7aa5787.webp",
+    "static/media/magicMassage.webp": "/static/media/magicMassage.ef6e6b0e6b2cac30dd7b.webp",
+    "static/media/nexus.webp": "/static/media/nexus.68bab813b000ff946145.webp",
+    "static/media/pixnft.webp": "/static/media/pixnft.148ecbc9227edad74a66.webp",
+    "static/media/chess_prj.webp": "/static/media/chess_prj.4e19ec3007f1711b6bf6.webp",
+    "static/media/portfolio_prj.webp": "/static/media/portfolio_prj.fbab3081a618ea4f61c9.webp",
+    "static/media/calculator_app.webp": "/static/media/calculator_app.d68f64e33c304e670e12.webp",
+    "static/media/3dlab.webp": "/static/media/3dlab.bcfda3f7193785df7ba3.webp",
+    "static/media/despo_img_512.webp": "/static/media/despo_img_512.755d065a0a3bb71a717f.webp",
+    "index.html": "/index.html",
+    "main.bdd077a7.css.map": "/static/css/main.bdd077a7.css.map",
+    "main.95ffa148.js.map": "/static/js/main.95ffa148.js.map"
   },
   "entrypoints": [
-    "static/css/main.749faeb8.css",
-    "static/js/main.faa6c326.js"
+    "static/css/main.bdd077a7.css",
+    "static/js/main.95ffa148.js"
   ]
 }
