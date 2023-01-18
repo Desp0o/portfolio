@@ -236,7 +236,7 @@ function Home() {
             <div className="nav_right">
                 <Link to='' className="navLinks" onClick={()=> handleClick(homeRef)} ref={navHomeRef}></Link>
                 <Link to='' className="navLinks" onClick={()=> handleClick(aboutRef)} ref={navAboutRef}></Link>
-                <Link to='' className="navLinks" onClick={()=> handleClick(projectRef)} ref={navProjRef}></Link>
+                <Link to='/Projects' className="navLinks"ref={navProjRef}></Link>
                 <Link to='' className="navLinks" onClick={()=> handleClick(contactRef)} ref={navContRef}></Link>
                 <Link to='' className="navLinks" ref={navLanguageEng} onClick={()=> engLang()}>ENG</Link>
                 <Link to='' className="navLinks" ref={navLanguageGeo} onClick={()=> geoLang()}>GEO</Link>
@@ -250,7 +250,7 @@ function Home() {
         <div className={dashbrd} onClick={()=> toggleMenu()}>
             <div><Link to='' className="navLinks" onClick={()=> handleClick(homeRef)} ref={burgerMain}></Link></div>
             <div><Link to='' className="navLinks" onClick={()=> handleClick(aboutRef)} ref={burgerAbout}></Link></div>
-            <div><Link to='' className="navLinks" onClick={()=> handleClick(projectRef)} ref={burgerProj}></Link></div>
+            <div><Link to='/Projects' className="navLinks" onClick={()=> handleClick(projectRef)} ref={burgerProj}></Link></div>
             <div><Link to='' className="navLinks" onClick={()=> handleClick(contactRef)} ref={burgerCont}></Link></div>
             <div ref={burgerLanguageEng}><Link to='' className="navLinks" onClick={()=> engLang()}>ENG</Link></div>
             <div ref={burgerLanguageGeo}><Link to='' className="navLinks" onClick={()=> geoLang()}>GEO</Link></div>
