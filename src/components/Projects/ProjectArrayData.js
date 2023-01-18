@@ -7,6 +7,7 @@ import calApp     from '../../images/calculator_app.webp'
 import nexus      from '../../images/nexus.webp'
 import carco      from '../../images/carco_prj.webp'
 import dlab       from '../../images/3dlab.webp'
+import magicMas   from '../../images/magicMassage.webp'
 
 export const ProjectArray = [
     {id:1, image:`${carco}`, title:'Carco.Ge', description:'ავტო იმპორტის ვებ-გვერდი,ტრანსპორტირებისა და განბაჟების კალკულატორით.', button:'ნახვა',
@@ -34,6 +35,8 @@ export const ProjectArray = [
                                                 descriptionEng:'Super light portfolio web page for Frontend Web Developer, built with', buttonEng:'Visit', link:'https://devweb.cc/', framework:' React Js.'},
     
     {id:9, image:`${calApp}`, title:'Carco.Ge Android APP', description:'ტრანსპორტირების და განბაჟების კალკუალტორის აპლიაკცია ანდორიდ სისტემისტვის.', button:'გადმოწერა',
-                                                descriptionEng:'Auto import Android APP with transportation and Customs Clearnece calculator.', buttonEng:'Download', link:'https://drive.google.com/file/d/13f4GXvhRR9DFW4wAu0RFgsXPmbfm6RKH/view'}
+                                                descriptionEng:'Auto import Android APP with transportation and Customs Clearnece calculator.', buttonEng:'Download', link:'https://drive.google.com/file/d/13f4GXvhRR9DFW4wAu0RFgsXPmbfm6RKH/view'},
+    {id:10, image:`${magicMas}`, title:'MagicMassage', description:'მულტი ფუნქციური მასაჟორის საინფორმაციო ვებ გვერდი', button:'ნახვა',
+                                                descriptionEng:'MagicMassage™ provides relief from head tensions.', buttonEng:'Visit', link:'https://desp0o.github.io/MagicMassage/'}                                           
 
 ]
