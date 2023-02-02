@@ -322,6 +322,7 @@ function Home() {
                             <span className="skill">CSS</span>
                             <span className="skill">SASS</span>
                             <span className="skill">SCSS</span>
+                            <span className="skill">Tailwindcss</span>
                         </div>
 
                         <div className="my_skills">
