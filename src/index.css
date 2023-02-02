@@ -41,10 +41,12 @@ code {
 
 ::-webkit-scrollbar{
   background-color: transparent;
+  width: 15px;
 }
 
 ::-webkit-scrollbar-thumb{
   background-color: #FACF0F;
+  border-radius: 10px;
 }
 
 

@@ -14,10 +14,7 @@ import Footer     from "../footer/footer";
 
 function PagePrj() {
 
-    const despriptionGeo = useRef()
-    const despriptionEng = useRef()
-    const buttonGeo = useRef()
-    const buttonEng = useRef()
+    const button = useRef()
     const mainTitelRef = useRef()
     const navbarNameRef = useRef()
     
@@ -52,12 +49,6 @@ function PagePrj() {
     const [dashbrd, setDashbrd] = useState('menu_dashboard')
     const [overlay, setOverlay] = useState('overlay')
 
-    const [descGeo, setDescGeo] = useState('')
-    const [descEng, setDescEng] = useState('')
-
-    const [btnGeo, setBtnGeo] = useState('button_to_cont_inner')
-    const [btnEng, setBtnEng] = useState('button_to_cont_inner')
-
     const [engSwitch, setEngSwitch] = useState('navLinks')
     const [geoSwitch, setGeoSwitch] = useState('navLinks')
 
@@ -80,9 +71,7 @@ function PagePrj() {
 
     useEffect(()=>{
         burgerLanguageGeo.current.style.display = 'none'
-        setDescEng('displayNone')
         setGeoSwitch('navLinks displayNone')
-        setBtnEng('button_to_cont_inner displayNone')
 
     }, [])
     
@@ -90,27 +79,18 @@ useEffect(()=>{
 
     
         setIsEng(false)
-        setDescEng('displayNone')
-        setDescGeo('')
-        setBtnEng('button_to_cont_inner displayNone')
-        setBtnGeo('button_to_cont_inner')
         setGeoSwitch('navLinks displayNone')
         setEngSwitch('navLinks')
         burgerLanguageEng.current.style.display = 'flex'
         burgerLanguageGeo.current.style.display = 'none'
         mainTitelRef.current.innerHTML = 'პროექტები'
         navbarNameRef.current.innerHTML = 'თორნიკე დესპოტაშვილი'
-        
         backHomeref.current.innerHTML = 'მთავარი გვერდი'
         navBackHomeRef.current.innerHTML = 'მთავარი გვერდი'
     
 
     if (localStorage.language === 'eng' || lg === 'eng') {
         setIsEng(true)
-        setDescGeo('displayNone')
-        setDescEng('')
-        setBtnGeo('button_to_cont_inner displayNone')
-        setBtnEng('button_to_cont_inner')
         setEngSwitch('navLinks displayNone')
         setGeoSwitch('navLinks')
         burgerLanguageEng.current.style.display = 'none'
@@ -169,18 +149,19 @@ useEffect(()=>{
                         <div key={project.id}>
                         <div className="prj" >
                             <div className="prj_img">
-                                <img className="project_image" src={project.image} alt='3dlab'/>
+                                <img className="project_image" src={project.image} alt='project cover'/>
                             </div>
 
 
                             <div className="prj_inner">
                                 <h3>{project.title}</h3>
-                                <p className={descGeo} ref={despriptionGeo}>{project.description}<b>{project.framework}</b></p>
-                                <p className={descEng} ref={despriptionEng}>{project.descriptionEng}<b>{project.framework}</b></p>
+                                <p>{localStorage.language === 'eng' ? `${project.descriptionEng}` : `${project.description}`}</p>
+                               
 
                                 <span className="button_to_cont visitBTN">
-                                    <span ref={buttonGeo} className={btnGeo} onClick={()=> redirect(project.link)}>{project.button}</span>
-                                    <span ref={buttonEng} className={btnEng} onClick={()=> redirect(project.link)}>{project.buttonEng}</span>
+                                    <span ref={button} className='button_to_cont_inner' onClick={()=> redirect(project.link)}>
+                                    {localStorage.language === 'eng' ? `${project.buttonEng}` : `${project.button}`}
+                                    </span>
                                 </span>
                             </div>
                         </div>

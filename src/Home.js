@@ -3,6 +3,7 @@ import {useRef} from 'react';
 import {Link} from  "react-router-dom";
 import emailjs from '@emailjs/browser';
 import Footer from "./components/footer/footer";
+import { projectDB } from "./projectDB";
 
 
 //CSS
@@ -17,10 +18,6 @@ import './index.css'
 import despoIMG   from './images/despo_img_512.webp'
 import menu       from './images/menu.png'
 import close      from './images/close.png'
-import carco      from './images/carco_prj.webp'
-import dlab       from './images/3dlab.webp'
-import pixnft     from './images/pixnft.webp'
-import nexus      from './images/nexus.webp'
 
 
 const imageStyle = {
@@ -50,14 +47,6 @@ function Home() {
     const aboutMeSkill       = useRef()
     const aboutMeBtn         = useRef()
     const projTitleRef       = useRef()
-    const carcoRef           = useRef()
-    const labref             = useRef()
-    const nftRef             = useRef()
-    const nexusRef           = useRef()
-    const seeMoreRef1        = useRef()
-    const seeMoreRef2        = useRef()
-    const seeMoreRef3        = useRef()
-    const seeMoreRef4        = useRef()
     const seeMoreBtnBlackRef = useRef()
     const contactTitleRef    = useRef()
     const contactParRef      = useRef()
@@ -71,10 +60,6 @@ function Home() {
     const navLanguageGeo     = useRef()
     const burgerLanguageEng  = useRef()
     const burgerLanguageGeo  = useRef()
-    const carRef             = useRef()
-    const dlabRef             = useRef()
-    const pixRef             = useRef()
-    const nexusHeaderRef     = useRef()
 
     
     const form       = useRef()
@@ -116,11 +101,6 @@ function Home() {
         inputMail.current.placeholder = 'ელფოსტა'
         inputNumber.current.placeholder = 'ნომერი'
         inputText.current.placeholder = 'თქვენი შეტყობინება'
-
-        carRef.current.innerHTML = 'Carco.Ge'
-        dlabRef.current.innerHTML = '3dlab.Group'
-        pixRef.current.innerHTML = 'pixnft.me'
-        nexusHeaderRef.current.innerHTML = 'teamofnexus.com'
         navbarTitleHref.current.innerHTML = 'თორნიკე დესპოტაშვილი'
         navHomeRef.current.innerHTML = 'მთავარი'
         navAboutRef.current.innerHTML = 'შესახებ'
@@ -136,14 +116,6 @@ function Home() {
         aboutMeSkill.current.innerHTML = 'უნარები!'
         aboutMeBtn.current.innerHTML = 'კონტაქტი'
         projTitleRef.current.innerHTML = 'პროექტები'
-        carcoRef.current.innerHTML = 'ავტო იმპორტის ვებ-გვერდი,ტრანსპორტირებისა და განბაჟების კალკულატორით.'
-        labref.current.innerHTML = 'ანიმაციური სტუდია, რომელიც ქმნის სხვადასხვა ტიპის 3D სარეკლამო ანიმაციებს კომპანიებისთვის.' 
-        nftRef.current.innerHTML = 'NFT ვებ-გვერდი, ინოვაციური გეგმებით.'
-        nexusRef.current.innerHTML = 'ამერიკული გადამზიდი კომპანია React Js.'
-        seeMoreRef1.current.innerHTML = 'ნახვა'
-        seeMoreRef2.current.innerHTML = 'ნახვა'
-        seeMoreRef3.current.innerHTML = 'ნახვა'
-        seeMoreRef4.current.innerHTML = 'ნახვა'
         seeMoreBtnBlackRef.current.innerHTML = 'მეტი პროექტი'
         contactTitleRef.current.innerHTML = 'კონტაქტი'
         contactParRef.current.innerHTML = 'დასაკონტაქტებლად შეავსეთ ქვემოთ მოცემული ველები და შეძლებისდგავარად სწრაფად მიიღებთ პასუხს'
@@ -171,14 +143,6 @@ function Home() {
              aboutMeSkill.current.innerHTML = 'Skills!'
              aboutMeBtn.current.innerHTML = 'CONTACT'
              projTitleRef.current.innerHTML = 'PROJECTS'
-             carcoRef.current.innerHTML = 'Auto import Web page, with transportation and Customs Clearnece calculator.'
-             labref.current.innerHTML = '3Dlab is Animation studio, famous in social networks, with its funny projects' 
-             nftRef.current.innerHTML = 'NFT project Landing page, with road map and OpenSeas account link'
-             nexusRef.current.innerHTML = 'Nexus Logistics LLC is a 24/7 delivery/dispatching/carrier company React Js.'
-             seeMoreRef1.current.innerHTML = 'See More'
-             seeMoreRef2.current.innerHTML = 'See More'
-             seeMoreRef3.current.innerHTML = 'See More'
-             seeMoreRef4.current.innerHTML = 'See More'
              seeMoreBtnBlackRef.current.innerHTML = 'See More Projects'
              contactTitleRef.current.innerHTML = 'CONTACT'
              contactParRef.current.innerHTML = 'Feel free to Contact me by submitting the form below and I will get back to you as soon as possible'
@@ -389,65 +353,31 @@ function Home() {
 
             <div className="projects_inner">
 
-                <div className="prj">
-                        <div className="prj_img">
-                            <img className="project_image" src={carco} alt='carco'/>
+            {/* პროექტების მაპინგი */}
+            {projectDB.map((project)=>{
+                    return(
+                        <div key={project.id}>
+                        <div className="prj" >
+                            <div className="prj_img">
+                                <img className="project_image" src={project.image} alt='project cover'/>
+                            </div>
+
+
+                            <div className="prj_inner">
+                                <h3>{project.title}</h3>
+                                <p>{localStorage.language === 'eng' ? `${project.descriptionEng}` : `${project.description}`}</p>
+                               
+
+                                <span className="button_to_cont visitBTN">
+                                    <span className='button_to_cont_inner' onClick={()=> redirect(project.link)}>
+                                    {localStorage.language === 'eng' ? `${project.buttonEng}` : `${project.button}`}
+                                    </span>
+                                </span>
+                            </div>
                         </div>
-
-
-                        <div className="prj_inner">
-                            <h2 ref={carRef}></h2>
-                            <p ref={carcoRef}></p>
-                            <span className="button_to_cont visitBTN">
-                                <span ref={seeMoreRef1} className="button_to_cont_inner" onClick={()=> redirect('https://carco.ge/')}></span>
-                            </span>
                         </div>
-                </div>
-
-                <div className="prj">
-                        <div className="prj_img">
-                            <img className="project_image" src={dlab} alt='3dlab'/>
-                        </div>
-
-
-                        <div className="prj_inner">
-                            <h2 ref={dlabRef}></h2>
-                            <p ref={labref}></p>
-                            <span className="button_to_cont visitBTN">
-                                <span ref={seeMoreRef2} className="button_to_cont_inner" onClick={()=> redirect('https://3dlab.group/')}></span>
-                            </span>
-                        </div>
-                </div>
-
-                <div className="prj">
-                        <div className="prj_img">
-                            <img className="project_image" src={pixnft} alt='nft'/>
-                        </div>
-
-
-                        <div className="prj_inner">
-                            <h2 ref={pixRef}></h2>
-                            <p ref={nftRef}></p>
-                            <span className="button_to_cont visitBTN">
-                                <span ref={seeMoreRef3} className="button_to_cont_inner" onClick={()=> redirect('https://pixnft.me/')}></span>
-                            </span>
-                        </div>
-                </div>
-
-                <div className="prj">
-                        <div className="prj_img">
-                            <img className="project_image" src={nexus} alt='indian'/>
-                        </div>
-
-
-                        <div className="prj_inner">
-                            <h2 ref={nexusHeaderRef}></h2>
-                            <p ref={nexusRef}></p>
-                            <span className="button_to_cont visitBTN">
-                                <span ref={seeMoreRef4} className="button_to_cont_inner" onClick={()=>redirect('https://teamofnexus.com/')}></span>
-                            </span>
-                        </div>
-                </div>
+                    )
+                })}
 
             </div>
 
