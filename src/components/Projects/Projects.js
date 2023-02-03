@@ -83,10 +83,10 @@ useEffect(()=>{
         setEngSwitch('navLinks')
         burgerLanguageEng.current.style.display = 'flex'
         burgerLanguageGeo.current.style.display = 'none'
-        mainTitelRef.current.innerHTML = 'პროექტები'
-        navbarNameRef.current.innerHTML = 'თორნიკე დესპოტაშვილი'
-        backHomeref.current.innerHTML = 'მთავარი გვერდი'
-        navBackHomeRef.current.innerHTML = 'მთავარი გვერდი'
+        mainTitelRef.current.innerText = 'პროექტები'
+        navbarNameRef.current.innerText = 'თორნიკე დესპოტაშვილი'
+        backHomeref.current.innerText = 'მთავარი გვერდი'
+        navBackHomeRef.current.innerText = 'მთავარი გვერდი'
     
 
     if (localStorage.language === 'eng' || lg === 'eng') {
@@ -95,11 +95,11 @@ useEffect(()=>{
         setGeoSwitch('navLinks')
         burgerLanguageEng.current.style.display = 'none'
         burgerLanguageGeo.current.style.display = 'flex'
-        mainTitelRef.current.innerHTML = 'Here You Are!'
-        navbarNameRef.current.innerHTML = 'Tornike Despotashvili'
+        mainTitelRef.current.innerText = 'Here You Are!'
+        navbarNameRef.current.innerText = 'Tornike Despotashvili'
         
-        backHomeref.current.innerHTML = 'Back To Home'
-        navBackHomeRef.current.innerHTML = 'Back To Home'
+        backHomeref.current.innerText = 'Back To Home'
+        navBackHomeRef.current.innerText = 'Back To Home'
     }
 
     return

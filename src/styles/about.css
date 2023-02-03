@@ -126,15 +126,16 @@
     }
 }   
 
-@media (min-width:1500px) {
-    .about_me_inner{
-        padding-left: 230px;
-    }
-}
 
 @media (min-width:1400px) {
     .about_me_inner{
         padding-left: 120px;
+    }
+}
+
+@media (min-width:1500px) {
+    .about_me_inner{
+        padding-left: 230px;
     }
 }
 
