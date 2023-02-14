@@ -155,7 +155,7 @@ useEffect(()=>{
 
                             <div className="prj_inner">
                                 <h3>{project.title}</h3>
-                                <p>{localStorage.language === 'eng' ? `${project.descriptionEng}` : `${project.description}`}</p>
+                                <p>{localStorage.language === 'eng' ? `${project.descriptionEng}` : `${project.description}`} {project.framework}</p>
                                
 
                                 <span className="button_to_cont visitBTN">
