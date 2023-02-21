@@ -4,7 +4,7 @@ import {Link} from  "react-router-dom";
 import emailjs from '@emailjs/browser';
 import Footer from "./components/footer/footer";
 import { projectDB } from "./projectDB";
-
+import xa from './images/metaCover.webp'
 
 //CSS
 import './styles/home.css'
