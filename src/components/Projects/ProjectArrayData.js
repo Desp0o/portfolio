@@ -9,6 +9,7 @@ import carco       from '../../images/carco_prj.webp'
 import dlab        from '../../images/3dlab.webp'
 import magicMas    from '../../images/magicMassage.webp'
 import tourGeorgia from '../../images/tourGeorgia.webp'
+import shutter     from '../../images/shutterpic.webp'
 
 export const ProjectArray = [
     {id:1, image:`${carco}`, title:'Carco.Ge', description:'ავტო იმპორტის ვებ-გვერდი,ტრანსპორტირებისა და განბაჟების კალკულატორით.', button:'ნახვა',
@@ -17,8 +18,8 @@ export const ProjectArray = [
     {id:2, image:`${dlab}`, title:'3Dlab.Group', description:'ანიმაციური სტუდია, რომელიც ქმნის სხვადასხვა ტიპის 3D სარეკლამო ანიმაციებს კომპანიებისთვის.', button:'ნახვა',
                                                 descriptionEng:'3Dlab is Animation studio, famous in social networks, with its funny projects.', buttonEng:'Visit',  link:'https://3dlab.group/'},
 
-    {id:3, image:`${pixnft}`, title:'pixnft.me', description:'NFT - ვებ-გვერდი, ინოვაციური გეგმებით.', button:'ნახვა',
-                                                descriptionEng:'NFT project Landing page, with road map and OpenSea account link.', buttonEng:'Visit', link:'https://pixnft.me/'},
+    {id:12, image:`${shutter}`, title:'shutter.pics', description:'მსუბუქი პორტფოლიო ფოტოგრაფისთვის', button:'ნახვა',
+                                                descriptionEng:'Super light portfolio for photographer with image viewer', buttonEng:'Visit',  link:'https://shutter.pics/', framework:' React Js, Tailwindcss'},
 
     {id:4, image:`${nexus}`, title:'Nexus Logistic LLC', description:'Nexus Logistics გადამზიდი კომპანია.', button:'ნახვა',
                                                 descriptionEng:'Nexus Logistics LLC is a 24/7 delivery/dispatching/carrier company.', buttonEng:'Visit', link:'https://teamofnexus.com/', framework:' React Js.'},
@@ -41,8 +42,8 @@ export const ProjectArray = [
     {id:10, image:`${calApp}`, title:'Carco.Ge Android APP', description:'ტრანსპორტირების და განბაჟების კალკუალტორის აპლიაკცია ანდორიდ სისტემისტვის.', button:'გადმოწერა',
                                                 descriptionEng:'Auto import Android APP with transportation and Customs Clearnece calculator.', buttonEng:'Download', link:'https://drive.google.com/file/d/13f4GXvhRR9DFW4wAu0RFgsXPmbfm6RKH/view'},
     {id:11, image:`${magicMas}`, title:'MagicMassage', description:'მულტი ფუნქციური მასაჟორის საინფორმაციო ვებ გვერდიის კლონი.', button:'ნახვა',
-                                                descriptionEng:'MagicMassage™ provides relief from head tensions.', buttonEng:'Visit', link:'https://desp0o.github.io/MagicMassage/'}
-                                                
-                                                                                          
+                                                descriptionEng:'MagicMassage™ provides relief from head tensions.', buttonEng:'Visit', link:'https://desp0o.github.io/MagicMassage/'},
 
+    {id:3, image:`${pixnft}`, title:'pixnft.me', description:'NFT - ვებ-გვერდი, ინოვაციური გეგმებით.', button:'ნახვა',
+                                                descriptionEng:'NFT project Landing page, with road map and OpenSea account link.', buttonEng:'Visit', link:'https://desp0o.github.io/PixNFT/#creator'}
 ]
