@@ -10,6 +10,7 @@ import dlab        from '../../images/3dlab.webp'
 import magicMas    from '../../images/magicMassage.webp'
 import tourGeorgia from '../../images/tourGeorgia.webp'
 import shutter     from '../../images/shutterpic.webp'
+import panorama    from '../../images/panorama.webp'
 
 export const ProjectArray = [
     {id:1, image:`${carco}`, title:'Carco.Ge', description:'ავტო იმპორტის ვებ-გვერდი,ტრანსპორტირებისა და განბაჟების კალკულატორით.', button:'ნახვა',
@@ -23,6 +24,9 @@ export const ProjectArray = [
 
     {id:4, image:`${nexus}`, title:'Nexus Logistic LLC', description:'Nexus Logistics გადამზიდი კომპანია.', button:'ნახვა',
                                                 descriptionEng:'Nexus Logistics LLC is a 24/7 delivery/dispatching/carrier company.', buttonEng:'Visit', link:'https://teamofnexus.com/', framework:' React Js.'},
+
+    {id:4, image:`${panorama}`, title:'Twins Development', description:'Twins Development-ი სამშენებლო კომპანიის ვებ გვერდი. მიმდინარე პროექტი', button:'ნახვა',
+                                                descriptionEng:'Landing page fro Twins Development. Ongoing project', buttonEng:'Visit', link:'https://desp0o.github.io/panorama_varketili/', framework:' React Js.'},
 
     {id:5, image:`${tourGeorgia}`, title:'Tour Georgia', description:'უკრაინულ-ქართული ტურისტული კომპანია', button:'ნახვა',
                                                 descriptionEng:'Georgian-Ukrainian tour agency in Georgia.', buttonEng:'Visit', link:'https://tourgeorgia.com.ge/', framework:' React Js, Tailwindcss'},
