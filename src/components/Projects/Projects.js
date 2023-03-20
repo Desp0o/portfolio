@@ -55,7 +55,15 @@ function PagePrj(props) {
                             <div className="prj_inner">
                                 <h3>{project.title}</h3>
                                 <p>{localStorage.language === 'eng' ? `${project.descriptionEng}` : `${project.description}`} {project.framework}</p>
-                               
+
+                                {project.work1 && 
+                                    <div className="workBTNblock">
+                                        {project.work1 && <div className="workBTN"><p>{project.work1}</p></div>}
+                                        {project.work2 && <div className="workBTN"><p>{project.work2}</p></div>}
+                                        {project.work3 && <div className="workBTN"><p>{project.work3}</p></div>}
+                                        {project.work4 && <div className="workBTN"><p>{project.work4}</p></div>}
+                                    </div>
+                                }
 
                                 <span className="button_to_cont visitBTN">
                                     <span ref={button} className='button_to_cont_inner' onClick={()=> redirect(project.link)}>

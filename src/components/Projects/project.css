@@ -8,6 +8,28 @@
     padding-top: 50px;
 }
 
+.workBTNblock{
+    display: flex;
+    gap: 10px;
+}
+
+.button_to_cont_inner{
+    margin-top: 0%;
+}
+
+.workBTN{
+    padding: 5px 10px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.workBTN p{
+    font-size: 14px !important;
+    font-family: 'FiragoBold';
+    font-weight: bolder; 
+    color: #fff;
+}
+
 @media (min-width:1600px) {
     .projects{
         width: 100%;
@@ -36,6 +58,7 @@
 }
 
 .prj_inner{
+    padding-top: 20px;
     color: #666;
     width: 50%;
     display: flex;

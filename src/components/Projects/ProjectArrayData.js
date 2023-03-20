@@ -14,40 +14,54 @@ import panorama    from '../../images/panorama.webp'
 
 export const ProjectArray = [
     {id:1, image:`${carco}`, title:'Carco.Ge', description:'ავტო იმპორტის ვებ-გვერდი,ტრანსპორტირებისა და განბაჟების კალკულატორით.', button:'ნახვა',
-                                                descriptionEng:'Auto import Web page, with transportation and Customs Clearnece calculator.', buttonEng:'Visit',  link:'https://carco.ge/'},
+                                                descriptionEng:'Auto import Web page, with transportation and Customs Clearnece calculator.', buttonEng:'Visit',  link:'https://carco.ge/',
+                                                work1:'HTML', work2:'CSS', work3:'JS'},
 
     {id:2, image:`${dlab}`, title:'3Dlab.Group', description:'ანიმაციური სტუდია, რომელიც ქმნის სხვადასხვა ტიპის 3D სარეკლამო ანიმაციებს კომპანიებისთვის.', button:'ნახვა',
-                                                descriptionEng:'3Dlab is Animation studio, famous in social networks, with its funny projects.', buttonEng:'Visit',  link:'https://3dlab.group/'},
+                                                descriptionEng:'3Dlab is Animation studio, famous in social networks, with its funny projects.', buttonEng:'Visit',  link:'https://3dlab.group/',
+                                                work1:'HTML', work2:'CSS', work3:'JS', work4:'Bootstrap'},
 
-    {id:12, image:`${shutter}`, title:'shutter.pics', description:'მსუბუქი პორტფოლიო ფოტოგრაფისთვის', button:'ნახვა',
-                                                descriptionEng:'Super light portfolio for photographer with image viewer', buttonEng:'Visit',  link:'https://shutter.pics/', framework:' React Js, Tailwindcss'},
+    {id:12, image:`${shutter}`, title:'shutter.pics', description:'პორტფოლიო ფოტოგრაფისთვის', button:'ნახვა',
+                                                descriptionEng:'Super light portfolio for photographer with image viewer', buttonEng:'Visit',  link:'https://shutter.pics/',
+                                                work1:'React JS', work2:'CSS', work3:'Tailwind', work4:'Axios'},
 
     {id:13, image:`${nexus}`, title:'Nexus Logistic LLC', description:'Nexus Logistics გადამზიდი კომპანია.', button:'ნახვა',
-                                                descriptionEng:'Nexus Logistics LLC is a 24/7 delivery/dispatching/carrier company.', buttonEng:'Visit', link:'https://teamofnexus.com/', framework:' React Js.'},
+                                                descriptionEng:'Nexus Logistics LLC is a 24/7 delivery/dispatching/carrier company.', buttonEng:'Visit', link:'https://teamofnexus.com/',
+                                                work1:'React JS', work2:'CSS'},
 
     {id:4, image:`${panorama}`, title:'Twins Development', description:'Twins Development-ი სამშენებლო კომპანიის ვებ გვერდი. მიმდინარე პროექტი', button:'ნახვა',
-                                                descriptionEng:'Landing page fro Twins Development. Ongoing project', buttonEng:'Visit', link:'https://desp0o.github.io/panorama_varketili/', framework:' React Js.'},
+                                                descriptionEng:'Landing page fro Twins Development. Ongoing project', buttonEng:'Visit', link:'https://desp0o.github.io/panorama_varketili/',
+                                                work1:'React JS', work2:'CSS', work3:'swiper.js'},
 
     {id:5, image:`${tourGeorgia}`, title:'Tour Georgia', description:'უკრაინულ-ქართული ტურისტული კომპანია', button:'ნახვა',
-                                                descriptionEng:'Georgian-Ukrainian tour agency in Georgia.', buttonEng:'Visit', link:'https://tourgeorgia.com.ge/', framework:' React Js, Tailwindcss'},
+                                                descriptionEng:'Georgian-Ukrainian tour agency in Georgia.', buttonEng:'Visit', link:'https://tourgeorgia.com.ge/',
+                                                work1:'React JS', work2:'Tailwind', work3:'swiper.js'},
 
     {id:6, image:`${indian}`, title:'Moto Shop Clone', description:'მოტოციკლეტების მაღაზიის პროექტი.', button:'ნახვა',
-                                                descriptionEng:'Moto shop web page clone, with responsive design and links animation.', buttonEng:'Visit', link:'https://desp0o.github.io/IndianMotorcycle/'},
+                                                descriptionEng:'Moto shop web page clone, with responsive design and links animation.', buttonEng:'Visit', link:'https://desp0o.github.io/IndianMotorcycle/',
+                                                work1:'HTML', work2:'CSS', work3:'JS'},
 
     {id:7, image:`${archic}`, title:'Architect Clone', description:'თანამედროვე,ესეთიკური, ტრადიციული ღირებულებების მქონე არქიტექტურული დიზაინები.', button:'ნახვა',
-                                                descriptionEng:'Architecutre web page clone, with responsive design and animations.', buttonEng:'Visit', link:'https://desp0o.github.io/Archic/'},
+                                                descriptionEng:'Architecutre web page clone, with responsive design and animations.', buttonEng:'Visit', link:'https://desp0o.github.io/Archic/',
+                                                work1:'HTML', work2:'CSS', work3:'JS'},
 
     {id:8, image:`${chess}`, title:'Chess Championship', description:'ჭადრაკის ჩემპიონატის რეგისტრაციის ფორმა.', button:'ნახვა',
-                                                descriptionEng:'Chess registration form built with.', buttonEng:'Visit', link:'https://desp0o.github.io/RedBeryy-Chess-Hero/', framework:' React Js.'},
+                                                descriptionEng:'Chess registration form built with.', buttonEng:'Visit', link:'https://desp0o.github.io/RedBeryy-Chess-Hero/', 
+                                                work1:'React JS', work2:'CSS'},
 
     {id:9, image:`${portfolio}`, title:'Devweb.cc', description:'პორტფოლიო ვებ დეველოპერისთვის.', button:'ნახვა',
-                                                descriptionEng:'Super light portfolio web page for Frontend Web Developer.', buttonEng:'Visit', link:'https://devweb.cc/', framework:' React Js.'},
+                                                descriptionEng:'Super light portfolio web page for Frontend Web Developer.', buttonEng:'Visit', link:'https://devweb.cc/', 
+                                                work1:'React JS', work2:'CSS'},
     
     {id:10, image:`${calApp}`, title:'Carco.Ge Android APP', description:'ტრანსპორტირების და განბაჟების კალკუალტორის აპლიაკცია ანდორიდ სისტემისტვის.', button:'გადმოწერა',
-                                                descriptionEng:'Auto import Android APP with transportation and Customs Clearnece calculator.', buttonEng:'Download', link:'https://drive.google.com/file/d/13f4GXvhRR9DFW4wAu0RFgsXPmbfm6RKH/view'},
+                                                descriptionEng:'Auto import Android APP with transportation and Customs Clearnece calculator.', buttonEng:'Download', link:'https://drive.google.com/file/d/13f4GXvhRR9DFW4wAu0RFgsXPmbfm6RKH/view',
+                                                work1:'Android Studio'},
+
     {id:11, image:`${magicMas}`, title:'MagicMassage', description:'მულტი ფუნქციური მასაჟორის საინფორმაციო ვებ გვერდიის კლონი.', button:'ნახვა',
-                                                descriptionEng:'MagicMassage™ provides relief from head tensions.', buttonEng:'Visit', link:'https://desp0o.github.io/MagicMassage/'},
+                                                descriptionEng:'MagicMassage™ provides relief from head tensions.', buttonEng:'Visit', link:'https://desp0o.github.io/MagicMassage/',
+                                                work1:'HTML', work2:'CSS', work3:'JS'},
 
     {id:3, image:`${pixnft}`, title:'pixnft.me', description:'NFT - ვებ-გვერდი, ინოვაციური გეგმებით.', button:'ნახვა',
-                                                descriptionEng:'NFT project Landing page, with road map and OpenSea account link.', buttonEng:'Visit', link:'https://desp0o.github.io/PixNFT/#creator'}
+                                                descriptionEng:'NFT project Landing page, with road map and OpenSea account link.', buttonEng:'Visit', link:'https://desp0o.github.io/PixNFT/#creator',
+                                                work1:'HTML', work2:'CSS', work3:'JS'}
 ]
