@@ -27,7 +27,7 @@ export default function Footer(props) {
     },[props.iseng])
 
     return(
-        <div className="footer">
+        <div className="footer geoStyle">
             <div className="footer_top">
                 <div className="footer_top_left">
                     <p className="footer_hedaer geoStyle" ref={footerMailRef}></p>

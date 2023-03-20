@@ -12,6 +12,10 @@ nav{
     background-color: #fff;
 }
 
+.displayNone{
+    display: none !important;
+}
+
 .nav_left{
     padding-left: 50px;
     width: 50%;

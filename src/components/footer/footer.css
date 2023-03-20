@@ -1,10 +1,12 @@
 .footer{
+    box-sizing: border-box;
     width: 100%;
-    height: 40%;
     display: flex;
     flex-direction: column;
     background-color: #111;
-    margin-top: 50px;
+    margin-top: 100px;
+
+    padding-top: 50px;
 }
 .footer_top{
     width: 100%;
@@ -53,14 +55,16 @@
 .footer_bottom{
     width: 100%;
     height: 30%;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 30px;
 }
 
 @media only screen and (max-width:679px){
     .footer{
-        height: unset;
+        padding-top: 20px;
     }
     .footer_top{
         flex-direction: column;

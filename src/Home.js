@@ -4,45 +4,20 @@ import {Link} from  "react-router-dom";
 import emailjs from '@emailjs/browser';
 import Footer from "./components/footer/footer";
 import { projectDB } from "./projectDB";
+import Navbar from "./components/navbar/navbar";
 
 //CSS
 import './styles/home.css'
-import './styles/navbar.css'
 import './styles/about.css'
 import './components/Projects/project.css'
 import './styles/contact.css'
 import './index.css'
 
-//images
-import despoIMG   from './images/despo_img_512.webp'
-import menu       from './images/menu.png'
-import close      from './images/close.png'
 
-
-const imageStyle = {
-    width: '50px',
-    borderRadius:'50%'
-}
-
-function Home() {
-    const [isEng, setIsEng]     = useState(false)
-    const [toggle, setToggle]   = useState(false)
-    const [menuIMG, setMenuIMG] = useState(menu)
-    const [dashbrd, setDashbrd] = useState('menu_dashboard')
-    const [overlay, setOverlay] = useState('overlay')
-    const [svgW, setSvgW] = useState(310.80704)
+function Home(props) {
     const [svgH, setSvgH] = useState(310.80704)
 
-    const navbarTitleHref    = useRef()
-    const navHomeRef         = useRef()
     const projBtnRef         = useRef()
-    const navAboutRef        = useRef()
-    const navProjRef         = useRef()
-    const navContRef         = useRef()
-    const burgerMain         = useRef()
-    const burgerAbout        = useRef()
-    const burgerProj         = useRef()
-    const burgerCont         = useRef()
     const aboutMeTitle       = useRef()
     const aboutMeParag       = useRef()
     const aboutMeSkill       = useRef()
@@ -52,113 +27,52 @@ function Home() {
     const contactTitleRef    = useRef()
     const contactParRef      = useRef()
     const contactSendBtnRef  = useRef()
-    
     const inputName          = useRef()
     const inputMail          = useRef()
     const inputNumber        = useRef()
     const inputText          = useRef()
-    const navLanguageEng     = useRef()
-    const navLanguageGeo     = useRef()
-    const burgerLanguageEng  = useRef()
-    const burgerLanguageGeo  = useRef()
-
-    
-    const form       = useRef()
-    const homeRef    = useRef(null)
-    const aboutRef   = useRef(null)
-    const projectRef = useRef(null)
-    const contactRef = useRef(null)
-
-    function toggleMenu() {
-        if(!toggle){
-            setMenuIMG(close)
-            setDashbrd('menu_dashboard visible')
-            setOverlay('overlay visible')
-            setToggle(true)
-        }else{
-            setMenuIMG(menu)
-            setDashbrd('menu_dashboard')
-            setOverlay('overlay')
-            setToggle(false)
-        }
-    }
-
-    function engLang() {
-        localStorage.setItem("language", "eng");
-        setIsEng(true)
-    }
-
-    function geoLang() {
-        localStorage.setItem("language", "geo");
-        setIsEng(false)
-    }
+    const form               = useRef()
+    const homeRef            = useRef(null)
+    const aboutRef           = useRef(null)
+    const projectRef         = useRef(null)
+    const contactRef         = useRef(null)
 
     const lg = localStorage.getItem('language');
 
     useEffect(()=>{
-        navLanguageGeo.current.style.display = 'none'
-        burgerLanguageGeo.current.style.display = 'none'
-        inputName.current.placeholder = 'სახელი'
-        inputMail.current.placeholder = 'ელფოსტა'
-        inputNumber.current.placeholder = 'ნომერი'
-        inputText.current.placeholder = 'თქვენი შეტყობინება'
-        navbarTitleHref.current.innerText = 'თორნიკე დესპოტაშვილი'
-        navHomeRef.current.innerText = 'მთავარი'
-        navAboutRef.current.innerText = 'შესახებ'
-        navProjRef.current.innerText = 'პროექტები'
-        navContRef.current.innerText = 'კონტაქტი'
-        burgerMain.current.innerText = 'მთავარი'
-        burgerAbout.current.innerText = 'შესახებ'
-        burgerProj.current.innerText = 'პროექტები'
-        burgerCont.current.innerText = 'კონტაქტი'
-        projBtnRef.current.innerText = 'პროექტები'
-        aboutMeTitle.current.innerText = 'ჩემ შესახებ'
-        aboutMeParag.current.innerHTML = 'მე ვარ,თორნიკე დესპოტაშვილი Front-End -ზე ფოკუსირებული ვებ დეველოპერი. ვაწყობ ვებ-გვერდებს, რომელიც დღეს ერთ-ერთი  ყველაზე მნიშვნელოვანი საფეხურია ბიზნესის წარმატებისთვის.<br/><br/> მზად ვარ ახალი,საინტერესო გამოწვევებისთვის,ახალი პროექტებისთვის და თუ  კი ხარ ის,ვისაც აქვს ინოვაციური,საინტერესო პროექტი სიამოვნებით ვითანამშრომლებ თქვენთან.'
-        aboutMeSkill.current.innerText = 'უნარები!'
-        aboutMeBtn.current.innerText = 'კონტაქტი'
-        projTitleRef.current.innerText = 'პროექტები'
-        seeMoreBtnBlackRef.current.innerText = 'მეტი პროექტი'
-        contactTitleRef.current.innerText = 'კონტაქტი'
-        contactParRef.current.innerText = 'დასაკონტაქტებლად შეავსეთ ქვემოთ მოცემული ველები და შეძლებისდგავარად სწრაფად მიიღებთ პასუხს'
-        contactSendBtnRef.current.innerText = 'გაგზავნა'
-        navLanguageEng.current.style.display = 'block'
-        navLanguageGeo.current.style.display = 'none'
-        burgerLanguageEng.current.style.display = 'flex'
-        burgerLanguageGeo.current.style.display = 'none'
-        setIsEng(false);
+        
+            projBtnRef.current.innerText = 'პროექტები'
+            aboutMeTitle.current.innerText = 'ჩემ შესახებ'
+            aboutMeParag.current.innerHTML = 'მე ვარ,თორნიკე დესპოტაშვილი Front-End -ზე ფოკუსირებული ვებ დეველოპერი. ვაწყობ ვებ-გვერდებს, რომელიც დღეს ერთ-ერთი  ყველაზე მნიშვნელოვანი საფეხურია ბიზნესის წარმატებისთვის.<br/><br/> მზად ვარ ახალი,საინტერესო გამოწვევებისთვის,ახალი პროექტებისთვის და თუ  კი ხარ ის,ვისაც აქვს ინოვაციური,საინტერესო პროექტი სიამოვნებით ვითანამშრომლებ თქვენთან.'
+            aboutMeSkill.current.innerText = 'უნარები!'
+            aboutMeBtn.current.innerText = 'კონტაქტი'
+            projTitleRef.current.innerText = 'პროექტები'
+            seeMoreBtnBlackRef.current.innerText = 'მეტი პროექტი'
+            contactTitleRef.current.innerText = 'კონტაქტი'
+            contactParRef.current.innerText = 'დასაკონტაქტებლად შეავსეთ ქვემოთ მოცემული ველები და შეძლებისდგავარად სწრაფად მიიღებთ პასუხს'
+            contactSendBtnRef.current.innerText = 'გაგზავნა'
+            inputName.current.placeholder = 'სახელი'
+            inputMail.current.placeholder = 'ელფოსტა'
+            inputNumber.current.placeholder = 'ნომერი'
+            inputText.current.placeholder = 'თქვენი შეტყობინება'
 
-         if(lg === 'eng') {
-            setIsEng(true);
-             navbarTitleHref.current.innerText = 'tornike despotashvili';
-             navHomeRef.current.innerText = 'Home'
-             navAboutRef.current.innerText = 'About'
-             navProjRef.current.innerText = 'Projects'
-             navContRef.current.innerText = 'Contact'
-             burgerMain.current.innerText = 'Home'
-             burgerAbout.current.innerText = 'About'
-             burgerProj.current.innerText = 'Projects'
-             burgerCont.current.innerText = 'Contact'
-             projBtnRef.current.innerText = 'PROJECTS'
-             aboutMeTitle.current.innerText = 'ABOUT ME'
-             aboutMeParag.current.innerHTML = 'Im a Frontend Web Developer building the Front-End of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.<br/><br/> Im open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then dont hesitate to contact me.'
-             aboutMeSkill.current.innerText = 'Skills!'
-             aboutMeBtn.current.innerText = 'CONTACT'
-             projTitleRef.current.innerText = 'PROJECTS'
-             seeMoreBtnBlackRef.current.innerText = 'See More Projects'
-             contactTitleRef.current.innerText = 'CONTACT'
-             contactParRef.current.innerText = 'Feel free to Contact me by submitting the form below and I will get back to you as soon as possible'
-             contactSendBtnRef.current.innerText = 'Send'
-             inputName.current.placeholder = 'Name'
-             inputMail.current.placeholder = 'Email'
-             inputNumber.current.placeholder = 'Number'
-             inputText.current.placeholder = 'Your Message'
-             navLanguageEng.current.style.display = 'none'
-             navLanguageGeo.current.style.display = 'block'
-             burgerLanguageEng.current.style.display = 'none'
-             burgerLanguageGeo.current.style.display = 'flex'
-
+        if(lg === 'eng') {
+            aboutMeTitle.current.innerText = 'ABOUT ME'
+            aboutMeParag.current.innerHTML = 'Im a Frontend Web Developer building the Front-End of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.<br/><br/> Im open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then dont hesitate to contact me.'
+            aboutMeSkill.current.innerText = 'Skills!'
+            aboutMeBtn.current.innerText = 'CONTACT'
+            projTitleRef.current.innerText = 'PROJECTS'
+            seeMoreBtnBlackRef.current.innerText = 'See More Projects'
+            contactTitleRef.current.innerText = 'CONTACT'
+            contactParRef.current.innerText = 'Feel free to Contact me by submitting the form below and I will get back to you as soon as possible'
+            contactSendBtnRef.current.innerText = 'Send'
+            inputName.current.placeholder = 'Name'
+            inputMail.current.placeholder = 'Email'
+            inputNumber.current.placeholder = 'Number'
+            inputText.current.placeholder = 'Your Message'
+            projBtnRef.current.innerText = 'PROJECTS'
         }
-    },[isEng])
+    },[props.isEng])
 
 
     const handleClick = (refname) => {
@@ -197,47 +111,13 @@ function Home() {
     
 
     return(
-    <div className="geoStyle app">
+    <div>
 
-        {/* <Opening /> */}
-
-        {/* ნავიგაცია /////////////////////////////////////////// */}
-        <nav>
-            <div className="nav_left">
-                <img src={despoIMG} style={imageStyle} alt='logo'/>
-                <p ref={navbarTitleHref}></p>
-            </div>
-
-            <div className="nav_right">
-                <Link to='' className="navLinks" onClick={()=> handleClick(homeRef)} ref={navHomeRef}></Link>
-                <Link to='' className="navLinks" onClick={()=> handleClick(aboutRef)} ref={navAboutRef}></Link>
-                <Link to='/Projects' className="navLinks"ref={navProjRef}></Link>
-                <Link to='' className="navLinks" onClick={()=> handleClick(contactRef)} ref={navContRef}></Link>
-                <Link to='' className="navLinks" ref={navLanguageEng} onClick={()=> engLang()}>ENG</Link>
-                <Link to='' className="navLinks" ref={navLanguageGeo} onClick={()=> geoLang()}>GEO</Link>
-            </div>
-
-            <div className="burger_menu">
-                <img className="menu_bars" src={menuIMG} onClick={()=> toggleMenu()} alt='menu'/>
-            </div>
-        </nav>
-
-        <div className={dashbrd} onClick={()=> toggleMenu()}>
-            <div><Link to='' className="navLinks" onClick={()=> handleClick(homeRef)} ref={burgerMain}></Link></div>
-            <div><Link to='' className="navLinks" onClick={()=> handleClick(aboutRef)} ref={burgerAbout}></Link></div>
-            <div><Link to='/Projects' className="navLinks" onClick={()=> handleClick(projectRef)} ref={burgerProj}></Link></div>
-            <div><Link to='' className="navLinks" onClick={()=> handleClick(contactRef)} ref={burgerCont}></Link></div>
-            <div ref={burgerLanguageEng}><Link to='' className="navLinks" onClick={()=> engLang()}>ENG</Link></div>
-            <div ref={burgerLanguageGeo}><Link to='' className="navLinks" onClick={()=> geoLang()}>GEO</Link></div>
-        </div>
-
-        <div className={overlay} onClick={()=> toggleMenu()}></div>
-
-        
+        <Navbar eng={props.eng} geo={props.geo} isEng={props.isEng} refing={props.refing} refcontact={props.refcontact}/>
 
         {/* ჰიუმ ფეიჯი ////////////////////////////////////////////////////// */}
         <span ref={homeRef}></span>
-        <div className="home">
+        <div className="home geoStyle">
             
              <div className="svg_div">
                 <svg  data-name="Layer 1" width="1139.17088" height={svgH} viewBox="0 0 1139.17088 654.54324">
@@ -289,10 +169,6 @@ function Home() {
                     <p ref={projBtnRef}></p>
                 </div>
             </div>
-
-            {/* <div className="modes">
-                <Link to='/darkmode/homdeDark'><img src={mode} alt="mode"/></Link>
-            </div> */}
 
             {/* სოციალური ქსელები */}
             <span className="social">
@@ -346,8 +222,8 @@ function Home() {
         </div>
 
         {/* ებაუთ ფეიჯი ////////////////////////////////////////////////////// */}
-        <div ref={aboutRef}></div>
-        <div className="about_me" >
+        <div ref={props.refing}></div>
+        <div className="about_me geoStyle" >
                 <h1 className="about_me_h1" ref={aboutMeTitle}></h1>
                 <span className="underline"></span>
 
@@ -395,7 +271,7 @@ function Home() {
             
         {/* პროექტები ფეიჯი ////////////////////////////////////////////////////// */}
         <span ref={projectRef}></span>
-        <div className="projects" >
+        <div className="projects geoStyle" >
                 <div className="header_underline">
                     <h1 className="about_me_h1" ref={projTitleRef}></h1>
                     <span className="underline"></span>
@@ -441,8 +317,8 @@ function Home() {
         </div>
 
         {/* კონტაქტი ///////////////////////////////////////////////////////////*/}
-        <span ref={contactRef}></span>
-        <div className="contact" >
+        <span ref={props.refcontact}></span>
+        <div className="contact geoStyle">
             <div className="contact_header">
                 <h1 className="about_me_h1" ref={contactTitleRef}></h1>
                 <span className="underline"></span>
@@ -466,7 +342,7 @@ function Home() {
 
         {/* footer //////////////////////////////////////////////////////////// */}
 
-        <Footer iseng={isEng}/>
+        <Footer iseng={props.isEng}/>
 
     </div>
     )

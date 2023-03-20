@@ -19,7 +19,8 @@
 
 @media (max-width:769px) {
     .svg_div{
-        margin-bottom: 100px;
+        margin-bottom: 50px;
+        margin-top: -50px;
     }
 }
 

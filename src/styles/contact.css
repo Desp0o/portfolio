@@ -17,6 +17,8 @@
 }
 
 .form_parent{
+    padding-top: 50px;
+    padding-bottom: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,7 +105,7 @@ input:focus{
     .form_parent{
         height: 65%;
         width: 90%;
-        padding: 20px 0;
+        
     }
     .simpleInputENG,
     .simpleInput{

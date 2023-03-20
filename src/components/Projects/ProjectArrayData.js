@@ -22,7 +22,7 @@ export const ProjectArray = [
     {id:12, image:`${shutter}`, title:'shutter.pics', description:'მსუბუქი პორტფოლიო ფოტოგრაფისთვის', button:'ნახვა',
                                                 descriptionEng:'Super light portfolio for photographer with image viewer', buttonEng:'Visit',  link:'https://shutter.pics/', framework:' React Js, Tailwindcss'},
 
-    {id:4, image:`${nexus}`, title:'Nexus Logistic LLC', description:'Nexus Logistics გადამზიდი კომპანია.', button:'ნახვა',
+    {id:13, image:`${nexus}`, title:'Nexus Logistic LLC', description:'Nexus Logistics გადამზიდი კომპანია.', button:'ნახვა',
                                                 descriptionEng:'Nexus Logistics LLC is a 24/7 delivery/dispatching/carrier company.', buttonEng:'Visit', link:'https://teamofnexus.com/', framework:' React Js.'},
 
     {id:4, image:`${panorama}`, title:'Twins Development', description:'Twins Development-ი სამშენებლო კომპანიის ვებ გვერდი. მიმდინარე პროექტი', button:'ნახვა',

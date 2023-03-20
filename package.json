@@ -1,7 +1,7 @@
 {
   "homepage": "https://devweb.cc/",
   "name": "tornike-despotashvili",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
