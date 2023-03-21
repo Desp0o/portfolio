@@ -1,4 +1,5 @@
-import {React, useEffect, useRef} from "react";
+import {React, useEffect, useRef, useContext} from "react";
+import { langContext } from "../context";
 import { ProjectArray } from "./ProjectArrayData";
 import Navbar from "../navbar/navbar";
 
@@ -10,6 +11,8 @@ import '../../index.css'
 import Footer     from "../footer/footer";
 
 function PagePrj(props) {
+    const {isEng} = useContext(langContext)
+
     const button = useRef()
     const mainTitelRef = useRef()
 
@@ -27,7 +30,7 @@ function PagePrj(props) {
             mainTitelRef.current.innerText = 'Here You Are!'
         }
 
-    },[props.isEng])
+    },[isEng])
 
 
     

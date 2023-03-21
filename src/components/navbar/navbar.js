@@ -1,6 +1,7 @@
 import {React, useEffect, useState, useRef,  } from "react";
 import { Link } from "react-router-dom";
-
+import { useContext } from "react";
+import { langContext } from "../context";
 import despoIMG   from '../../images/despo_img_512.webp'
 import menu       from '../../images/menu.png'
 import close      from '../../images/close.png'
@@ -13,6 +14,10 @@ const imageStyle = {
 }
 
 export default function Navbar(props){
+    const {geoLang} = useContext(langContext)
+    const {engLang} = useContext(langContext)
+    const {isEng} = useContext(langContext)
+    const {setIsEng} = useContext(langContext)
     
     const navLanguageEng     = useRef()
     const navLanguageGeo     = useRef()
@@ -73,7 +78,7 @@ export default function Navbar(props){
 
 
         if(lg === 'eng') {
-        
+        setIsEng(true)
         navbarTitleHref.current.innerText = 'tornike despotashvili';
         navHomeRef.current.innerText = 'Home'
         navAboutRef.current.innerText = 'About'
@@ -88,7 +93,9 @@ export default function Navbar(props){
         burgerLanguageEng.current.style.display = 'none'
         burgerLanguageGeo.current.style.display = 'flex'
         }
-    },[props.isEng])
+    },[isEng])
+
+    console.log(isEng);
 
     return(
         <>
@@ -96,7 +103,7 @@ export default function Navbar(props){
         <nav className="geoStyle">
             <div className="nav_left">
                 <img src={despoIMG} style={imageStyle} alt='logo'/>
-                <p ref={navbarTitleHref}></p>
+                <Link to="/"><p ref={navbarTitleHref}></p></Link>
             </div>
 
             <div className="nav_right">
@@ -104,8 +111,8 @@ export default function Navbar(props){
                 <Link to='' className={`navLinks ${props.display}`}  ref={navAboutRef} onClick={()=>handleClick(props.refing)}></Link>
                 <Link to='/Projects' className={`navLinks ${props.display}`}ref={navProjRef}></Link>
                 <Link to='' className={`navLinks ${props.display}`}  ref={navContRef}  onClick={()=>handleClick(props.refcontact)}></Link>
-                <p className="navLinks" ref={navLanguageEng} onClick={props.eng}>ENG</p>
-                <p className="navLinks" ref={navLanguageGeo} onClick={props.geo}>GEO</p>
+                <p className="navLinks" ref={navLanguageEng} onClick={engLang}>ENG</p>
+                <p className="navLinks" ref={navLanguageGeo} onClick={geoLang}>GEO</p>
             </div>
 
             <div className="burger_menu">
@@ -118,8 +125,8 @@ export default function Navbar(props){
             <div className={`${props.display}`}><Link to='' className="navLinks geoStyle"  ref={burgerAbout} onClick={()=>handleClick(props.refing)}></Link></div>
             <div className={`${props.display}`}><Link to='/Projects' className="navLinks geoStyle" ref={burgerProj}></Link></div>
             <div className={`${props.display}`}><Link to='' className="navLinks geoStyle" ref={burgerCont} onClick={()=>handleClick(props.refcontact)}></Link></div>
-            <div ref={burgerLanguageEng} onClick={props.eng}><p className="navLinks geoStyle">ENG</p></div>
-            <div ref={burgerLanguageGeo} onClick={props.geo}><p className="navLinks geoStyle">GEO</p></div>
+            <div ref={burgerLanguageEng} onClick={engLang}><p className="navLinks geoStyle">ENG</p></div>
+            <div ref={burgerLanguageGeo} onClick={geoLang}><p className="navLinks geoStyle">GEO</p></div>
         </div>
 
         <div className={overlay} onClick={()=> toggleMenu()}></div>

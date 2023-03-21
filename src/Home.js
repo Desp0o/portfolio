@@ -1,5 +1,6 @@
 import {React, useEffect, useState} from "react";
-import {useRef} from 'react';
+import {useRef, useContext} from 'react';
+import { langContext } from "./components/context";
 import {Link} from  "react-router-dom";
 import emailjs from '@emailjs/browser';
 import Footer from "./components/footer/footer";
@@ -15,6 +16,8 @@ import './index.css'
 
 
 function Home(props) {
+    const {isEng} = useContext(langContext)
+
     const [svgH, setSvgH] = useState(310.80704)
 
     const projBtnRef         = useRef()
@@ -72,7 +75,7 @@ function Home(props) {
             inputText.current.placeholder = 'Your Message'
             projBtnRef.current.innerText = 'PROJECTS'
         }
-    },[props.isEng])
+    },[isEng])
 
 
     const handleClick = (refname) => {
@@ -113,7 +116,7 @@ function Home(props) {
     return(
     <div>
 
-        <Navbar eng={props.eng} geo={props.geo} isEng={props.isEng} refing={props.refing} refcontact={props.refcontact}/>
+        <Navbar refing={props.refing} refcontact={props.refcontact}/>
 
         {/* ჰიუმ ფეიჯი ////////////////////////////////////////////////////// */}
         <span ref={homeRef}></span>
