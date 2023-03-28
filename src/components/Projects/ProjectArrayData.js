@@ -55,7 +55,7 @@ export const ProjectArray = [
     
     {id:10, image:`${calApp}`, title:'Carco.Ge Android APP', description:'ტრანსპორტირების და განბაჟების კალკუალტორის აპლიაკცია ანდორიდ სისტემისტვის.', button:'გადმოწერა',
                                                 descriptionEng:'Auto import Android APP with transportation and Customs Clearnece calculator.', buttonEng:'Download', link:'https://drive.google.com/file/d/13f4GXvhRR9DFW4wAu0RFgsXPmbfm6RKH/view',
-                                                work1:'Android Studio'},
+                                                work1:'Android Studio', work2:"webView"},
 
     {id:11, image:`${magicMas}`, title:'MagicMassage', description:'მულტი ფუნქციური მასაჟორის საინფორმაციო ვებ გვერდიის კლონი.', button:'ნახვა',
                                                 descriptionEng:'MagicMassage™ provides relief from head tensions.', buttonEng:'Visit', link:'https://desp0o.github.io/MagicMassage/',

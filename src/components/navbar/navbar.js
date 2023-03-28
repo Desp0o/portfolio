@@ -95,8 +95,6 @@ export default function Navbar(props){
         }
     },[isEng])
 
-    console.log(isEng);
-
     return(
         <>
         {/* ნავიგაცია /////////////////////////////////////////// */}
