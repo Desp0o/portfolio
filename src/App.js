@@ -59,7 +59,7 @@ const showChatbox = () => {
           greeting_dialog_display="hide"
           entry_point_icon="chat_angular_icon"
           entry_point_label="none"
-          greeting_dialog_delay={250000000}
+          minimized={true}
         />
 
         <Routes>
