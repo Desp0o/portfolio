@@ -53,14 +53,14 @@ const showChatbox = () => {
   return (
     <div>
          <div
-          className="fb-customerchat"
-          attribution="setup_tool"
-          page_id="127905463538280"
-          greeting_dialog_display="hide"
-          entry_point_icon="chat_angular_icon"
-          entry_point_label="none"
-          minimized={true}
-        />
+            className="fb-customerchat"
+            attribution="setup_tool"
+            page_id="127905463538280"
+            greeting_dialog_display="hide"
+            entry_point_icon="chat_angular_icon"
+            entry_point_label="none"
+            minimized={true}
+          />
 
         <Routes>
           <Route exact path="*"         element={<Home refing={aboutMeRef} refcontact={contactRef}/>} />

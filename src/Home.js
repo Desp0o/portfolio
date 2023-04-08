@@ -209,7 +209,7 @@ function Home(props) {
                 </g>
             </svg>
 
-            <svg className="social_img" viewBox="0 0 72 72" version="1.1" onClick={()=> socialLink("https://www.facebook.com/tornike.despotashvili/")}>
+            <svg className="social_img" viewBox="0 0 72 72" version="1.1" onClick={()=> socialLink("https://www.facebook.com/profile.php?id=100091310801047")}>
                 <g >
                     <g  transform="translate(-152.000000, -43.000000)">
                         <g id="Facebook" transform="translate(152.000000, 43.000000)">
