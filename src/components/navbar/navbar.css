@@ -17,7 +17,7 @@ nav{
 }
 
 .nav_left{
-    padding-left: 50px;
+    padding-left: 95px;
     width: 50%;
     height: 100%;
     display: flex;
@@ -45,11 +45,13 @@ nav{
 }
 
 .nav_right{
+    box-sizing: border-box;
     width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-right: 95px;
     gap: 40px;
 }
 
@@ -151,4 +153,15 @@ nav{
         display: flex;
     } */
 
+}
+
+
+@media (min-width:1900px) {
+    .nav_left{
+        padding-left:235px;
+    }
+    .nav_right{
+        padding-right: 235px;
+    }
+    
 }

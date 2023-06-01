@@ -55,7 +55,7 @@ function PagePrj(props) {
                             </div>
 
 
-                            <div className="prj_inner">
+                            <div className="prj_inner projectPageInner">
                                 <h3>{project.title}</h3>
                                 <p>{localStorage.language === 'eng' ? `${project.descriptionEng}` : `${project.description}`} {project.framework}</p>
 
