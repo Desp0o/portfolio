@@ -30,12 +30,7 @@
     color: #fff;
 }
 
-@media (min-width:1600px) {
-    .projects{
-        width: 100%;
-        padding-top: 110px;
-    }
-}
+
 
 .projects_inner{
     width: 100%;
@@ -58,9 +53,11 @@
 }
 
 .prj_inner{
-    padding-top: 20px;
     color: #666;
     width: 50%;
+    height: fit-content;
+    box-sizing: border-box;
+    padding-right: 80px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -128,4 +125,25 @@
 
 .displayNone{
     display: none;
+}
+
+
+
+@media (min-width:1600px) {
+    .projects{
+        width: 100%;
+        padding-top: 110px;
+    }
+    .prj_inner{
+        color: #666;
+        width: 50%;
+        height: fit-content;
+        box-sizing: border-box;
+        padding-right: 210px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+    }
 }

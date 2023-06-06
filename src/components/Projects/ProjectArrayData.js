@@ -38,7 +38,7 @@ export const ProjectArray = [
                                                 descriptionEng:'Georgian-Ukrainian tour agency in Georgia.', buttonEng:'Visit', link:'https://tourgeorgia.com.ge/',
                                                 work1:'React JS', work2:'Tailwind', work3:'swiper.js'},
 
-    {id:13, image:`${sugarland}`, title:'Sugarlandspamassage.com', description:'Sugarland Spa Massage - გამაჯანსაღებელი და სამკურნალო მასაჟების ვებ გვერდი.', button:'ნახვა',
+    {id:13, image:`${sugarland}`, title:'Sugarlandspamassage.com', description:'Sugarland Spa Massage - გამაჯანსაღებელი და სამკურნალო მასაჟები.', button:'ნახვა',
                                                 descriptionEng:'Sugarland spa Mobile massage therapy Will bring luxury quality services.', buttonEng:'Visit', link:'https://sugarlandspamassage.com/',
                                                 work1:'React JS', work2:'CSS'},
 
