@@ -12,6 +12,7 @@ import tourGeorgia from '../../images/tourGeorgia.webp'
 import shutter     from '../../images/shutterpic.webp'
 import panorama    from '../../images/panorama.webp'
 import sugarland   from '../../images/sugarlandProject.webp'
+import gsgCover    from '../../images/gsgCover.webp'
 
 export const ProjectArray = [
     {id:1, image:`${carco}`, title:'Carco.Ge', description:'ავტო იმპორტის ვებ-გვერდი,ტრანსპორტირებისა და განბაჟების კალკულატორით.', button:'ნახვა',
@@ -40,6 +41,10 @@ export const ProjectArray = [
 
     {id:13, image:`${sugarland}`, title:'Sugarlandspamassage.com', description:'Sugarland Spa Massage - გამაჯანსაღებელი და სამკურნალო მასაჟები.', button:'ნახვა',
                                                 descriptionEng:'Sugarland spa Mobile massage therapy Will bring luxury quality services.', buttonEng:'Visit', link:'https://sugarlandspamassage.com/',
+                                                work1:'React JS', work2:'CSS'},
+
+    {id:14, image:`${gsgCover}`, title:'gso-gsgo.ge', description:'საქართველოს ონკოლოგიის სკოლისა და საქართველოს გერიატრიული ონკოლოგიის საზოგადოების, საინფორმაციო ვე გვერდი.', button:'ნახვა',
+                                                descriptionEng:'Web page for Gerogian School of Oncology and Georgian Society of Geriatric Oncology.', buttonEng:'Visit', link:'https://sugarlandspamassage.com/',
                                                 work1:'React JS', work2:'CSS'},
 
     {id:6, image:`${indian}`, title:'Moto Shop Clone', description:'მოტოციკლეტების მაღაზიის პროექტი.', button:'ნახვა',

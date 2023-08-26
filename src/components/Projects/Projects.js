@@ -14,12 +14,7 @@ function PagePrj(props) {
     const {isEng} = useContext(langContext)
 
     const button = useRef()
-    const mainTitelRef = useRef()
-
-    
-    const redirect = (url) => {
-        window.open(url, '_blank', 'noopener,noreferrer');
-    } 
+    const mainTitelRef = useRef()   
 
     const lg = localStorage.getItem('language');
     
@@ -68,11 +63,13 @@ function PagePrj(props) {
                                     </div>
                                 }
 
-                                <span className="button_to_cont visitBTN">
-                                    <span ref={button} className='button_to_cont_inner' onClick={()=> redirect(project.link)}>
-                                    {localStorage.language === 'eng' ? `${project.buttonEng}` : `${project.button}`}
-                                    </span>
-                                </span>
+                                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                                        <span className="button_to_cont visitBTN">
+                                            <span ref={button} className='button_to_cont_inner'>
+                                            {localStorage.language === 'eng' ? `${project.buttonEng}` : `${project.button}`}
+                                            </span>
+                                        </span>
+                                    </a>
                             </div>
                         </div>
                         </div>
