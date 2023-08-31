@@ -13,6 +13,7 @@ import shutter     from '../../images/shutterpic.webp'
 import panorama    from '../../images/panorama.webp'
 import sugarland   from '../../images/sugarlandProject.webp'
 import gsgCover    from '../../images/gsgCover.webp'
+import myVideoPop  from '../../images/myvideoPopUp.webp'
 
 export const ProjectArray = [
     {id:1, image:`${carco}`, title:'Carco.Ge', description:'ავტო იმპორტის ვებ-გვერდი,ტრანსპორტირებისა და განბაჟების კალკულატორით.', button:'ნახვა',
@@ -46,6 +47,10 @@ export const ProjectArray = [
     {id:14, image:`${gsgCover}`, title:'gso-gsgo.ge', description:'საქართველოს ონკოლოგიის სკოლისა და საქართველოს გერიატრიული ონკოლოგიის საზოგადოების, საინფორმაციო ვე გვერდი.', button:'ნახვა',
                                                 descriptionEng:'Web page for Gerogian School of Oncology and Georgian Society of Geriatric Oncology.', buttonEng:'Visit', link:'https://sugarlandspamassage.com/',
                                                 work1:'React JS', work2:'CSS'},
+
+    {id:14, image:`${myVideoPop}`, title:'PopUp For Myvideo.Ge', description:'არხების სიის პოპაპი Myvideo.Ge-სთვის', button:'ნახვა',
+                                                descriptionEng:'Channel list popup for Myvideo.Ge', buttonEng:'Visit', link:'https://desp0o.github.io/channelPopUp/',
+                                                work1:'Html', work2:'CSS', work3:'JS'},
 
     {id:6, image:`${indian}`, title:'Moto Shop Clone', description:'მოტოციკლეტების მაღაზიის პროექტი.', button:'ნახვა',
                                                 descriptionEng:'Moto shop web page clone, with responsive design and links animation.', buttonEng:'Visit', link:'https://desp0o.github.io/IndianMotorcycle/',
