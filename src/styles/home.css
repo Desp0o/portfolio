@@ -133,6 +133,12 @@
     border-bottom-right-radius: 10px;
 }
 
+.toaster{
+    background-color: #FACF0F !important;
+    color: #000000 !important;  
+    font-family: 'FiragoBold';
+    padding: 10px;
+}
 
 @media only screen and (max-width:679px){
     .home{

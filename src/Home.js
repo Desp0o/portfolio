@@ -5,6 +5,7 @@ import {Link} from  "react-router-dom";
 import emailjs from '@emailjs/browser';
 import Footer from "./components/footer/footer";
 import { projectDB } from "./projectDB";
+import toast, { Toaster } from 'react-hot-toast';
 import Navbar from "./components/navbar/navbar";
 import SVG from "./components/SVG";
 
@@ -42,7 +43,14 @@ function Home(props) {
 
     const lg = localStorage.getItem('language');
 
+    const message = lg === 'eng' ? "Message Is Sent!" : "თქვენი წერილი გაგზავნილია!"
+    const notify = () => toast(message,{
+        icon: '✉️',
+    });
+
     useEffect(()=>{
+
+        
         
             projBtnRef.current.innerText = 'პროექტები'
             aboutMeTitle.current.innerText = 'ჩემ შესახებ'
@@ -92,6 +100,8 @@ function Home(props) {
               console.log(error.text);
           });
           e.target.reset()
+
+          notify()
     }
     
 
@@ -249,7 +259,17 @@ function Home(props) {
         {/* footer //////////////////////////////////////////////////////////// */}
 
         <Footer iseng={props.isEng}/>
-
+        <Toaster 
+            toastOptions={{
+                className: 'toaster',
+                duration: 6000,
+                style: {
+                  border: '1px solid #000',
+                  padding: '16px',
+                  color: '#713200',
+                },
+              }}
+        />
     </div>
     )
 }
