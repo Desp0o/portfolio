@@ -93,9 +93,9 @@ function Home(props) {
     const sendEmail =(e)=>{
         e.preventDefault();
 
-        emailjs.sendForm('service_bpng7e7', 'template_y2xffsh', form.current, 'k5sgg72-uloGuXB_E')
+        emailjs.sendForm(process.env.REACT_APP_SERVICE_KEY, process.env.REACT_APP_TEMPLATE_KEY, form.current, 'k5sgg72-uloGuXB_E')
           .then((result) => {
-              console.log(result.text);
+              
           }, (error) => {
               console.log(error.text);
           });
