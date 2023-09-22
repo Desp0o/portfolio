@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { HashRouter as Router } from "react-router-dom";
-import ScrollToTop from './ScrollToTop';
+import ScrollToTop from './components/ScrollToTop';
 import { LangContexProvider } from './components/context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

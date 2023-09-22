@@ -1,12 +1,16 @@
 .contact{
     width: 100%;
-    height: 120%;
+    padding-top: 150px;
+}
+
+.contact_inner{
+    margin: 0 auto;
+    max-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 40px;
-    padding-top: 50px;
 }
 
 .contact_header{
@@ -23,7 +27,7 @@
     align-items: center;
     justify-content: center;
     height: 70%;
-    width: 70%;
+    width: 100%;
     background-color: #fff;
     box-sizing: border-box;
     border-radius: 5px;
@@ -84,10 +88,15 @@ form{
     outline: none;
     border: none;
     font-family: FiragoBold;
-    background-color: #FACF0F;
-    color: #111 !important;
-    width: 200px;
-    height: 60px;
+    background-color:var(--component-color);
+    color: var(--text-color-darker);
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 2px;
+    
+    width: 220px;
+    height: 50px;
 }
 
 .submit_parent{
@@ -98,14 +107,17 @@ form{
 }
 
 input:focus{
-    border: 1px solid #FACF0F;
+    border: 1px solid var(--component-color);
 }
 
-@media only screen and (max-width:679px){
+@media only screen and (max-width:769px){
+    .contact{
+        width: 100%;
+        padding-top: 100px;
+    }
     .form_parent{
         height: 65%;
         width: 90%;
-        
     }
     .simpleInputENG,
     .simpleInput{

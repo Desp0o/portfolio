@@ -2,52 +2,39 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 100px;
-}
-
-@media (max-width:769px) {
-    .about_me{
-        padding-top: 0px;
-    }
-}
-
-.about_me_h1{
-    position: relative;
-    font-size: 55px;
-}
-
-.underline{
-    width: 50px;
-    height: 5px;
-    border-radius: 20px;
-    background-color: #FACF0F;
+    padding-top: 80px;
 }
 
 .about_me_inner{
+    margin: 0 auto;
     box-sizing: border-box;
     padding-top: 50px;
     width: 100%;
+    max-width: 1200px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .about_me_inner_left,
 .about_me_inner_right{
-    width: 50%;
     display: flex;
     flex-direction: column;
-    padding-left: 50px;
     gap: 30px;
 }
 
-.about_me_inner_left h2{
+.about_me_inner_left{
+    max-width: 650px;
+}
+
+
+.about_me_inner_right h2{
     font-size: 26px;
+    color: var(--text-color-darker);
 }
 
 .about_me_inner_left p{
     font-size: 20px;
-    color: #666;
+    color:var(--text-color-main);
     line-height: 1.5;
 }
 
@@ -65,52 +52,22 @@
     align-items: center;
     justify-content: center;
     padding: 10px 15px;
-    background-color: rgba(153,153,153,.2);
+    background-color: var( --bg-layer);
+    color: var(--text-color-darker);
     box-sizing: border-box;
     border-radius: 5px;
     overflow: hidden;
 }
 
-.button_to_cont{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.button_to_cont_inner{
-    width: 200px;
-    height: 50px;
-    background-color: #FACF0F;
-    border-radius: 10px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 20px;
-    letter-spacing: 2px;
-    margin-top: 3%;
-    cursor: pointer;
-    transition: all 0.4s ease;
-}
-
-.button_to_cont_inner:hover{
-    margin-bottom: 10px;
-}
-
-.button_to_cont_inner p{
-    color: #111;
-}
-
-@media only screen and (max-width:679px){
-    .about_me_h1{
-        font-size: 40px;
+@media only screen and (max-width:769px){
+    .about_me{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;
     }
     .about_me_inner{
-        padding-top: 40px;
-    }
-    .about_me_inner{
+        padding-top: 20px;
         flex-direction: column;
         box-sizing: content-box;
     }
@@ -132,16 +89,4 @@
     }
 }   
 
-
-@media (min-width:1400px) {
-    .about_me_inner{
-        padding-left: 120px;
-    }
-}
-
-@media (min-width:1500px) {
-    .about_me_inner{
-        padding-left: 230px;
-    }
-}
 

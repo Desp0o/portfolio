@@ -1,6 +1,6 @@
 import {React, useRef} from 'react';
-import Home from './Home';
-import Projs from './components/Projects/Projects'
+import Home from './pages/Home';
+import Projs from './pages/Projects'
 
 import {
   Routes,

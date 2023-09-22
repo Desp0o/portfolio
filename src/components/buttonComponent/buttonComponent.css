@@ -1,0 +1,14 @@
+.buttonComponent{
+    width: 220px;
+    height: 50px;
+    background-color:var(--component-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    padding: 0 15px;
+}

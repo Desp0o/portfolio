@@ -1,17 +1,19 @@
-import { React, useRef, useEffect } from "react";
+import { React, useEffect, useRef, useContext } from "react";
+import { langContext } from "../../components/context";
 import './footer.css'
 
-export default function Footer(props) {
+export default function Footer() {
 
     const footerMailRef      = useRef()
     const footerSocialRef    = useRef()
     const authorRef          = useRef()
 
+    const { isEng } = useContext(langContext)
+
     const socialLink = (url) => {
         window.open(url, '_blank', 'noopener,noreferrer');
     }
     
-   
 
     useEffect(()=>{
         footerMailRef.current.innerHTML = 'ელ. ფოსტა'
@@ -24,7 +26,7 @@ export default function Footer(props) {
             authorRef.current.innerHTML = '© TORNIKE DESPOTASHVILI'
         }
         
-    },[props.iseng])
+    },[isEng])
 
     return(
         <div className="footer geoStyle">

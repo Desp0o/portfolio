@@ -4,13 +4,20 @@
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    scroll-padding-top: 50px;
+    scroll-padding-top: 70px;
+}
+
+:root{
+  --text-color-main: #4e4d4d;
+  --text-color-darker: #000;
+  --component-color: #FACF0F;
+  --bg-layer: #D9D8D8;
 }
 
 
 @font-face {
   font-family: 'FiragoBold';
-  src: url("./FiraGO-Bold.woff2") format('woff2');
+  src: url("./components/fonts/FiraGO-Bold.woff2") format('woff2');
   font-display: swap;
 }
 
@@ -43,7 +50,7 @@ code {
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: #FACF0F;
+  background-color: var(--component-color);
   border-radius: 10px;
 }
 
@@ -66,4 +73,5 @@ code {
 a{
   color: initial;
   text-decoration: initial;
+  width: fit-content;
 }

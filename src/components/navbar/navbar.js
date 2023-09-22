@@ -98,25 +98,27 @@ export default function Navbar(props){
     return(
         <>
         {/* ნავიგაცია /////////////////////////////////////////// */}
-        <nav className="geoStyle">
-            <div className="nav_left">
-                <img src={despoIMG} style={imageStyle} alt='logo'/>
-                <Link to="/"><p ref={navbarTitleHref}></p></Link>
-            </div>
+        <div className="navbar geoStyle">
+            <div className="navbar_inner">
+                <div className="nav_left">
+                    <img src={despoIMG} style={imageStyle} alt='logo'/>
+                    <Link to="/"><p ref={navbarTitleHref}></p></Link>
+                </div>
 
-            <div className="nav_right">
-                <Link to='/' className="navLinks"  ref={navHomeRef}></Link>
-                <Link to='' className={`navLinks ${props.display}`}  ref={navAboutRef} onClick={()=>handleClick(props.refing)}></Link>
-                <Link to='/Projects' className={`navLinks ${props.display}`}ref={navProjRef}></Link>
-                <Link to='' className={`navLinks ${props.display}`}  ref={navContRef}  onClick={()=>handleClick(props.refcontact)}></Link>
-                <p className="navLinks" ref={navLanguageEng} onClick={engLang}>ENG</p>
-                <p className="navLinks" ref={navLanguageGeo} onClick={geoLang}>GEO</p>
-            </div>
+                <div className="nav_right">
+                    <Link to='/' className="navLinks"  ref={navHomeRef}></Link>
+                    <Link to='' className={`navLinks ${props.display}`}  ref={navAboutRef} onClick={()=>handleClick(props.refing)}></Link>
+                    <Link to='/Projects' className={`navLinks ${props.display}`}ref={navProjRef}></Link>
+                    <Link to='' className={`navLinks ${props.display}`}  ref={navContRef}  onClick={()=>handleClick(props.refcontact)}></Link>
+                    <p className="navLinks" ref={navLanguageEng} onClick={engLang}>ENG</p>
+                    <p className="navLinks" ref={navLanguageGeo} onClick={geoLang}>GEO</p>
+                </div>
 
-            <div className="burger_menu">
-                <img className="menu_bars" src={menuIMG} onClick={()=> toggleMenu()} alt='menu'/>
+                <div className="burger_menu">
+                    <img className="menu_bars" src={menuIMG} onClick={()=> toggleMenu()} alt='menu'/>
+                </div>
             </div>
-        </nav>
+        </div>
 
         <div className={dashbrd} onClick={()=> toggleMenu()}>
             <div><Link to='/' className="navLinks geoStyle"  ref={burgerMain}></Link></div>
