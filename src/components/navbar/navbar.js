@@ -41,8 +41,8 @@ export default function Navbar(props){
     function toggleMenu() {
         if(!toggle){
             setMenuIMG(close)
-            setDashbrd('menu_dashboard visible')
-            setOverlay('overlay visible')
+            setDashbrd('menu_dashboard menu_dashboard_Active')
+            setOverlay('overlay overlay_Active')
             setToggle(true)
         }else{
             setMenuIMG(menu)

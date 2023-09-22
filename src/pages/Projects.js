@@ -1,6 +1,7 @@
 import {React, useEffect, useRef, useContext} from "react";
 import { langContext } from "../components/context";
 import { ProjectArray } from "../components/ProjectArrayData";
+import TitleComponent from "../components/titleComponent/titleComponent"
 import SingleProjectComponent from "../components/singleProjectComponent/singleProjectComponent";
 import Navbar from "../components/navbar/navbar";
 import Footer from "../components/footer/footer";
@@ -32,7 +33,7 @@ function PagePrj(props) {
 
         {/* mainScreen */}
         <div className="mainScreen">
-            <h1 ref={mainTitelRef} style={{textAlign:'center'}}>პროექტები</h1>
+            <TitleComponent propsRef={mainTitelRef}/>
 
             <div className="projects" >
             
