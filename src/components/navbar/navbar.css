@@ -5,7 +5,8 @@
     top: 0;
     position: fixed;
     z-index: 2;
-    background-color: #fff;
+    background-color: var(--navbar-color-light);
+    color: var(--text-color-darker);
 }
 
 .navbar_inner{
@@ -15,6 +16,7 @@
     height: 100px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .displayNone{
@@ -22,7 +24,6 @@
 }
 
 .nav_left{
-    width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -38,7 +39,6 @@
     font-size: 18px;
     cursor: pointer;
     transition: color 0.3s ease;
-    color: var(--text-color-darker);
 }
 
 .nav_left p:hover{
@@ -51,7 +51,6 @@
 
 .nav_right{
     box-sizing: border-box;
-    width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -60,7 +59,6 @@
 }
 
 .navLinks{
-    color: var(--text-color-darker);
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;

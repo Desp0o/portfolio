@@ -133,6 +133,7 @@ input:focus{
     .geoContact{
         font-size: 14px;
         padding: 0 12px;
+        max-width: 650px;
     }
 }
 

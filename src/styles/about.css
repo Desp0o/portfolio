@@ -6,6 +6,7 @@
 }
 
 .about_me_inner{
+    background-color: tan;
     margin: 0 auto;
     box-sizing: border-box;
     padding-top: 50px;
@@ -20,6 +21,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    max-width: 650px;
 }
 
 .about_me_inner_left{
@@ -34,7 +36,6 @@
 
 .about_me_inner_left p{
     font-size: 20px;
-    color:var(--text-color-main);
     line-height: 1.5;
 }
 
@@ -70,6 +71,7 @@
         padding-top: 20px;
         flex-direction: column;
         box-sizing: content-box;
+        align-items: center;
     }
     .about_me_inner_left{
         width: 95%;

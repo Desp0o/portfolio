@@ -33,7 +33,7 @@ export default function Footer() {
             <div className="footer_top">
                 <div className="footer_top_left">
                     <p className="footer_hedaer geoStyle" ref={footerMailRef}></p>
-                    <p className="footer_hedaer_txt" style={{color:'#fff'}}>info@devweb.cc</p>
+                    <p className="footer_hedaer_txt">info@devweb.cc</p>
                 </div>
 
                 <div className="footer_top_right">

@@ -12,6 +12,13 @@
   --text-color-darker: #000;
   --component-color: #FACF0F;
   --bg-layer: #D9D8D8;
+  --navbar-color-light: #fff;
+  --bg-color: #e9e8e8;
+
+  --dark-mode-bg:#202124;
+  --dark-mode-navbar:#1a1a1a;
+  --dark-mode-dark-txt:#9AA0A6;
+  --dark-mode-component: #8AB4F8;
 }
 
 
@@ -33,7 +40,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
-  background-color: #e9e8e8;
+  background-color: var(--bg-color);
   font-display: swap;
 }
 
@@ -54,7 +61,14 @@ code {
   border-radius: 10px;
 }
 
+.App{
+  background-color: var(--bg-color);
+  color: var(--text-color-main);
+}
 
+.App_Dark{
+  background-color: var(--dark-mode-bg);
+}
 
 .geoStyle{
   font-family: 'FiragoBold';

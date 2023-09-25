@@ -18,6 +18,8 @@ export default function Navbar(props){
     const {engLang} = useContext(langContext)
     const {isEng} = useContext(langContext)
     const {setIsEng} = useContext(langContext)
+    const {isDark, setIsDark} = useContext(langContext)
+    const {modeHandler} = useContext(langContext)
     
     const navLanguageEng     = useRef()
     const navLanguageGeo     = useRef()
@@ -95,13 +97,15 @@ export default function Navbar(props){
         }
     },[isEng])
 
+    
+
     return(
         <>
         {/* ნავიგაცია /////////////////////////////////////////// */}
         <div className="navbar geoStyle">
             <div className="navbar_inner">
                 <div className="nav_left">
-                    <img src={despoIMG} style={imageStyle} alt='logo'/>
+                    <img src={despoIMG} style={imageStyle} alt='logo' onClick={modeHandler}/>
                     <Link to="/"><p ref={navbarTitleHref}></p></Link>
                 </div>
 

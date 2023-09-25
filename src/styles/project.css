@@ -26,14 +26,9 @@
     
 }
 
-.singleProj_header{
-    color:var(--text-color-main);
-}
-
 .singleProj_conent{
     padding-top: 10px;
     position: relative;
-    color: var(--text-color-main);
     max-width:500px ;
     width: 100%;
 

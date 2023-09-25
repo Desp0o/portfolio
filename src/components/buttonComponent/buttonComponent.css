@@ -2,6 +2,7 @@
     width: 220px;
     height: 50px;
     background-color:var(--component-color);
+    color: var(--text-color-darker);
     border-radius: 10px;
     display: flex;
     align-items: center;
