@@ -33,6 +33,10 @@
     border-radius: 5px;
 }
 
+.form_parent_dark{
+    background-color: var(--dark-mode-bg);
+}
+
 form{
     display: flex;
     flex-direction: column;

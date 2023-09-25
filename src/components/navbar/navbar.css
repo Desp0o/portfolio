@@ -99,6 +99,20 @@
     transition: all 0.4s ease; 
 }
 
+.menu_dashboard_dark{
+    background-color: var(--dark-mode-bg);
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 70px;
+    display: flex;
+    right:-100% ;
+    flex-direction: column;
+    padding: 20px 10px 0 0;
+    transition: all 0.4s ease; 
+}
+
 .menu_dashboard_Active{
     right: 0;
 }

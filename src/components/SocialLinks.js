@@ -1,9 +1,12 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import { langContext } from './context'
 import "../styles/home.css"
 
 export default function SocialLinks() {
+    const {socialClass} = useContext(langContext)
+
   return (
-    <span className="social">
+    <span className={socialClass}>
 
             <a href='https://github.com/Desp0o' target="_blank" rel="noopener noreferrer">
                 <svg className="social_img" viewBox="0 0 72 72" version="1.1">

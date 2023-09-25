@@ -13,7 +13,7 @@ export default function FourthSection() {
     const inputNumber = useRef()
     const inputText = useRef()
     const form = useRef()
-    const { isEng } = useContext(langContext)
+    const { isEng, formBg } = useContext(langContext)
     const lg = localStorage.getItem('language');
     const message = lg === 'eng' ? "Message Is Sent!" : "თქვენი წერილი გაგზავნილია!"
     const notify = () => toast(message, {
@@ -62,7 +62,7 @@ export default function FourthSection() {
                 <p className="geoContact" style={{ textAlign: 'center', marginTop: '20px' }} ref={contactParRef}></p>
             </div>
 
-            <div className="form_parent">
+            <div className={formBg}>
                 <form ref={form} onSubmit={sendEmail} >
                     <input ref={inputName} className="simpleInput geoStyle" type="text" name="name" required />
                     <input ref={inputMail} className="simpleInput geoStyle" type="email" name="email" required />

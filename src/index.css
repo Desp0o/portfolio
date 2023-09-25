@@ -16,7 +16,7 @@
   --bg-color: #e9e8e8;
 
   --dark-mode-bg:#202124;
-  --dark-mode-navbar:#1a1a1a;
+  --dark-mode-navbar:#111111;
   --dark-mode-dark-txt:#9AA0A6;
   --dark-mode-component: #8AB4F8;
 }
@@ -57,7 +57,7 @@ code {
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: var(--component-color);
+  background-color: var(--component-color) !important;
   border-radius: 10px;
 }
 
@@ -67,8 +67,19 @@ code {
 }
 
 .App_Dark{
-  background-color: var(--dark-mode-bg);
+  background-color: var(--dark-mode-navbar) !important;
+  color: var(--bg-color) !important;
 }
+
+.App_Darker{
+  background-color: var(--dark-mode-bg) !important;
+  color: var(--bg-color) !important;
+}
+
+.App_Dark_text{
+  color: var(--bg-color) !important;
+}
+
 
 .geoStyle{
   font-family: 'FiragoBold';
