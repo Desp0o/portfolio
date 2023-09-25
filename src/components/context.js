@@ -52,7 +52,7 @@ export const LangContexProvider = ({ children }) => {
             setFormBg('form_parent form_parent_dark')
             setDashboardMode('menu_dashboard menu_dashboard_dark')
             setSkillTitle('skillTitle skillTitle_dark')
-            setTogglerIco(moon)
+            setTogglerIco(sun)
         }else{
             setBgColor('App')
             setSocialClass('social')
@@ -62,7 +62,7 @@ export const LangContexProvider = ({ children }) => {
             setFormBg('form_parent')
             setDashboardMode('menu_dashboard')
             setSkillTitle('skillTitle')
-            setTogglerIco(sun)
+            setTogglerIco(moon)
         }
     },[isDarkMode])
 
