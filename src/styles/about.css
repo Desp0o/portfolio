@@ -27,10 +27,13 @@
     max-width: 650px;
 }
 
-
-.about_me_inner_right h2{
+.skillTitle{
     font-size: 26px;
     color: var(--text-color-darker);
+}
+
+.skillTitle_dark{
+    color: var(--bg-color);
 }
 
 .about_me_inner_left p{

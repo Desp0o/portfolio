@@ -12,7 +12,7 @@ const aboutMeParag = useRef()
 const aboutMeBtn = useRef()
 const aboutMeSkill = useRef()
 
-const { isEng } = useContext(langContext)
+const { isEng, skillTitle } = useContext(langContext)
 const lg = localStorage.getItem('language');
 
 useEffect(()=>{
@@ -46,7 +46,7 @@ return (
             </div>
 
             <div className="about_me_inner_right">
-                <h2 ref={aboutMeSkill}>უნარები!</h2>
+                <h2 className={skillTitle} ref={aboutMeSkill}>უნარები!</h2>
 
                 <div className="my_skills">
                     <span className="skill">HTML</span>

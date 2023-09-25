@@ -65,9 +65,29 @@
     font-size: 18px;
     transition: color 0.3s ease;
     cursor: pointer;
+    color: black;
+}
+
+.modeTogglerDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modeTogglerIcons{
+    width: 20px;
+    cursor: pointer;
 }
 
 .navLinks:hover{
+    color:var(--component-color);
+}
+
+.navLinks_Dark{
+    color: var(--bg-color);
+}
+
+.navLinks_Dark:hover{
     color:var(--component-color);
 }
 

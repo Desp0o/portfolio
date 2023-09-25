@@ -15,12 +15,7 @@ const imageStyle = {
 }
 
 export default function Navbar(props){
-    const {geoLang} = useContext(langContext)
-    const {engLang} = useContext(langContext)
-    const {isEng} = useContext(langContext)
-    const {setIsEng} = useContext(langContext)
-    const {navbarClass, navLinksClass, dashBoardMode, isDarkMode} = useContext(langContext)
-    const {modeHandler} = useContext(langContext)
+    const {togglerIco, navbarClass, navLinksClass, dashBoardMode, geoLang, engLang, isEng, setIsEng, modeHandler, isDark} = useContext(langContext)
     
     const navLanguageEng     = useRef()
     const navLanguageGeo     = useRef()
@@ -40,6 +35,7 @@ export default function Navbar(props){
     const [dashbrd, setDashbrd] = useState('menu_dashboard')
     const [overlay, setOverlay] = useState('overlay')
     const [toggle, setToggle]   = useState(false)
+    
     
     function toggleMenu() {
         if(!toggle){
@@ -106,7 +102,7 @@ export default function Navbar(props){
         <div className={navbarClass}>
             <div className="navbar_inner">
                 <div className="nav_left">
-                    <img src={despoIMG} style={imageStyle} alt='logo' onClick={modeHandler}/>
+                    <img src={despoIMG} style={imageStyle} alt='logo'/>
                     <Link to="/"><p className={`${navLinksClass} geoStyle`} ref={navbarTitleHref}></p></Link>
                 </div>
 
@@ -117,6 +113,10 @@ export default function Navbar(props){
                     <Link to='' className={`${navLinksClass} ${props.display}`}  ref={navContRef}  onClick={()=>handleClick(props.refcontact)}></Link>
                     <p className={navLinksClass} ref={navLanguageEng} onClick={engLang}>ENG</p>
                     <p className={navLinksClass} ref={navLanguageGeo} onClick={geoLang}>GEO</p>
+
+                    <div className="modeTogglerDiv">
+                        <img src={togglerIco} className="modeTogglerIcons" alt="mode toggler" onClick={modeHandler}/>
+                    </div>
                 </div>
 
                 <div className="burger_menu">
@@ -125,13 +125,16 @@ export default function Navbar(props){
             </div>
         </div>
 
-        <div className={dashbrd} onClick={()=> toggleMenu()}>
+        <div className={`${dashBoardMode} ${dashbrd}`} onClick={()=> toggleMenu()}>
             <div><Link to='/' className={`${navLinksClass} geoStyle`}  ref={burgerMain}></Link></div>
             <div className={`${props.display}`}><Link to='' className={`${navLinksClass} geoStyle`}  ref={burgerAbout} onClick={()=>handleClick(props.refing)}></Link></div>
             <div className={`${props.display}`}><Link to='/Projects' className={`${navLinksClass} geoStyle`} ref={burgerProj}></Link></div>
             <div className={`${props.display}`}><Link to='' className={`${navLinksClass} geoStyle`} ref={burgerCont} onClick={()=>handleClick(props.refcontact)}></Link></div>
             <div ref={burgerLanguageEng} onClick={engLang}><p className={`${navLinksClass} geoStyle`}>ENG</p></div>
             <div ref={burgerLanguageGeo} onClick={geoLang}><p className={`${navLinksClass} geoStyle`}>GEO</p></div>
+            <div className="modeTogglerDiv" >
+                <img src={togglerIco} className="modeTogglerIcons" alt="mode toggler" onClick={modeHandler}/>
+            </div>
         </div>
 
         <div className={overlay} onClick={()=> toggleMenu()}></div>
