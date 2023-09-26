@@ -10,7 +10,7 @@ export default function SVG() {
       }
 
       if(window.innerWidth > 1500){
-          setSvgH(600)
+          setSvgH(550)
       }
   },[])
 

@@ -5,6 +5,7 @@
 
 .contact_inner{
     margin: 0 auto;
+    width: 90%;
     max-width: 1200px;
     display: flex;
     align-items: center;

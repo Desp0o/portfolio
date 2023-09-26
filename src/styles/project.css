@@ -4,7 +4,7 @@
 }
 
 .projects{
-    width: 100%;
+    width: 90%;
     max-width: 1200px;
     box-sizing: border-box;
     margin: 0 auto;
@@ -92,8 +92,31 @@
     margin-top: 50px;
 }
 
+@media (max-width:1000px) {
+    .tools_item{
+        background-color: #2a2a2a;
+        color: #fff;
+        border-radius: 10px;
+        padding: 3px 10px;
+        font-size: 13px;
+    }
 
-@media (max-width:769px) {
+    .singleProj_link_btn{
+        width: 120px;
+        height: 30px;
+        font-size: 16px;
+        position: absolute;
+        bottom: 5px;
+    }
+
+    .singleProj_conent{
+        gap: 10px;
+    }
+
+}
+
+
+@media (max-width:800px) {
     .thirdSection{
         margin-top: 100px;
     }
@@ -131,6 +154,8 @@
     .singleProj_link_btn{
         position: relative;
         margin-top: 20px;
+        width: 140px;
+        height: 40px;
     }
 
     .tools_item{

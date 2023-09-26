@@ -44,16 +44,6 @@ export const LangContexProvider = ({ children }) => {
     
     useEffect(()=>{
         if(!isDarkMode){
-            setBgColor('App App_Dark')
-            setSocialClass('social App_Darker')
-            setNavbarClass('navbar geoStyle App_Darker')
-            setNavLinksClass('navLinks navLinks_Dark')
-            setTitleClass('main_title main_title_Dark')
-            setFormBg('form_parent form_parent_dark')
-            setDashboardMode('menu_dashboard menu_dashboard_dark')
-            setSkillTitle('skillTitle skillTitle_dark')
-            setTogglerIco(sun)
-        }else{
             setBgColor('App')
             setSocialClass('social')
             setNavbarClass('navbar geoStyle')
@@ -63,6 +53,16 @@ export const LangContexProvider = ({ children }) => {
             setDashboardMode('menu_dashboard')
             setSkillTitle('skillTitle')
             setTogglerIco(moon)
+        }else{
+            setTogglerIco(sun)
+            setBgColor('App App_Dark')
+            setSocialClass('social App_Darker')
+            setNavbarClass('navbar geoStyle App_Darker')
+            setNavLinksClass('navLinks navLinks_Dark')
+            setTitleClass('main_title main_title_Dark')
+            setFormBg('form_parent form_parent_dark')
+            setDashboardMode('menu_dashboard menu_dashboard_dark')
+            setSkillTitle('skillTitle skillTitle_dark')
         }
     },[isDarkMode])
 

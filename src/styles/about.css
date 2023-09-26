@@ -9,7 +9,7 @@
     margin: 0 auto;
     box-sizing: border-box;
     padding-top: 50px;
-    width: 100%;
+    width: 90%;
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
@@ -62,7 +62,7 @@
     overflow: hidden;
 }
 
-@media only screen and (max-width:769px){
+@media only screen and (max-width:912px){
     .about_me{
         width: 100%;
         display: flex;
