@@ -5,6 +5,22 @@ import ButtonComponent from "../buttonComponent/buttonComponent"
 
 import "../../styles/about.css"
 
+const skillArr = [
+    'HTML',
+    'CSS',
+    'SASS',
+    'SCSS',
+    'Github',
+    'Git',
+    'Gitlab',
+    'Javascript',
+    'React',
+    'Responsive Design',
+    'JQuery',
+    'webView',
+    'Tailwindcss'
+]
+
 export default function SecondSection({handler}) {
 
 const aboutMeTitle = useRef()
@@ -49,27 +65,12 @@ return (
                 <h2 className={skillTitle} ref={aboutMeSkill}>უნარები!</h2>
 
                 <div className="my_skills">
-                    <span className="skill">HTML</span>
-                    <span className="skill">CSS</span>
-                    <span className="skill">SASS</span>
-                    <span className="skill">SCSS</span>
-                    <span className="skill">Tailwindcss</span>
+                    {skillArr.map((skill, index)=>{
+                        return(
+                            <span key={index} className="skill">{skill}</span>
+                        )
+                    })}
                 </div>
-
-                <div className="my_skills">
-                    <span className="skill">Javascript</span>
-                    <span className="skill">React</span>
-                    <span className="skill">Responsive Design</span>
-                    <span className="skill">Github</span>
-                </div>
-
-                <div className="my_skills">
-                    <span className="skill">Git</span>
-                    <span className="skill">JQuery</span>
-                    <span className="skill">Docker</span>
-                    <span className="skill">webView</span>
-                </div>
-
 
             </div>
         </div>

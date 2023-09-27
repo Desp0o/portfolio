@@ -1,6 +1,4 @@
 import React from 'react'
-import ButtonComponent from '../buttonComponent/buttonComponent'
-import { Link } from 'react-router-dom'
 
 export default function SingleProjectComponent({project, cover, title, description, descriptionEng, work1, work2, work3, work4, path, buttonProj, buttonProjEng}) {
     return (

@@ -13,6 +13,7 @@
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .about_me_inner_left,
@@ -42,8 +43,8 @@
 }
 
 .my_skills{
-    height: 50px;
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     width: fit-content;
     line-break: auto;
