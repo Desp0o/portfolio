@@ -15,7 +15,7 @@ const imageStyle = {
 }
 
 export default function Navbar(props){
-    const {togglerIco, navbarClass, navLinksClass, dashBoardMode, geoLang, engLang, isEng, setIsEng, modeHandler, isDark} = useContext(langContext)
+    const {togglerIco, navbarClass, navLinksClass, dashBoardMode, geoLang, engLang, isEng, setIsEng, modeHandler} = useContext(langContext)
     
     const navLanguageEng     = useRef()
     const navLanguageGeo     = useRef()
@@ -92,6 +92,8 @@ export default function Navbar(props){
         burgerLanguageEng.current.style.display = 'none'
         burgerLanguageGeo.current.style.display = 'flex'
         }
+
+        // eslint-disable-next-line
     },[isEng])
 
     
