@@ -34,7 +34,7 @@ export const ProjectArray = [
             work1:'React JS', work2:'CSS'},
 
     {id:5, image:`${dlab}`, title:'3Dlab.Group', description:'ანიმაციური სტუდია, რომელიც ქმნის სხვადასხვა ტიპის 3D სარეკლამო ანიმაციებს კომპანიებისთვის.', button:'ნახვა',
-            descriptionEng:'3Dlab is Animation studio, famous in social networks, with its funny projects.', buttonEng:'Visit',  link:'https://3dlab.group/',
+            descriptionEng:'3Dlab is Animation studio, famous in social networks, with its funny projects.', buttonEng:'Visit',  link:'https://desp0o.github.io/3dlab/',
             work1:'HTML', work2:'CSS', work3:'JS', work4:'Bootstrap'},
 
     {id:6, image:`${tourGeorgia}`, title:'Tour Georgia', description:'უკრაინულ-ქართული ტურისტული კომპანია', button:'ნახვა',
