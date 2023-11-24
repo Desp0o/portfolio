@@ -1,5 +1,5 @@
 import { React, useEffect, useRef, useContext } from "react";
-import { langContext } from "../../components/context";
+import { langContext } from "../context";
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
 import TitleComponent from "../titleComponent/titleComponent";
@@ -20,10 +20,13 @@ export default function FourthSection() {
         icon: '✉️',
     });
 
+    const serviceKey = import.meta.env.VITE_REACT_APP_SERVICE_KEY
+    const templateKey = import.meta.env.VITE_REACT_APP_TEMPLATE_KEY
+
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm(process.env.REACT_APP_SERVICE_KEY, process.env.REACT_APP_TEMPLATE_KEY, form.current, 'k5sgg72-uloGuXB_E')
+        emailjs.sendForm(serviceKey, templateKey, form.current, 'k5sgg72-uloGuXB_E')
             .then((result) => {
 
             }, (error) => {
