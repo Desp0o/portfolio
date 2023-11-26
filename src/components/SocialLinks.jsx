@@ -8,7 +8,7 @@ export default function SocialLinks() {
   return (
     <span className={socialClass}>
 
-            <a href='https://github.com/Desp0o' target="_blank" rel="noopener noreferrer">
+            <a href='https://github.com/Desp0o' target="_blank" rel="noopener noreferrer" aria-label="reach me here">
                 <svg className="social_img" viewBox="0 0 72 72" version="1.1">
                     <g id="Page-1" stroke="none" >
                         <g id="Social-Icons---Rounded-Black" transform="translate(-264.000000, -939.000000)">
@@ -21,7 +21,7 @@ export default function SocialLinks() {
                 </svg>
             </a>
 
-            <a href='https://www.linkedin.com/in/tornike-despotashvili-250150219/' target="_blank" rel="noopener noreferrer">
+            <a href='https://www.linkedin.com/in/tornike-despotashvili-250150219/' target="_blank" rel="noopener noreferrer" aria-label="reach me here">
                 <svg className="social_img" viewBox="0 0 72 72" version="1.1">
                     <g id="Page-1" stroke="none"   fillRule="evenodd">
                         <g id="Social-Icons---Rounded-Black" transform="translate(-376.000000, -267.000000)">
@@ -35,7 +35,7 @@ export default function SocialLinks() {
             </a>
 
 
-            <a href='https://twitter.com/TDespotashvili' target="_blank" rel="noopener noreferrer">
+            <a href='https://twitter.com/TDespotashvili' target="_blank" rel="noopener noreferrer" aria-label="reach me here">
             <svg className="social_img" viewBox="0 0 72 72" version="1.1">
                 <g id="Page-1" stroke="none" >
                     <g id="Social-Icons---Rounded" transform="translate(-264.000000, -43.000000)">
@@ -50,7 +50,7 @@ export default function SocialLinks() {
 
 
 
-            <a href='https://www.facebook.com/profile.php?id=100091310801047' target="_blank" rel="noopener noreferrer">
+            <a href='https://www.facebook.com/profile.php?id=100091310801047' target="_blank" rel="noopener noreferrer" aria-label="reach me here">
             <svg className="social_img" viewBox="0 0 72 72" version="1.1">
                 <g >
                     <g  transform="translate(-152.000000, -43.000000)">
