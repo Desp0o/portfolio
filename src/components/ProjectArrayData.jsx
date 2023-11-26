@@ -15,6 +15,7 @@ import gsgCover    from '../images/gsgCover.webp'
 import myVideoPop  from '../images/myvideoPopUp.webp'
 import ticTacToe   from '../images/tictactoe.webp'
 import tvbox       from "../images/tvbox.webp"
+import moGraph     from "../images/mograph.webp"
 
 export const ProjectArray = [
     {id:1, image:`${carco}`, title:'Carco.Ge', description:'ავტო იმპორტის ვებ-გვერდი,ტრანსპორტირებისა და განბაჟების კალკულატორით.', button:'ნახვა',
@@ -56,6 +57,10 @@ export const ProjectArray = [
     {id:18, image:`${shutter}`, title:'shutter.pics', description:'პორტფოლიო ფოტოგრაფისთვის', button:'ნახვა',
             descriptionEng:'Super light portfolio for photographer with image viewer', buttonEng:'Visit',  link:'https://shutter.pics/',
             work1:'React JS', work2:'CSS', work3:'Tailwind', work4:'Axios'},
+
+    {id:19, image:`${moGraph}`, title:'moGraph', description:'მოუშენ დიზაინის კურსების ვებ გვერდი.', button:'ნახვა',
+            descriptionEng:'Web page for Courses of motion design', buttonEng:'Visit',  link:'https://shutter.pics/',
+            work1:'HTML', work2:'CSS', work3:'js'},
 
     {id:10, image:`${indian}`, title:'Moto Shop Clone', description:'მოტოციკლეტების მაღაზიის პროექტი.', button:'ნახვა',
             descriptionEng:'Moto shop web page clone, with responsive design and links animation.', buttonEng:'Visit', link:'https://desp0o.github.io/IndianMotorcycle/',
