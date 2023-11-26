@@ -59,7 +59,7 @@ export const ProjectArray = [
             work1:'React JS', work2:'CSS', work3:'Tailwind', work4:'Axios'},
 
     {id:19, image:`${moGraph}`, title:'moGraph', description:'მოუშენ დიზაინის კურსების ვებ გვერდი.', button:'ნახვა',
-            descriptionEng:'Web page for Courses of motion design', buttonEng:'Visit',  link:'https://shutter.pics/',
+            descriptionEng:'Web page for Courses of motion design', buttonEng:'Visit',  link:'https://desp0o.github.io/moGraph/',
             work1:'HTML', work2:'CSS', work3:'js'},
 
     {id:10, image:`${indian}`, title:'Moto Shop Clone', description:'მოტოციკლეტების მაღაზიის პროექტი.', button:'ნახვა',
