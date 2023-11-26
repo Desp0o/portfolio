@@ -100,3 +100,7 @@ a{
   text-decoration: initial;
   width: fit-content;
 }
+
+.singleProj_header{
+  font-size: 18.5px;
+}

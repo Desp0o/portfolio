@@ -6,7 +6,7 @@ export default function SingleProjectComponent({project, cover, title, descripti
         <img src={cover} className="singleProjImg" alt="project cover" />
 
         <div className="singleProj_conent">
-            <h3 className="singleProj_header">{title}</h3>
+            <p className="singleProj_header">{title}</p>
 
             <div className="singleProj_desc">
                 <p>{localStorage.language === 'eng' ? descriptionEng : description}</p>
