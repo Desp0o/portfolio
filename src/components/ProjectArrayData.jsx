@@ -16,6 +16,7 @@ import myVideoPop  from '../images/myvideoPopUp.webp'
 import ticTacToe   from '../images/tictactoe.webp'
 import tvbox       from "../images/tvbox.webp"
 import moGraph     from "../images/mograph.webp"
+import evernote    from "../images/evernote-proj.webp"
 
 export const ProjectArray = [
     {id:1, image:`${carco}`, title:'Carco.Ge', description:'ავტო იმპორტის ვებ-გვერდი,ტრანსპორტირებისა და განბაჟების კალკულატორით.', button:'ნახვა',
@@ -33,6 +34,10 @@ export const ProjectArray = [
     {id:4, image:`${sugarland}`, title:'Sugarlandspamassage.com', description:'Sugarland Spa Massage - გამაჯანსაღებელი და   სამკურნალო მასაჟები.', button:'ნახვა',
             descriptionEng:'Sugarland Spa Massage therapy Will bring luxury quality services.', buttonEng:'Visit', link:'https://sugarlandspamassage.com/',
             work1:'React JS', work2:'CSS'},
+        
+    {id:18, image:`${evernote}`, title:'Evernote Lite', description:'შექმენით და შეინახეთ თქვენთვის საჭირო ფაილები, დოკუმენტები და ტასკები', button:'ნახვა',
+            descriptionEng:'Create, manage, and organize notes, posts, and tasks on your personal productivity platform.', buttonEng:'Visit',  link:'https://charming-bubblegum-0838fc.netlify.app/',
+            work1:'React JS', work2:'CSS', work3:'NodeJs', work4:'MySQL'},
 
     {id:5, image:`${dlab}`, title:'3Dlab.Group', description:'ანიმაციური სტუდია, რომელიც ქმნის სხვადასხვა ტიპის 3D სარეკლამო ანიმაციებს კომპანიებისთვის.', button:'ნახვა',
             descriptionEng:'3Dlab is Animation studio, famous in social networks, with its funny projects.', buttonEng:'Visit',  link:'https://desp0o.github.io/3dlab/',
@@ -43,7 +48,7 @@ export const ProjectArray = [
             work1:'React JS', work2:'Tailwind', work3:'swiper.js'},
                                                 
     {id:7, image:`${nexus}`, title:'Nexus Logistic LLC', description:'Nexus Logistics გადამზიდი კომპანია.', button:'ნახვა',
-            descriptionEng:'Nexus Logistics LLC is a 24/7 delivery/dispatching/carrier company.', buttonEng:'Visit', link:'https://teamofnexus.com/',
+            descriptionEng:'Nexus Logistics LLC is a 24/7 delivery/dispatching/carrier company.', buttonEng:'Visit', link:'https://desp0o.github.io/logistic/',
             work1:'React JS', work2:'CSS'},
     
     {id:8, image:`${gsgCover}`, title:'gso-gsgo.ge', description:'საქართველოს ონკოლოგიის სკოლისა და საქართველოს გერიატრიული ონკოლოგიის საზოგადოების, საინფორმაციო ვე გვერდი.', button:'ნახვა',

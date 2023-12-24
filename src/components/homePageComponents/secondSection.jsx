@@ -18,7 +18,9 @@ const skillArr = [
     'Responsive Design',
     'JQuery',
     'webView',
-    'Tailwindcss'
+    'Tailwindcss',
+    'Node js',
+    'MySQL'
 ]
 
 export default function SecondSection({handler}) {
