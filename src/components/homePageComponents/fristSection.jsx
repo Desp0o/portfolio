@@ -1,24 +1,23 @@
-import React, {useRef, useEffect, useContext} from 'react'
+import React, {useRef, useEffect} from 'react'
 import SocialLinks from '../SocialLinks';
 import SVG from '../SVG';
-import { langContext } from '../context';
 import ButtonComponent from '../buttonComponent/buttonComponent';
+import { useSelector } from "react-redux";
 
 import '../../styles/home.css'
 
 export default function FristSection({handler}) {
     const projBtnRef = useRef()
     
-    const { isEng } = useContext(langContext)
-    const lg = localStorage.getItem('language');
+    const language = useSelector( state =>  state.language.value)
     
     useEffect(()=>{
-        projBtnRef.current.innerText = 'პროექტები'
-
-        if (lg === 'eng') {
+        if(language === 'geo'){
+            projBtnRef.current.innerText = 'პროექტები'
+        }else if (language === 'eng') {
             projBtnRef.current.innerText = 'PROJECTS'
         }
-    },[isEng])
+    },[language])
 
 
   return (

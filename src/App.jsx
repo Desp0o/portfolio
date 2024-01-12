@@ -6,13 +6,13 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import { langContext } from './components/context';
+import { useSelector } from 'react-redux';
 
 function App() {
 const aboutMeRef = useRef()
 const contactRef = useRef()
 
-const {bgColor} = useContext(langContext)
+const bgColor = useSelector( state => state.theme.setBgColor)
 
   return (
     <div className={bgColor}>

@@ -1,10 +1,10 @@
-import React, {useContext} from 'react'
-import { langContext } from '../context'
+import React from 'react'
 import './titleComponent.css'
+import { useSelector } from 'react-redux'
 
 export default function TitleComponent({propsRef}) {
 
-  const {titleClass} = useContext(langContext)
+  const titleClass = useSelector( state => state.theme.setTitleClass)
 
   return (
     <>

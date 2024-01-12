@@ -1,9 +1,9 @@
-import React, {useContext} from 'react'
-import { langContext } from './context'
+import React from 'react'
 import "../styles/home.css"
+import { useSelector } from 'react-redux'
 
 export default function SocialLinks() {
-    const {socialClass} = useContext(langContext)
+    const socialClass = useSelector((state) => state.theme.setSocialClass)
 
   return (
     <span className={socialClass}>
