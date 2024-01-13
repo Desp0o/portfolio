@@ -101,7 +101,7 @@ export default function FourthSection() {
                 name="number"
                 required
               />
-              <input
+              <textarea
                 ref={inputText}
                 className="textarea geoStyle"
                 type="text"
