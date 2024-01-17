@@ -3,7 +3,7 @@ import React from 'react'
 export default function SingleProjectComponent({project, cover, title, description, descriptionEng, work1, work2, work3, work4, path, buttonProj, buttonProjEng}) {
     return (
     <div className="singleProj">
-        <img src={cover} className="singleProjImg" alt="project cover" />
+        <img loading="lazy" src={cover} className="singleProjImg" alt="project cover" />
 
         <div className="singleProj_conent">
             <p className="singleProj_header">{title}</p>

@@ -59,7 +59,7 @@ export const ProjectArray = [
             descriptionEng:'Channel list popup for Myvideo.Ge', buttonEng:'Visit', link:'https://desp0o.github.io/channelPopUp/',
             work1:'Html', work2:'CSS', work3:'JS'},
 
-    {id:18, image:`${shutter}`, title:'shutter.pics', description:'პორტფოლიო ფოტოგრაფისთვის', button:'ნახვა',
+    {id:20, image:`${shutter}`, title:'shutter.pics', description:'პორტფოლიო ფოტოგრაფისთვის', button:'ნახვა',
             descriptionEng:'Super light portfolio for photographer with image viewer', buttonEng:'Visit',  link:'https://shutter.pics/',
             work1:'React JS', work2:'CSS', work3:'Tailwind', work4:'Axios'},
 
