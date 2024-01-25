@@ -170,3 +170,20 @@
         margin-top: 25px;
     }
 }
+
+@media (max-width:375px) {
+    .tools{
+        gap: 10px;
+    }
+    .tools_item{
+        font-size: 12px;
+        background-color: #2a2a2a;
+        color: #fff;
+        border-radius: 10px;
+        padding: 5px 10px;
+    }
+    .singleProj_desc p{
+        width: fit-content;
+        margin: 0 auto;
+    }
+}
