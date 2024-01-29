@@ -17,11 +17,15 @@ const skillArr = [
   "React",
   "Redux Toolkit",
   "Responsive Design",
-  "JQuery",
+  "react-query",
   "webView",
+  "Framer",
   "Tailwindcss",
   "Node js",
   "MySQL",
+  "Postman",
+  "Firebase",
+  "Figma"
 ];
 
 export default function SecondSection({ handler }) {
