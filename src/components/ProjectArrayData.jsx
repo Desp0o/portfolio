@@ -83,10 +83,6 @@ export const ProjectArray = [
             descriptionEng:'Super light portfolio web page for Frontend Web Developer.', buttonEng:'Visit', link:'https://devweb.cc/', 
             work1:'React JS', work2:'CSS'},
 
-    {id:14, image:`${ticTacToe}`, title:'Tic Tac Toe', description:'თამაში Tic Tac Toe.', button:'ნახვა',
-            descriptionEng:'Tic Tac Toe Game.', buttonEng:'Visit', link:'https://desp0o.github.io/tic-tac-toe/', 
-            work1:'React JS', work2:'CSS'},
-
     {id:16, image:`${magicMas}`, title:'MagicMassage', description:'მულტი ფუნქციური მასაჟორის საინფორმაციო ვებ გვერდიის კლონი.', button:'ნახვა',
             descriptionEng:'MagicMassage™ provides relief from head tensions.', buttonEng:'Visit', link:'https://desp0o.github.io/MagicMassage/',
             work1:'HTML', work2:'CSS', work3:'JS'},
