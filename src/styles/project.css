@@ -60,6 +60,10 @@
     color: #fff;
     border-radius: 10px;
     padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .singleProj_link_btn{
@@ -174,6 +178,8 @@
 @media (max-width:375px) {
     .tools{
         gap: 10px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
     .tools_item{
         font-size: 12px;
@@ -187,3 +193,4 @@
         margin: 0 auto;
     }
 }
+

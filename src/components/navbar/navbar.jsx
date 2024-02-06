@@ -32,8 +32,6 @@ export default function Navbar(props) {
     if(themeMode === 'dark'){
         dispatch(changeThemeToLight())
     }
-
-    console.log(themeMode);
   }
 
   //change language to English

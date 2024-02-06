@@ -13,7 +13,7 @@ import panorama    from '../images/panorama.webp'
 import sugarland   from '../images/sugarlandProject.webp'
 import gsgCover    from '../images/gsgCover.webp'
 import myVideoPop  from '../images/myvideoPopUp.webp'
-import ticTacToe   from '../images/tictactoe.webp'
+import moviedb     from "../images/moviedb.webp"
 import tvbox       from "../images/tvbox.webp"
 import moGraph     from "../images/mograph.webp"
 import evernote    from "../images/evernote-proj.webp"
@@ -89,5 +89,9 @@ export const ProjectArray = [
 
     {id:17, image:`${pixnft}`, title:'pixnft.me', description:'NFT - ვებ-გვერდი, ინოვაციური გეგმებით.', button:'ნახვა',
             descriptionEng:'NFT project Landing page, with road map and OpenSea account link.', buttonEng:'Visit', link:'https://desp0o.github.io/PixNFT/#creator',
-            work1:'HTML', work2:'CSS', work3:'JS'}
+            work1:'HTML', work2:'CSS', work3:'JS'},
+
+    {id:21, image:`${moviedb}`, title:'The Movie DB', description:'React-Query -ის გამოყენებით, წამოღებულია ფილმების ბაზა, რომელზეც შეგიძლიათ ჩაატაროთ მანიპუალიცები: გაფილტროთ ჟანრისა და მომხარებლების რეიტინიგს მიხედვით, დასორტოთ და მოძებნოთ სასრუველი ფილმი ან სერიალი.', button:'ნახვა',
+            descriptionEng:'Used React-Query for fetching data. You can display trending movies of the day or week, trending TV shows, and filter movies by genres and user ratings, sort them in ascending or descending order and search for movies or TV shows by name.', buttonEng:'Visit', link:'https://meek-peony-73b096.netlify.app/',
+            work1:'React', work2:'CSS', work3:'Redux/Toolkit', work4:'React-Query'}
 ]
