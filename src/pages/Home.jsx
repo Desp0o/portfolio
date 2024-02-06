@@ -23,7 +23,7 @@ return (
         <Navbar refing={props.refing} refcontact={props.refcontact} />
 
         {/* ჰიუმ ფეიჯი */}
-        <span ref={homeRef} />
+        <span ref={homeRef} style={{height:"40px"}}></span>
         <FristSection handler={()=>handleClick(projectRef)}/>
 
         {/* ებაუთ ფეიჯი */}
