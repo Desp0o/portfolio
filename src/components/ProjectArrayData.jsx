@@ -24,7 +24,7 @@ export const ProjectArray = [
             work1:'HTML', work2:'CSS', work3:'JS'},
     
     {id:2, image:`${panorama}`, title:'Twins Development', description:'Twins Development-ი სამშენებლო კომპანიის ვებ გვერდი.', button:'ნახვა',
-            descriptionEng:'Landing page fro Twins Development.', buttonEng:'Visit', link:'https://desp0o.github.io/panorama_varketili/',
+            descriptionEng:'Landing page fro Twins Development.', buttonEng:'Visit', link:'https://twins.com.ge/',
             work1:'React JS', work2:'CSS', work3:'swiper.js'},
     
     {id:3, image:`${tvbox}`, title:'TVbox.Ge', description:'ვებ გვერდი Myvideo.Ge-ს ტელევიზიისთვის.', button:'ნახვა',
@@ -60,7 +60,7 @@ export const ProjectArray = [
             work1:'Html', work2:'CSS', work3:'JS'},
 
     {id:20, image:`${shutter}`, title:'shutter.pics', description:'პორტფოლიო ფოტოგრაფისთვის', button:'ნახვა',
-            descriptionEng:'Super light portfolio for photographer with image viewer', buttonEng:'Visit',  link:'https://shutter.pics/',
+            descriptionEng:'Super light portfolio for photographer with image viewer', buttonEng:'Visit',  link:'https://meek-basbousa-38f2cc.netlify.app/',
             work1:'React JS', work2:'CSS', work3:'Tailwind', work4:'Axios'},
 
     {id:19, image:`${moGraph}`, title:'moGraph', description:'მოუშენ დიზაინის კურსების ვებ გვერდი.', button:'ნახვა',
