@@ -175,7 +175,7 @@
     }
 }
 
-@media (max-width:375px) {
+@media (max-width:500px) {
     .tools{
         gap: 10px;
         flex-wrap: wrap;
