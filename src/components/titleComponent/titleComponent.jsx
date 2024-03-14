@@ -9,7 +9,7 @@ export default function TitleComponent({propsRef}) {
   return (
     <>
         <div className="title_and_underline">
-            <h1 className={titleClass} ref={propsRef}></h1>
+            <h1 className={titleClass}>{propsRef}</h1>
             <span className="underline"></span>
         </div>
     </>

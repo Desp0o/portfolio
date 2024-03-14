@@ -1,18 +1,16 @@
-import { React, useEffect, useRef } from "react";
+import { React, useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
 import TitleComponent from "../titleComponent/titleComponent";
 import { useSelector } from "react-redux";
+import geolanguage from "../../geolang.json"
+import englanguage from "../../englang.json"
 
 export default function FourthSection() {
   const contactTitleRef = useRef();
-  const contactParRef = useRef();
-  const contactSendBtnRef = useRef();
-  const inputName = useRef();
-  const inputMail = useRef();
-  const inputNumber = useRef();
-  const inputText = useRef();
   const form = useRef();
+
+  const [languageJson, setLanguageJson] = useState(geolanguage)
 
   const serviceKey = import.meta.env.VITE_REACT_APP_SERVICE_KEY;
   const templateKey = import.meta.env.VITE_REACT_APP_TEMPLATE_KEY;
@@ -45,23 +43,9 @@ export default function FourthSection() {
 
   useEffect(() => {
     if (language === "geo") {
-      contactTitleRef.current.innerText = "კონტაქტი";
-      contactParRef.current.innerText =
-        "დასაკონტაქტებლად შეავსეთ ქვემოთ მოცემული ველები და შეძლებისდგავარად სწრაფად მიიღებთ პასუხს";
-      contactSendBtnRef.current.innerText = "გაგზავნა";
-      inputName.current.placeholder = "სახელი";
-      inputMail.current.placeholder = "ელფოსტა";
-      inputNumber.current.placeholder = "ნომერი";
-      inputText.current.placeholder = "თქვენი შეტყობინება";
+      setLanguageJson(geolanguage)
     } else if (language === "eng") {
-      contactTitleRef.current.innerText = "CONTACT";
-      contactParRef.current.innerText =
-        "Feel free to Contact me by submitting the form below and I will get back to you as soon as possible";
-      contactSendBtnRef.current.innerText = "Send";
-      inputName.current.placeholder = "Name";
-      inputMail.current.placeholder = "Email";
-      inputNumber.current.placeholder = "Number";
-      inputText.current.placeholder = "Your Message";
+      setLanguageJson(englanguage)
     }
   }, [language]);
 
@@ -70,42 +54,41 @@ export default function FourthSection() {
       <div className="contact geoStyle">
         <div className="contact_inner">
           <div className="contact_header">
-            <TitleComponent propsRef={contactTitleRef} />
+            <TitleComponent propsRef={languageJson.contact} />
             <p
               className="geoContact"
               style={{ textAlign: "center", marginTop: "20px" }}
-              ref={contactParRef}
-            ></p>
+            >{languageJson.contactParagraph}</p>
           </div>
 
           <div className={formBg}>
             <form ref={form} onSubmit={sendEmail}>
               <input
-                ref={inputName}
                 className="simpleInput geoStyle"
                 type="text"
                 name="name"
+                placeholder={languageJson.nameInput}
                 required
               />
               <input
-                ref={inputMail}
                 className="simpleInput geoStyle"
                 type="email"
                 name="email"
+                placeholder={languageJson.emailInput}
                 required
               />
               <input
-                ref={inputNumber}
                 className="simpleInput geoStyle"
                 type="text"
                 name="number"
+                placeholder={languageJson.numberInput}
                 required
               />
               <textarea
-                ref={inputText}
                 className="textarea geoStyle"
                 type="text"
                 name="message"
+                placeholder={languageJson.yourMessage}
                 required
               />
 
@@ -113,8 +96,7 @@ export default function FourthSection() {
                 <button
                   className="submitBTN button_to_cont_inner geoStyle"
                   type="submit"
-                  ref={contactSendBtnRef}
-                ></button>
+                >{languageJson.sendButton}</button>
               </div>
             </form>
           </div>

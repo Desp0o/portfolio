@@ -1,6 +1,8 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import TitleComponent from "../titleComponent/titleComponent";
 import ButtonComponent from "../buttonComponent/buttonComponent";
+import geolanguage from "../../geolang.json"
+import englanguage from "../../englang.json"
 
 import "../../styles/about.css";
 import { useSelector } from "react-redux";
@@ -27,46 +29,34 @@ const skillArr = [
 ];
 
 export default function SecondSection({ handler }) {
-  const aboutMeTitle = useRef();
-  const aboutMeParag = useRef();
-  const aboutMeBtn = useRef();
-  const aboutMeSkill = useRef();
-
   const language = useSelector((state) => state.language.value);
-
   const skillTitle = useSelector((state) => state.theme.setSkillTitle);
+
+  const [languageJson, setLanguageJson] = useState(geolanguage)
 
   useEffect(() => {
     if (language === "geo") {
-      aboutMeTitle.current.innerText = "ჩემ შესახებ";
-      aboutMeParag.current.innerHTML =
-        "გამარჯობა, მე ვარ თორნიკე დესპოტაშვილი Front-End ვებ დეველოპერი. გთავაზობთ ვებ-გვერდებს აწყობას, რომელიც ერთ-ერთი ყველაზე მნიშვნელოვანი საფეხურია ბიზნესის წარმატებისთვის.<br/><br/> მზად ვარ ახალი,საინტერესო გამოწვევებისთვის,ახალი პროექტებისთვის და თუ  კი ხარ ის,ვისაც აქვს ინოვაციური,საინტერესო პროექტი სიამოვნებით ვითანამშრომლებ თქვენთან.";
-      aboutMeBtn.current.innerText = "კონტაქტი";
-      aboutMeSkill.current.innerText = "უნარები!";
+      setLanguageJson(geolanguage)
     } else if (language === "eng") {
-      aboutMeTitle.current.innerText = "ABOUT ME";
-      aboutMeParag.current.innerHTML =
-        "Im a Frontend Web Developer building the Front-End of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.<br/><br/> Im open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then dont hesitate to contact me.";
-      aboutMeBtn.current.innerText = "CONTACT";
-      aboutMeSkill.current.innerText = "Skills!";
+      setLanguageJson(englanguage)
     }
   }, [language]);
 
   return (
     <>
       <div className="about_me geoStyle">
-        <TitleComponent propsRef={aboutMeTitle} />
+        <TitleComponent propsRef={languageJson.aboutMe} />
 
         <div className="about_me_inner">
           <div className="about_me_inner_left">
-            <p ref={aboutMeParag}></p>
+            <p dangerouslySetInnerHTML={{ __html: languageJson.bio }}></p>
 
-            <ButtonComponent value={aboutMeBtn} handler={handler} />
+            <ButtonComponent value={languageJson.contact} handler={handler} />
           </div>
 
           <div className="about_me_inner_right">
-            <h2 className={skillTitle} ref={aboutMeSkill}>
-              უნარები!
+            <h2 className={skillTitle}>
+              {languageJson.skills}
             </h2>
 
             <div className="my_skills">

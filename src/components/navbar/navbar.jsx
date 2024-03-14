@@ -10,6 +10,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { makeEng, makeGeo } from "../../store/languageSlice";
 import { changeThemeToDark, changeThemeToLight } from "../../store/themeMode";
 
+import geolanguage from "../../geolang.json"
+import englanguage from "../../englang.json"
+
 const imageStyle = {
   width: "50px",
   borderRadius: "50%",
@@ -44,30 +47,16 @@ export default function Navbar(props) {
     dispatch(makeGeo());
   };
 
-
-
-
-
-
-
   const navLanguageEng = useRef();
   const navLanguageGeo = useRef();
   const burgerLanguageEng = useRef();
   const burgerLanguageGeo = useRef();
-  const navbarTitleHref = useRef();
-  const navHomeRef = useRef();
-  const navAboutRef = useRef();
-  const navProjRef = useRef();
-  const navContRef = useRef();
-  const burgerMain = useRef();
-  const burgerAbout = useRef();
-  const burgerProj = useRef();
-  const burgerCont = useRef();
 
   const [menuIMG, setMenuIMG] = useState(menu);
   const [dashbrd, setDashbrd] = useState("menu_dashboard");
   const [overlay, setOverlay] = useState("overlay");
   const [toggle, setToggle] = useState(false);
+  const [languageJson, setLanguageJson] = useState(geolanguage)
 
   function toggleMenu() {
     if (!toggle) {
@@ -89,31 +78,15 @@ export default function Navbar(props) {
 
   useEffect(() => {
     if (language === "geo") {
+      setLanguageJson(geolanguage)
       navLanguageGeo.current.style.display = "none";
       burgerLanguageGeo.current.style.display = "none";
-      navbarTitleHref.current.innerText = "თორნიკე დესპოტაშვილი";
-      navHomeRef.current.innerText = "მთავარი";
-      navAboutRef.current.innerText = "შესახებ";
-      navProjRef.current.innerText = "პროექტები";
-      navContRef.current.innerText = "კონტაქტი";
-      burgerMain.current.innerText = "მთავარი";
-      burgerAbout.current.innerText = "შესახებ";
-      burgerProj.current.innerText = "პროექტები";
-      burgerCont.current.innerText = "კონტაქტი";
       navLanguageEng.current.style.display = "block";
       navLanguageGeo.current.style.display = "none";
       burgerLanguageEng.current.style.display = "flex";
       burgerLanguageGeo.current.style.display = "none";
     }else if (language === "eng") {
-      navbarTitleHref.current.innerText = "tornike despotashvili";
-      navHomeRef.current.innerText = "Home";
-      navAboutRef.current.innerText = "About";
-      navProjRef.current.innerText = "Projects";
-      navContRef.current.innerText = "Contact";
-      burgerMain.current.innerText = "Home";
-      burgerAbout.current.innerText = "About";
-      burgerProj.current.innerText = "Projects";
-      burgerCont.current.innerText = "Contact";
+      setLanguageJson(englanguage)
       navLanguageEng.current.style.display = "none";
       navLanguageGeo.current.style.display = "block";
       burgerLanguageEng.current.style.display = "none";
@@ -131,32 +104,26 @@ export default function Navbar(props) {
           <div className="nav_left">
             <img src={despoIMG} style={imageStyle} alt="logo" />
             <Link to="/">
-              <p
-                className={`${navLinksClass} geoStyle`}
-                ref={navbarTitleHref}
-              ></p>
+              <p className={`${navLinksClass} geoStyle`}>{languageJson.navbar.fullname}</p>
             </Link>
           </div>
 
           <div className="nav_right">
-            <Link to="/" className={navLinksClass} ref={navHomeRef}></Link>
+            <Link to="/" className={navLinksClass}>{languageJson.navbar.main}</Link>
             <Link
               to=""
               className={`${navLinksClass} ${props.display}`}
-              ref={navAboutRef}
               onClick={() => handleClick(props.refing)}
-            ></Link>
+            >{languageJson.navbar.about}</Link>
             <Link
               to="/Projects"
               className={`${navLinksClass} ${props.display}`}
-              ref={navProjRef}
-            ></Link>
+            >{languageJson.navbar.projects}</Link>
             <Link
               to=""
               className={`${navLinksClass} ${props.display}`}
-              ref={navContRef}
               onClick={() => handleClick(props.refcontact)}
-            ></Link>
+            >{languageJson.navbar.contact}</Link>
             <p className={navLinksClass} ref={navLanguageEng} onClick={engLang}>
               ENG
             </p>
@@ -193,31 +160,27 @@ export default function Navbar(props) {
           <Link
             to="/"
             className={`${navLinksClass} geoStyle`}
-            ref={burgerMain}
-          ></Link>
+          >{languageJson.navbar.main}</Link>
         </div>
         <div className={`${props.display}`}>
           <Link
             to=""
             className={`${navLinksClass} geoStyle`}
-            ref={burgerAbout}
             onClick={() => handleClick(props.refing)}
-          ></Link>
+          >{languageJson.navbar.about}</Link>
         </div>
         <div className={`${props.display}`}>
           <Link
             to="/Projects"
             className={`${navLinksClass} geoStyle`}
-            ref={burgerProj}
-          ></Link>
+          >{languageJson.navbar.projects}</Link>
         </div>
         <div className={`${props.display}`}>
           <Link
             to=""
             className={`${navLinksClass} geoStyle`}
-            ref={burgerCont}
             onClick={() => handleClick(props.refcontact)}
-          ></Link>
+          >{languageJson.navbar.contact}</Link>
         </div>
         <div ref={burgerLanguageEng} onClick={engLang}>
           <p className={`${navLinksClass} geoStyle`}>ENG</p>

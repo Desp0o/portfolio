@@ -7,7 +7,7 @@ export default function ButtonComponent({value, path, handler}) {
   return (
     <>
         <Link to={path} onClick={handler}>
-            <div className='buttonComponent' ref={value}></div>
+            <div className='buttonComponent'>{value}</div>
         </Link>
         
     </>

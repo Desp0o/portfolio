@@ -1,21 +1,21 @@
-import React, {useRef, useEffect} from 'react'
+import React,{useEffect, useState} from 'react'
 import SocialLinks from '../SocialLinks';
 import SVG from '../SVG';
 import ButtonComponent from '../buttonComponent/buttonComponent';
 import { useSelector } from "react-redux";
-
 import '../../styles/home.css'
+import geolanguage from "../../geolang.json"
+import englanguage from "../../englang.json"
 
-export default function FristSection({handler}) {
-    const projBtnRef = useRef()
-    
+export default function FristSection({handler}) {    
     const language = useSelector( state =>  state.language.value)
+    const [languageJson, setLanguageJson] = useState(geolanguage)
     
     useEffect(()=>{
         if(language === 'geo'){
-            projBtnRef.current.innerText = 'პროექტები'
+            setLanguageJson(geolanguage)
         }else if (language === 'eng') {
-            projBtnRef.current.innerText = 'PROJECTS'
+            setLanguageJson(englanguage)
         }
     },[language])
 
@@ -26,7 +26,7 @@ export default function FristSection({handler}) {
             <div className='main_screen_div'>
                 <SVG />
 
-                <ButtonComponent value={projBtnRef} handler={handler}/>
+                <ButtonComponent value={languageJson.projects} handler={handler}/>
             </div>
             <SocialLinks />
         </div>

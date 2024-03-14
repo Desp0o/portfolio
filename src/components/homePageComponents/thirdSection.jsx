@@ -1,34 +1,31 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { ProjectArray } from "../ProjectArrayData";
 import TitleComponent from "../titleComponent/titleComponent";
 import ButtonComponent from "../buttonComponent/buttonComponent";
 import SingleProjectComponent from "../singleProjectComponent/singleProjectComponent";
 import { useSelector } from "react-redux";
 
+import geolanguage from "../../geolang.json"
+import englanguage from "../../englang.json"
+
 export default function ThirdSection() {
   const language = useSelector((state) => state.language.value);
+  const [languageJson, setLanguageJson] = useState(geolanguage)
 
   const first4Projects = ProjectArray.slice(0, 4);
-
-  const projTitleRef = useRef();
-  const button = useRef();
-  const seeMoreBtnBlackRef = useRef();
-
+  
   useEffect(() => {
     if (language === "geo") {
-      projTitleRef.current.innerText = "პროექტები";
-      seeMoreBtnBlackRef.current.innerText = "მეტი პროექტი";
+      setLanguageJson(geolanguage)
     }
-
     if (language === "eng") {
-      projTitleRef.current.innerText = "PROJECTS";
-      seeMoreBtnBlackRef.current.innerText = "See More Projects";
+      setLanguageJson(englanguage)
     }
   }, [language]);
 
   return (
     <div className="thirdSection geoStyle">
-      <TitleComponent propsRef={projTitleRef} />
+      <TitleComponent propsRef={languageJson.projects} />
 
       <div className="projects">
         {/* პროექტების მაპინგი */}
@@ -54,7 +51,7 @@ export default function ThirdSection() {
       </div>
 
       <div className="project_mainPage_btn">
-        <ButtonComponent value={seeMoreBtnBlackRef} path={"/Projects"} />
+        <ButtonComponent value={languageJson.seeMoreProjects} path={"/Projects"} />
       </div>
     </div>
   );
