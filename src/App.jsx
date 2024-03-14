@@ -1,4 +1,4 @@
-import {React, useContext, useRef} from 'react';
+import {React, useRef} from 'react';
 import Home from './pages/Home';
 import Projs from './pages/Projects'
 

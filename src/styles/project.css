@@ -105,6 +105,7 @@
     margin-top: 50px;
 }
 
+
 @media (max-width:1000px) {
     .tools_item{
         background-color: #2a2a2a;
@@ -126,7 +127,6 @@
     }
 
 }
-
 
 @media (max-width:800px) {
     .thirdSection{
