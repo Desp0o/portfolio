@@ -1,34 +1,55 @@
-import React from 'react'
+import React from "react";
 
-export default function SingleProjectComponent({project, cover, title, description, descriptionEng, work1, work2, work3, work4, path, buttonProj, buttonProjEng}) {
-    return (
+export default function SingleProjectComponent({
+  project,
+  cover,
+  title,
+  description,
+  descriptionEng,
+  work1,
+  work2,
+  work3,
+  work4,
+  path,
+  buttonProj,
+  buttonProjEng,
+}) {
+  return (
     <div className="singleProj">
-        <img loading="lazy" src={cover} className="singleProjImg" alt="project cover" />
+      <img
+        loading="lazy"
+        src={cover}
+        className="singleProjImg"
+        alt="project cover"
+      />
 
-        <div className="singleProj_conent">
-            <p className="singleProj_header">{title}</p>
+      <div className="singleProj_conent">
+        
+        <div className="title_desc_skills">
+          <p className="singleProj_header">{title}</p>
 
-            <div className="singleProj_desc">
-                <p>{localStorage.language === 'eng' ? descriptionEng : description}</p>
+          <div className="singleProj_desc">
+            <p>
+              {localStorage.language === "eng" ? descriptionEng : description}
+            </p>
 
-                <div className="tools">
-                    
-                    <p className="tools_item">{work1}</p>
-                    <p className="tools_item">{work2}</p>
-                    {project?.work3 ? <p className="tools_item">{work3}</p> : <></>}
-                    {project?.work4 ? <p className="tools_item">{work4}</p> : <></>}
-
-                </div>
+            <div className="tools">
+              <p className="tools_item">{work1}</p>
+              <p className="tools_item">{work2}</p>
+              {project?.work3 ? <p className="tools_item">{work3}</p> : <></>}
+              {project?.work4 ? <p className="tools_item">{work4}</p> : <></>}
             </div>
-
-            <a href={path} target='_blank' rel="noopener noreferrer">
-                <div className='singleProj_link_btn'>
-                    <p>{localStorage.language === 'eng' ? buttonProjEng : buttonProj}</p>
-                </div>
-            </a>
+          </div>
         </div>
 
-
+        <a href={path} target="_blank" rel="noopener noreferrer">
+          <div className="singleProj_link_btn">
+            <p>
+              {localStorage.language === "eng" ? buttonProjEng : buttonProj}
+            </p>
+          </div>
+        </a>
+      </div>
     </div>
-  )
+  );
 }
