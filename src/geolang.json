@@ -18,6 +18,10 @@
     "emailInput":"ელ-ფოსტა",
     "numberInput":"ნომერი",
     "yourMessage":"თქვენი შეტყობინება",
-    "seconPageTitle":"პროექტები"
-
+    "seconPageTitle":"პროექტები",
+    "footer":{
+        "email":"ელ-ფოსტა",
+        "socials":"ქსელები",
+        "fullname":"© თორნიკე დესპოტაშვილი"
+    }
 }

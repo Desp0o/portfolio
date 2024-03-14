@@ -1,27 +1,23 @@
-import { React, useEffect, useRef } from "react";
+import { React, useEffect, useState } from "react";
 import "./footer.css";
 import { useSelector } from "react-redux";
+import geolanguage from "../../geolang.json"
+import englanguage from "../../englang.json"
+
 
 export default function Footer() {
-  const footerMailRef = useRef();
-  const footerSocialRef = useRef();
-  const authorRef = useRef();
+  const language = useSelector((state) => state.language.value);
+  const [languageJson, setLanguageJson] = useState(geolanguage)
 
   const socialLink = (url) => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
 
-  const language = useSelector((state) => state.language.value);
-
   useEffect(() => {
     if (language === "geo") {
-      footerMailRef.current.innerHTML = "ელ. ფოსტა";
-      footerSocialRef.current.innerHTML = "ქსელები";
-      authorRef.current.innerHTML = "© თორნიკე დესპოტაშვილი";
+      setLanguageJson(geolanguage)
     } else if (language === "eng") {
-      footerMailRef.current.innerHTML = "Email";
-      footerSocialRef.current.innerHTML = "SOCIAL";
-      authorRef.current.innerHTML = "© TORNIKE DESPOTASHVILI";
+      setLanguageJson(englanguage)
     }
   }, [language]);
 
@@ -30,12 +26,12 @@ export default function Footer() {
       <div className="footer_inner">
         <div className="footer_top">
           <div className="footer_top_left">
-            <p className="footer_hedaer geoStyle" ref={footerMailRef}></p>
+            <p className="footer_hedaer geoStyle">{languageJson.footer.email}</p>
             <p className="footer_hedaer_txt">info@devweb.cc</p>
           </div>
 
           <div className="footer_top_right">
-            <p className="footer_hedaer geoStyle" ref={footerSocialRef}></p>
+            <p className="footer_hedaer geoStyle">{languageJson.footer.socials}</p>
             <span className="footer_social">
               <svg
                 className="footer_svg"
@@ -164,8 +160,7 @@ export default function Footer() {
         <div className="footer_bottom">
           <p
             style={{ fontSize: "12px", color: "#fff", textAlign: "center" }}
-            ref={authorRef}
-          ></p>
+          >{languageJson.footer.fullname}</p>
         </div>
       </div>
     </div>

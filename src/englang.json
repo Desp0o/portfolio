@@ -18,5 +18,10 @@
     "emailInput":"Email",
     "numberInput":"Number",
     "yourMessage":"Your Message",
-    "seconPageTitle":"Here You Are!"
+    "seconPageTitle":"Here You Are!",
+    "footer":{
+        "email":"Email",
+        "socials":"SOCIAL",
+        "fullname":"© TORNIKE DESPOTASHVILI"
+    }
 }

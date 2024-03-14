@@ -7,7 +7,6 @@ import geolanguage from "../../geolang.json"
 import englanguage from "../../englang.json"
 
 export default function FourthSection() {
-  const contactTitleRef = useRef();
   const form = useRef();
 
   const [languageJson, setLanguageJson] = useState(geolanguage)
