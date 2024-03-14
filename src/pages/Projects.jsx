@@ -1,23 +1,24 @@
-import { React, useEffect, useRef, useContext } from "react";
+import { React, useEffect, useState } from "react";
 import { ProjectArray } from "../components/ProjectArrayData";
 import TitleComponent from "../components/titleComponent/titleComponent";
 import SingleProjectComponent from "../components/singleProjectComponent/singleProjectComponent";
 import Navbar from "../components/navbar/navbar";
 import Footer from "../components/footer/footer";
 import { useSelector } from "react-redux";
+import geolanguage from "../geolang.json"
+import englanguage from "../englang.json"
 
 import "../styles/project.css";
 
 function PagePrj(props) {
-  const mainTitelRef = useRef();
-
   const language = useSelector((state) => state.language.value);
+  const [languageJson, setLanguageJson] = useState(geolanguage)
 
   useEffect(() => {
     if (language === "geo") {
-      mainTitelRef.current.innerText = "პროექტები";
+      setLanguageJson(geolanguage)
     } else if (language === "eng") {
-      mainTitelRef.current.innerText = "Here You Are!";
+      setLanguageJson(englanguage)
     }
   }, [language]);
 
@@ -34,7 +35,7 @@ function PagePrj(props) {
 
       {/* mainScreen */}
       <div className="mainScreen">
-        <TitleComponent propsRef={mainTitelRef} />
+        <TitleComponent propsRef={languageJson.seconPageTitle} />
 
         <div className="projects">
           {ProjectArray.map((project) => {
