@@ -51,7 +51,7 @@ code {
 }
 
 ::-webkit-scrollbar{
-  background-color: transparent;
+  background-color: #202124;
   width: 15px;
 }
 
