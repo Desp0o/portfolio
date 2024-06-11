@@ -22,6 +22,7 @@
     box-sizing: content-box;
 
     display: flex;
+    align-items: center;
     gap: 60px;
     
 }
@@ -48,6 +49,7 @@
 .singleProjImg{
     width: 500px;
     max-width: 90%;
+    max-height: 280px;
 }
 
 .singleProj_desc{
@@ -149,12 +151,17 @@
         justify-content: center;
     }
 
+    .singleProj_header{
+        text-align: center;
+    }
+
     .singleProj_desc{
         width: 90%;
         max-width: 500px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
         gap: 10px;
     }
 
