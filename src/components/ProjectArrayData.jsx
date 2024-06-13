@@ -41,7 +41,7 @@ export const ProjectArray = [
         {
                 id: 14, image: `${movieCom}`, title: 'Movie Quiz', description: 'მიმდინარე პროექტი, სადაც მომხარებელს შეუძლია რეგისტრაცია და ავოტრიზაცია. მომხარებელს აქვს შესაძლებლობა განათავსოს პოსტები, გამოკითხევბი, განათავსოს და ასევე ითამაშოს ქვიზები და ქვესთები. თითოეულიი ამ აქტივობით იუზერი აგროვებს ქულებს, რომლითაც იღებს ონაწილეობას გათამაშებაში და შესაძლებლობა ექნება მოიგოს პრიზები და მიიღოს ეიჩივმენთები.', button: 'მიმდინარე',
                 descriptionEng: 'Ongoing project where users can register and authenticate. Users can create posts, polls, quizzes, and questions. They can like, save, and comment on posts. For each task, users gain points, which can help them win in ratings and get prizes. Users also earn achievements.', buttonEng: 'Ongoing', link: 'https://dev.devweb.cc/#/',
-                work1: 'React', work2: 'CSS', work3: 'React-redux', work4:"React-Query"
+                work1: 'React', work2: 'CSS', work3: 'React-redux', work4:"React-Query", work5: "swiper.js", work6:"firebase", work7:"dompurify", work7:"react-toastify", work7:"axios"
         },
 
 
@@ -120,7 +120,7 @@ export const ProjectArray = [
         {
                 id: 13, image: `${portfolio}`, title: 'Devweb.cc', description: 'პორტფოლიო ვებ დეველოპერისთვის.', button: 'ნახვა',
                 descriptionEng: 'Super light portfolio web page for Frontend Web Developer.', buttonEng: 'Visit', link: 'https://devweb.cc/',
-                work1: 'React JS', work2: 'CSS'
+                work1: 'React JS', work2: 'CSS' ,work3:"react-toastify"
         },
 
         {

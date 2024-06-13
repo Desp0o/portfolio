@@ -61,6 +61,7 @@
 
 .tools{
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -188,6 +189,10 @@
     .project_mainPage_btn{
         margin-top: 25px;
     }
+
+    .title_desc_skills{
+        align-items: center;
+    }
 }
 
 @media (max-width:500px) {
@@ -206,6 +211,9 @@
     .singleProj_desc p{
         width: fit-content;
         margin: 0 auto;
+    }
+    .title_desc_skills{
+        align-items: center;
     }
 }
 
