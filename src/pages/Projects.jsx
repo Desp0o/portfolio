@@ -54,6 +54,8 @@ function PagePrj(props) {
                 work5={project?.work5}
                 work6={project?.work6}
                 work7={project?.work7}
+                work8={project?.work8}
+                work9={project?.work9}
                 path={project.link}
                 buttonProj={project.button}
                 buttonProjEng={project.buttonEng}

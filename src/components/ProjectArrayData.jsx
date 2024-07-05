@@ -38,19 +38,19 @@ export const ProjectArray = [
                 work1: 'React JS', work2: 'CSS', work4: 'Axios'
         },
 
-        {
-                id: 14, image: `${movieCom}`, title: 'Movie Quiz', description: 'მიმდინარე პროექტი, სადაც მომხარებელს შეუძლია რეგისტრაცია და ავოტრიზაცია. მომხარებელს აქვს შესაძლებლობა განათავსოს პოსტები, გამოკითხევბი, განათავსოს და ასევე ითამაშოს ქვიზები და ქვესთები. თითოეულიი ამ აქტივობით იუზერი აგროვებს ქულებს, რომლითაც იღებს ონაწილეობას გათამაშებაში და შესაძლებლობა ექნება მოიგოს პრიზები და მიიღოს ეიჩივმენთები.', button: 'მიმდინარე',
-                descriptionEng: 'Ongoing project where users can register and authenticate. Users can create posts, polls, quizzes, and questions. They can like, save, and comment on posts. For each task, users gain points, which can help them win in ratings and get prizes. Users also earn achievements.', buttonEng: 'Ongoing', link: 'https://dev.devweb.cc/#/',
-                work1: 'React', work2: 'CSS', work3: 'React-redux', work4:"React-Query", work5: "swiper.js", work6:"firebase", work7:"dompurify", work7:"react-toastify", work7:"axios"
-        },
-
-
+        
+        
         {
                 id: 4, image: `${sugarland}`, title: 'Sugarlandspamassage.com', description: 'Sugarland Spa Massage - გამაჯანსაღებელი და   სამკურნალო მასაჟები.', button: 'ნახვა',
                 descriptionEng: 'Sugarland Spa Massage therapy Will bring luxury quality services.', buttonEng: 'Visit', link: 'https://sugarlandspamassage.com/',
                 work1: 'React JS', work2: 'CSS'
-        },
-
+                },
+                
+                {
+                        id: 14, image: `${movieCom}`, title: 'Movie Quiz', description: 'მიმდინარე პროექტი, სადაც მომხარებელს შეუძლია რეგისტრაცია და ავოტრიზაცია. მომხარებელს აქვს შესაძლებლობა განათავსოს პოსტები, გამოკითხევბი, განათავსოს და ასევე ითამაშოს ქვიზები და ქვესთები. თითოეულიი ამ აქტივობით იუზერი აგროვებს ქულებს, რომლითაც იღებს ონაწილეობას გათამაშებაში და შესაძლებლობა ექნება მოიგოს პრიზები და მიიღოს ეიჩივმენთები.', button: 'მიმდინარე',
+                        descriptionEng: 'Ongoing project where users can register and authenticate. Users can create posts, polls, quizzes, and questions. They can like, save, and comment on posts. For each task, users gain points, which can help them win in ratings and get prizes. Users also earn achievements.', buttonEng: 'Ongoing', link: 'https://dev.devweb.cc/#/',
+                        work1: 'React', work2: 'CSS', work3: 'React-redux', work4:"React-Query", work5: "swiper.js", work6:"firebase", work7:"dompurify", work8:"react-toastify", work9:"axios"
+                },
         {
                 id: 18, image: `${evernote}`, title: 'Evernote Lite', description: 'შექმენით და შეინახეთ თქვენთვის საჭირო ფაილები, დოკუმენტები და ტასკები', button: 'ნახვა',
                 descriptionEng: 'Create, manage, and organize notes, posts, and tasks on your personal productivity platform.', buttonEng: 'Visit', link: 'https://charming-bubblegum-0838fc.netlify.app/',

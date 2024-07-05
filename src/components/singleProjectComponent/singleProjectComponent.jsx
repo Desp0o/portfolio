@@ -13,6 +13,8 @@ export default function SingleProjectComponent({
   work5,
   work6,
   work7,
+  work8,
+  work9,
   path,
   buttonProj,
   buttonProjEng,
@@ -44,6 +46,8 @@ export default function SingleProjectComponent({
               {project?.work5 ? <p className="tools_item">{work5}</p> : <></>}
               {project?.work6 ? <p className="tools_item">{work6}</p> : <></>}
               {project?.work7 ? <p className="tools_item">{work7}</p> : <></>}
+              {project?.work8 ? <p className="tools_item">{work8}</p> : <></>}
+              {project?.work9 ? <p className="tools_item">{work9}</p> : <></>}
             </div>
           </div>
         </div>
