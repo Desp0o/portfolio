@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /tmp/
+Disallow: /node_modules/
+Disallow: /dist/
+Disallow: /src/
+
+# Allow indexing of the rest of the site
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.devweb.cc/sitemap.xml
+
