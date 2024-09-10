@@ -131,7 +131,7 @@ export const ProjectArray = [
         link: "https://line-dev-to-do-app.vercel.app/",
         work1: "React JS",
         work2: "Tailwind",
-        work3: "Tostify",
+        work3: "toastify",
         work4: "Clerk",
         work5: "Redux",
         work6: "supabase",
